@@ -17,18 +17,22 @@ let swiper = new Swiper(".mySwiper", {
 });
 
 $(function () {
-  $('.toggle').on('click', function () {
+  $('.toggle-container').on('click', function () {
     $(this).toggleClass('active');
+    $('.toggle').toggleClass('active');
     $('.header-second').find('.side-nav').toggleClass('active')
   });
 });
 
 $('.side-menu-mask').on('click', function () {
+  $('.header-second').find('.toggle-container.active').trigger("click");
   $('.header-second').find('.toggle.active').trigger("click");
 });
 
 var header = document.querySelector('.header-second');
-var logo = document.querySelector('.logo img');
+var logo = document.querySelector('.logo .small');
+var logoXs = document.querySelector('.logo .xs');
+var logoContainer = document.querySelector('.logo');
 var logoContainer = document.querySelector('.logo');
 
 ScrollTrigger.create({

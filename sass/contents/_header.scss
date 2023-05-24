@@ -135,6 +135,8 @@ nav {
 }
 
 .side-nav {
+  position: relative;
+  top: 2rem;
   background-color: #000;
   transform: translateX(-100%);
   width: 85%;
@@ -146,31 +148,20 @@ nav {
 
     .side-menu-item {
       position: relative;
+      height: 100vh;
       z-index: 3;
       background-color: rgb(0, 0, 0);
     }
 
     .side-menu-mask {
+      position: absolute;
       z-index: 2;
       width: 100vw;
       height: 100%;
-      // background: red;
-      background: rgba(0, 0, 0, 0.247);
-      position: absolute;
+      backdrop-filter: blur(10px);
       left: 0px;
       top: 0px;
     }
-  }
-}
-
-.toggle-container {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  gap: 0.5rem;
-
-  span {
-    font-size: 1.1rem;
   }
 }
 
@@ -203,10 +194,9 @@ nav {
   padding: 24px 8px 15px 8px;
   top: -2rem;
 
-  // img {
-  //   max-width: 108px;
-  //   max-height: 65px;
-  // }
+  .xs {
+    display: none;
+  }
 }
 
 // .side-menu-mask {

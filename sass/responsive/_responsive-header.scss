@@ -40,3 +40,33 @@ $media-largeDesktop: 1440px;
     }
   }
 }
+
+@media (max-width: $large-tablet) {
+  .header-second {
+    top: 0 !important;
+    padding: 0 !important;
+    height: 60px;
+    background-color: #000;
+  }
+
+  .logo-container {
+    top: 5px !important;
+    padding: 0 !important;
+  }
+
+  .logo {
+    top: 0 !important;
+    left: 0;
+    top: 0;
+    padding: 0 !important;
+
+    .small {
+      display: none;
+    }
+
+    .xs {
+      display: block;
+      height: 52px;
+    }
+  }
+}
