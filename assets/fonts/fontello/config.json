@@ -1,0 +1,112 @@
+{
+  "name": "",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "f6fa10cb3ffec7becb60834f50bb0182",
+      "css": "adjust",
+      "code": 59392,
+      "src": "entypo"
+    },
+    {
+      "uid": "f8e120c48c070f8afd2d072651b4fb9f",
+      "css": "light-up",
+      "code": 59393,
+      "src": "entypo"
+    },
+    {
+      "uid": "7f6916533c0842b6cec699fd773693d3",
+      "css": "hourglass",
+      "code": 59395,
+      "src": "entypo"
+    },
+    {
+      "uid": "4b20e1deee87faf4c3fab735fbd4bc1a",
+      "css": "lamp",
+      "code": 59396,
+      "src": "entypo"
+    },
+    {
+      "uid": "679d36f8485f05180a2719c91b3f621e",
+      "css": "comment",
+      "code": 59397,
+      "src": "iconic"
+    },
+    {
+      "uid": "acb5a542eef1c187078a9af1ede3db01",
+      "css": "comment-alt",
+      "code": 59398,
+      "src": "iconic"
+    },
+    {
+      "uid": "7cf0c6fefa5327473dec91427434ae26",
+      "css": "block",
+      "code": 59399,
+      "src": "iconic"
+    },
+    {
+      "uid": "4815ddddea76d90e367a9694a93b7e24",
+      "css": "resize-full",
+      "code": 59400,
+      "src": "iconic"
+    },
+    {
+      "uid": "776687efbdb973ebc67e049cc4c41b13",
+      "css": "resize-full-alt",
+      "code": 59401,
+      "src": "iconic"
+    },
+    {
+      "uid": "b05c5a209b56e7ea6632a31e4bd0b41d",
+      "css": "resize-small",
+      "code": 59402,
+      "src": "iconic"
+    },
+    {
+      "uid": "8596dc69a5e7e0297e8926b6e2563509",
+      "css": "resize-small-alt",
+      "code": 59403,
+      "src": "iconic"
+    },
+    {
+      "uid": "41d90aea465750c2a5dc6cb0bdef9617",
+      "css": "down",
+      "code": 59404,
+      "src": "iconic"
+    },
+    {
+      "uid": "971be54c1452e2558926d36786e6b1d7",
+      "css": "popup",
+      "code": 59405,
+      "src": "iconic"
+    },
+    {
+      "uid": "be25d23b15c3294588947a6b959811ec",
+      "css": "move",
+      "code": 59406,
+      "src": "iconic"
+    },
+    {
+      "uid": "7dde84b4f180e3c07523faecda81caa6",
+      "css": "resize-vertical",
+      "code": 59407,
+      "src": "iconic"
+    },
+    {
+      "uid": "63493102fc6b827e4a7be30b13cbf3b4",
+      "css": "resize-horizontal",
+      "code": 59408,
+      "src": "iconic"
+    },
+    {
+      "uid": "531359183f9fedb14b23666f1308591f",
+      "css": "telegram",
+      "code": 62150,
+      "src": "fontawesome"
+    }
+  ]
+}

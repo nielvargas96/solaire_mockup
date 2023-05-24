@@ -1,0 +1,42 @@
+$media-string: "only screen and ";
+$smallmobile: $media-string+"(max-width: 320px)";
+$tablet: $media-string+"(max-width: 768px)";
+$large-tablet: 1100px;
+$large-desktop: $media-string+"(min-width: 1200px)";
+$larger-desktop: $media-string+"(min-width: 1400px)";
+$largest-desktop: $media-string+"(min-width: 1860px)";
+$l4k-desktop: $media-string+"(min-width: 3000px)";
+
+$media-tablet: 640px;
+$media-largeTablet: 768px;
+$media-desktop: 1024px;
+$media-largeDesktop: 1440px;
+
+@media (min-width: $large-tablet) {
+  .side-nav {
+    display: none;
+  }
+
+  .header-menu {
+    display: flex;
+  }
+
+  .header-first {
+    display: flex;
+  }
+
+
+  .header-second {
+    margin-top: 2rem;
+  }
+
+  .toggle {
+    display: none;
+  }
+
+  .toggle-container {
+    span {
+      display: none;
+    }
+  }
+}

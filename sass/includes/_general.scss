@@ -1,0 +1,262 @@
+/*VARIABLES*/
+$full-width-desk: calc(100% - 1rem);
+$full-height-desk: calc(100vh - 5.5rem);
+$full-width-mob: calc(100% - 4rem);
+$full-height-mob: calc(100vh - 7rem);
+
+$gap: calc((26 - 14) * ((100vw - 300px) / (1600 - 300)));
+//ex: padding-top: calc(1rem + $gap);
+
+/*DOMS*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	position: relative;
+
+	margin: 0;
+	padding: 0;
+
+	font-size: var(--base-font-size);
+	font-family: var(--base-font);
+	scroll-behavior: smooth;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+body.inner {
+	overflow-y: auto;
+}
+
+// containers
+header {
+	position: relative;
+	top: 0;
+	left: 0;
+	margin: 0;
+	width: 100%;
+	z-index: 999;
+	background-color: #eee;
+	color: #444;
+}
+
+
+
+// main {
+// 	position: relative;
+// 	margin-top: 60px;
+// 	padding: 0;
+
+// 	section {
+// 		position: relative;
+// 		font-family: inherit;
+// 		overflow: hidden;
+
+// 		.content {
+// 			width: 100%;
+// 			height: 100vh;
+// 			margin: 0 auto;
+// 			max-width: 1200px;
+// 		}
+// 	}
+// }
+
+aside {
+	position: relative;
+
+	margin: 0;
+	padding: 0;
+
+	font-family: inherit;
+
+	.container {
+		padding: calc(1rem + $gap);
+	}
+}
+
+footer {
+	position: relative;
+
+	margin: 0;
+	padding: 0;
+
+	font-family: inherit;
+
+	.container {
+		padding: calc(1rem + $gap);
+	}
+}
+
+a {
+	text-decoration: none;
+}
+
+@mixin shadow {
+	box-shadow: 0 .3rem 1rem alpha($c3-dgray, 0.3);
+}
+
+/*DISPLAY FLEX */
+@mixin flex($behavior, $wrap: nowrap, $gap: $gap) {
+	$justify: flex-start;
+	$align: flex-start;
+	$orientation: row;
+	$spacing: flex-start;
+
+	@if($behavior =="row-top-left") {
+		$orientation: row;
+	}
+
+	@else if($behavior =="row-top-right") {
+		$orientation: row;
+		$justify: flex-end;
+	}
+
+	@else if($behavior =="row-bottom-left") {
+		$orientation: row;
+		$spacing: flex-end;
+	}
+
+	@else if($behavior =="row-bottom-wide") {
+		$orientation: row;
+		$justify: space-between;
+		$spacing: flex-end;
+	}
+
+	@else if($behavior =="row-top-left-full") {
+		$orientation: row;
+		$align: stretch;
+	}
+
+	@else if($behavior =="row-center-top") {
+		$orientation: row;
+		$align: flex-start;
+		$justify: center;
+		$spacing: flex-start;
+	}
+
+	@else if($behavior =="row-top-right-full") {
+		$orientation: row;
+		$justify: flex-end;
+		$align: stretch;
+	}
+
+	@else if($behavior =="row-center-left") {
+		$orientation: row;
+		$spacing: center;
+		$align: center;
+	}
+
+	@else if($behavior =="rev-row-center-left") {
+		$orientation: row-reverse;
+		$spacing: center;
+		$align: center;
+	}
+
+	@else if($behavior =="row-center-center") {
+		$orientation: row;
+		$align: center;
+		$justify: center;
+		$spacing: center;
+	}
+
+	@else if($behavior =="row-top-wide") {
+		$orientation: row;
+		$justify: space-between;
+	}
+
+	@else if($behavior =="row-center-wide") {
+		$orientation: row;
+		$align: center;
+		$justify: space-between;
+	}
+
+	@else if($behavior =="row-center-even") {
+		$orientation: row;
+		$align: center;
+		$justify: space-around;
+	}
+
+	@else if($behavior =="row-center-full") {
+		$orientation: row;
+		$spacing: stretch;
+	}
+
+	@else if($behavior =="column-top-left") {
+		$orientation: column;
+	}
+
+	@else if($behavior =="column-center-left") {
+		$orientation: column;
+		$justify: center;
+	}
+
+	@else if($behavior =="column-center-right") {
+		$orientation: column;
+		$align: flex-end;
+		$justify: center;
+	}
+
+	@else if($behavior =="column-top-wide") {
+		$orientation: column;
+		$justify: space-between;
+	}
+
+	@else if($behavior =="rev-column-top-left") {
+		$orientation: column-reverse;
+		$justify: flex-end;
+	}
+
+	@else if($behavior =="column-top-center") {
+		$orientation: column;
+		$align: center;
+	}
+
+	@else if($behavior =="column-bottom-center") {
+		$orientation: column;
+		$align: center;
+		$justify: flex-end;
+		$spacing: center;
+	}
+
+	@else if($behavior =="column-center-center") {
+		$orientation: column;
+		$align: center;
+		$justify: center;
+	}
+
+	display: flex;
+	flex-flow: $orientation $wrap;
+	justify-content: $justify;
+	align-items: $align;
+	align-content:$spacing;
+	gap:$gap;
+}
+
+
+/*BACKGROUND*/
+@mixin bg-image($src, $size: 100%, $attachment: inherit, $position: initial, $repeat: no-repeat, $color: transparent, $gradient: false, $gDirection: to bottom, $gColor1: rgb(255 255 255 / 1), $gColor2: rgb(0 0 0 / 1)) {
+	$path: '../img/'+$src;
+
+	@if($src !='none' and $gradient) {
+		background-image: url($path), linear-gradient($gDirection, $gColor1, $gColor2);
+	}
+
+	@else if($src =='none' and $gradient) {
+		background-image: linear-gradient($gDirection, $gColor1, $gColor2);
+	}
+
+	@else {
+		background-image: url($path);
+	}
+
+	background-size:$size;
+	background-position: $position;
+	background-attachment: $attachment;
+	background-repeat: $repeat;
+	background-color: $color;
+}
