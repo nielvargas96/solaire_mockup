@@ -241,21 +241,32 @@
       <div class="main">
         <div class="booking">
           <ul class="booking-tabs">
-            <li class="booking-tabItem active">HOTELS</li>
-            <li class="booking-tabItem">RESTAURANTS</li>
-            <li class="booking-tabItem">TICKETS</li>
+            <li class="booking-tabItem active" data-tab="tab1">HOTELS</li>
+            <li class="booking-tabItem" data-tab="tab2">RESTAURANTS</li>
+            <li class="booking-tabItem" data-tab="tab3">TICKETS</li>
           </ul>
 
           <div class="booking-container">
-            <div class="booking-content active">
-              hotels
+            <div class="booking-content tab1 active">
+              <div class="custom-select">
+                <div class="select-header">
+                  <div class="selected-option">All Hotels</div>
+                  <div class="arrow"></div>
+                </div>
+                <div class="select-options">
+                  <div class="option">Option 1</div>
+                  <div class="option">Option 2</div>
+                  <div class="option">Option 3</div>
+                  <!-- Add more options dynamically if needed -->
+                </div>
+              </div>
             </div>
 
-            <div class="booking-content">
+            <div class="booking-content tab2">
               restaurants
             </div>
 
-            <div class="booking-content">
+            <div class="booking-content tab3">
               tickets
             </div>
           </div>

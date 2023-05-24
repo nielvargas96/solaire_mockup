@@ -50,3 +50,53 @@
 	background-color: #fff;
 	height: 100vh;
 }
+
+.custom-select {
+	position: relative;
+	width: 200px;
+}
+
+.select-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px;
+	border: 1px solid #ccc;
+	cursor: pointer;
+}
+
+.selected-option {
+	flex-grow: 1;
+}
+
+.arrow {
+	width: 10px;
+	height: 10px;
+	border-left: 1px solid #ffffff;
+	border-bottom: 1px solid #ffffff;
+	transform: rotate(315deg);
+	transition: transform 0.2s;
+
+	&.open {}
+}
+
+.select-options {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+	display: none;
+	background-color: #000000;
+	border: 1px solid #ccc;
+	z-index: 999;
+}
+
+.option {
+	padding: 10px;
+	cursor: pointer;
+}
+
+.option:hover {
+	background-color: #f0f0f0;
+	color: #000000;
+}
