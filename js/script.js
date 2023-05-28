@@ -59,36 +59,36 @@ ScrollTrigger.create({
   onEnter: function () {
     gsap.to(header, {
       top: '-2rem',
-      duration: 0.3,
+      duration: 0.25,
       overwrite: true
     });
     gsap.to(logo, {
       height: '52px',
-      duration: 0.3,
+      duration: 0.25,
       overwrite: true
     });
     gsap.to(logoContainer, {
       padding: '4px',
       top: '0',
-      duration: 0.3,
+      duration: 0.25,
       overwrite: true
     });
   },
   onLeaveBack: function () {
     gsap.to(header, {
       top: '0',
-      duration: 0.3,
+      duration: 0.25,
       overwrite: true
     });
     gsap.to(logo, {
       height: '75px',
-      duration: 0.3,
+      duration: 0.25,
       overwrite: true
     });
     gsap.to(logoContainer, {
       padding: '24px 8px 15px 8px',
       top: '-2rem',
-      duration: 0.3,
+      duration: 0.25,
       overwrite: true
     });
   }
@@ -103,7 +103,7 @@ ScrollTrigger.create({
 //     onEnter: function () {
 //       gsap.to(backTop, {
 //         height: '2',
-//         duration: 0.3,
+//         duration: 0.25,
 //         overwrite: true
 //       });
 //     },
