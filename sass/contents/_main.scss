@@ -138,3 +138,23 @@
 	bottom: 0;
 	right: 2rem;
 }
+
+.heading-top {
+	margin-top: 3rem;
+	text-align: center;
+
+	.sub-title {
+		margin-bottom: 1rem;
+	}
+
+	span {
+		text-transform: uppercase;
+		font-weight: 600;
+		color: #a7a7a7;
+		border-bottom: 2px solid #DF6A2E;
+	}
+
+	h2 {
+		font-size: 2rem;
+	}
+}

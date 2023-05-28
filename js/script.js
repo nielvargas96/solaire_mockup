@@ -1,4 +1,4 @@
-let swiper = new Swiper(".mySwiper", {
+new Swiper(".mySwiper", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -14,6 +14,7 @@ let swiper = new Swiper(".mySwiper", {
     delay: 4000,
   }
 });
+
 
 $('.toggle-container').on('click', function () {
   $(this).toggleClass('active');
@@ -93,88 +94,6 @@ ScrollTrigger.create({
     });
   }
 });
-
-
-// let test = () => {
-//   ScrollTrigger.create({
-//     trigger: '.footer-wrapper',
-//     start: 'top top',
-//     end: 'bottom top',
-//     onEnter: function () {
-//       gsap.to(backTop, {
-//         height: '2',
-//         duration: 0.25,
-//         overwrite: true
-//       });
-//     },
-//     onLeaveBack: function () {
-//       gsap.to(backTop, {
-//         opacity: 0,
-//         duration: 0.3,
-//         overwrite: true
-//       });
-//     }
-//   });
-// }
-
-// test();
-
-
-
-// ScrollTrigger.create({
-//   start: "top top",
-//   end: 99999,
-//   onUpdate: (self) => {
-//     self.direction === -1 ? showAnim.play() : showAnim.reverse()
-//   }
-// });
-
-// gsap.to(".box", {
-//   scrollTrigger: ".box", // start the animation when ".box" enters the viewport (once)
-//   x: 500
-// });
-
-// gsap.registerPlugin(ScrollTrigger);
-
-// gsap.to('.header-second', {
-//   y: '-2rem',
-//   start: "top bottom", scrub: true,
-//   endTrigger: '.container-2',
-//   end: 'top center',
-//   markers: true,
-//   pin: true,
-//   pinSpacing: false
-// })
-
-
-// ScrollTrigger.create({
-//   animation: gsap.from(".header-second", {
-//     y: "2rem",
-//     // scale: 4,
-//     // yPercent: -50
-//   }),
-//   // scrub: true,
-//   // trigger: ".overlay-parallax",
-//   // start: "top ",
-//   // endTrigger: 'footer',
-//   // end: 'b',
-// markers: true,
-// pin: true,
-// pinSpacing: false
-// });
-
-
-// new Litepicker({
-//   element: document.getElementById('datepicker'),
-//   singleMode: false,
-//   tooltipText: {
-//     one: 'night',
-//     other: 'nights'
-//   },
-//   tooltipNumber: (totalDays) => {
-//     return totalDays - 1;
-//   }
-// })
 
 
 // Footer scripts

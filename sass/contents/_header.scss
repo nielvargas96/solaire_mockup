@@ -124,8 +124,17 @@ nav {
   }
 }
 
+.sub-menu-item {
+  &:not(:last-of-type) {
+    a {
+      border-bottom: 1px solid #686868;
+    }
+  }
+}
+
 .sub-menu-link {
-  padding: 0.75rem;
+  padding: 0.75rem 0;
+
 }
 
 .menu-link,
@@ -139,7 +148,7 @@ nav {
 
 .side-nav {
   position: relative;
-  top: 2rem;
+  top: 0;
   transform: translateX(-100%);
   width: 85%;
   z-index: 1;
@@ -227,10 +236,11 @@ nav {
   top: 60px;
   padding-bottom: 2rem;
   transition: top .35s ease 0s;
-
+  height: 0;
 
 
   &.active {
+    height: auto;
     opacity: 1;
     top: 0;
     z-index: 1;
