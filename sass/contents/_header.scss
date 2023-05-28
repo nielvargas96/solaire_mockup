@@ -1,3 +1,6 @@
+header {}
+
+
 nav {
   position: absolute;
   width: 100%;
@@ -74,7 +77,7 @@ nav {
   left: 0;
   background-color: #DF6A2E;
   transform-origin: bottom left;
-  transition: transform 0.35s ease-out;
+  transition: transform 0.25s ease-out;
 }
 
 .menu-item:hover::after {
@@ -137,42 +140,51 @@ nav {
 .side-nav {
   position: relative;
   top: 2rem;
-  background-color: #000;
   transform: translateX(-100%);
   width: 85%;
+  z-index: 1;
 
   &.active {
     transform: translateX(0);
     height: 100vh;
     transition: transform .3s ease-in-out;
-
-    .side-menu-item {
-      position: relative;
-      height: 100vh;
-      z-index: 3;
-      background-color: rgb(0, 0, 0);
-    }
-
-    .side-menu-mask {
-      position: absolute;
-      z-index: 2;
-      width: 100vw;
-      height: 100%;
-      backdrop-filter: blur(10px);
-      left: 0px;
-      top: 0px;
-    }
   }
 }
 
+.side-menu-wrapper {
+  position: relative;
+  height: 100vh;
+  z-index: 3;
+  background-color: rgb(0, 0, 0);
+}
+
+.side-sub-menu {
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}
+
+.side-menu-item {
+  .menu-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+
 .menu-wrapper {
   display: flex;
+  position: relative;
+  z-index: 1;
 
-  &:first-child {
+  &:first-of-type {
     margin-right: 4.5rem;
   }
 
-  &:last-child {
+  &:last-of-type {
     margin-left: 5rem;
   }
 }
@@ -189,13 +201,94 @@ nav {
 
 .logo {
   position: relative;
-  left: -1rem;
   background-color: #000;
-  padding: 24px 8px 15px 8px;
+  padding: 12px 8px 15px;
   top: -2rem;
+  left: 0.6rem;
 
   .xs {
     display: none;
+  }
+}
+
+.search-btn {
+  position: absolute;
+  right: 0;
+  top: 1rem;
+}
+
+.search-container {
+  position: relative;
+  background-color: #00000093;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  top: 60px;
+  padding-bottom: 2rem;
+  transition: top .35s ease 0s;
+
+
+
+  &.active {
+    opacity: 1;
+    top: 0;
+    z-index: 1;
+
+    a {
+      display: block;
+    }
+  }
+
+  a {
+    display: none;
+    color: #fff;
+    padding: 1rem;
+    border-bottom: 1px solid rgb(80, 82, 84);
+  }
+
+  input {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    border-bottom: 1px solid rgb(80, 82, 84);
+    width: 100%;
+
+    &:focus {
+      outline: none;
+    }
+
+    &::placeholder {
+      color: #fff;
+    }
+  }
+
+  .search {
+    width: 40%;
+  }
+
+  .search-related {
+    display: flex;
+    flex-direction: column;
+    // position: absolute;
+    // right: 0;
+    // height: 10;
+  }
+}
+
+.search-container-mask {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(10px);
+  left: 0px;
+  top: 60px;
+  display: none;
+
+  &.active {
+    display: block;
   }
 }
 

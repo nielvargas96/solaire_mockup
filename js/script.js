@@ -5,23 +5,21 @@ let swiper = new Swiper(".mySwiper", {
   },
   slidesPerView: "auto",
   loop: true,
-  spaceBetween: 30,
+  spaceBetween: 0,
+  speed: 900,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   }, autoplay: {
     delay: 4000,
-  },
-  speed: 750,
-  spaceBetween: 0,
+  }
 });
 
-$(function () {
-  $('.toggle-container').on('click', function () {
-    $(this).toggleClass('active');
-    $('.toggle').toggleClass('active');
-    $('.header-second').find('.side-nav').toggleClass('active')
-  });
+$('.toggle-container').on('click', function () {
+  $(this).toggleClass('active');
+  $('.toggle').toggleClass('active');
+  $('.header-second').find('.side-nav').toggleClass('active');
+  $('.header-second').find('.side-menu-mask').toggleClass('active');
 });
 
 $('.side-menu-mask').on('click', function () {
@@ -29,16 +27,35 @@ $('.side-menu-mask').on('click', function () {
   $('.header-second').find('.toggle.active').trigger("click");
 });
 
+$('.side-menu-item .menu-link').on('click', function () {
+  $('.side-menu-item .menu-link').not(this).removeClass('active');
+  $('.side-sub-menu').not($(this).next('.side-sub-menu')).removeClass('active');
+  $(this).toggleClass('active');
+  $(this).next('.side-sub-menu').toggleClass('active');
+});
+
+$('.search-container-mask').on('click', function () {
+  $('.header-second').find('.search-btn').trigger("click");
+});
+
+$('.search-btn').on('click', function () {
+  $('.search-container').toggleClass('active');
+  $('.search-container-mask').toggleClass('active');
+});
+
+
+
 var header = document.querySelector('.header-second');
 var logo = document.querySelector('.logo .small');
 var logoXs = document.querySelector('.logo .xs');
 var logoContainer = document.querySelector('.logo');
-var logoContainer = document.querySelector('.logo');
+
+gsap.registerPlugin(ScrollTrigger);
 
 ScrollTrigger.create({
-  trigger: '.hero-parallax',
+  trigger: '.header-second',
   start: 'top top',
-  end: 'top top',
+  end: 'bottom top',
   onEnter: function () {
     gsap.to(header, {
       top: '-2rem',
@@ -74,12 +91,35 @@ ScrollTrigger.create({
       duration: 0.3,
       overwrite: true
     });
-  },
-
-  // markers: true,
-  // pin: true,
-  // pinSpacing: false,
+  }
 });
+
+
+// let test = () => {
+//   ScrollTrigger.create({
+//     trigger: '.footer-wrapper',
+//     start: 'top top',
+//     end: 'bottom top',
+//     onEnter: function () {
+//       gsap.to(backTop, {
+//         height: '2',
+//         duration: 0.3,
+//         overwrite: true
+//       });
+//     },
+//     onLeaveBack: function () {
+//       gsap.to(backTop, {
+//         opacity: 0,
+//         duration: 0.3,
+//         overwrite: true
+//       });
+//     }
+//   });
+// }
+
+// test();
+
+
 
 // ScrollTrigger.create({
 //   start: "top top",
@@ -140,7 +180,6 @@ ScrollTrigger.create({
 // Footer scripts
 var resizeTimer;
 function handleClick() {
-  // console.log("Click event executed");
   $(this).next('.footer-menu').toggleClass('active');
   $(this).toggleClass('active');
   $(this).find('span').toggleClass('rotate');
@@ -148,7 +187,6 @@ function handleClick() {
 
 function checkWindowWidth() {
   var windowWidth = $(window).width();
-
   if (windowWidth >= 1100) {
     $('.footer-title').off('click', handleClick);
   } else {
@@ -158,31 +196,21 @@ function checkWindowWidth() {
 
 setTimeout(function () {
   checkWindowWidth();
-}, 500);
+}, 100);
 
-$(window).resize(function () {
+$(window).on('resize', function () {
   clearTimeout(resizeTimer);
   resizeTimer = setTimeout(function () {
     checkWindowWidth();
-  }, 500);
+  }, 100);
 });
 
-
-// $('.booking-tabItem').each(function (index) {
-//   $(this).click(function () {
-//     // $('.booking-content').hide();
-//     $('.booking-tabItem').eq(index).removeClass('active');
-//     $('.booking-content').eq(index).removeClass('active');
-//     $('.booking-content').eq(index).addClass('active');
-//     $('.booking-tabItem').eq(index).addClass('active');
-//   });
-// });
 
 $(".booking-content:first").addClass("active");
 $(".booking-tabItem:first").addClass("active");
 
 // Handle tabs click event
-$(".booking-tabItem").click(function () {
+$(".booking-tabItem").on('click', function () {
   var tabClass = $(this).data("tab");
   $(".booking-content").removeClass("active");
   $(".booking-tabItem").removeClass("active");
