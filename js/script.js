@@ -143,7 +143,6 @@ function checkWidth() {
   }
 }
 
-
 $(".booking-content:first").addClass("active");
 $(".booking-tabItem:first").addClass("active");
 
