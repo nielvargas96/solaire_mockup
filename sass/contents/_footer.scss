@@ -66,9 +66,11 @@ footer {
 }
 
 .footer-copyright {
+  position: relative;
   background-color: #343434;
   color: #fff;
   text-align: center;
   padding: .75rem;
   font-size: 0.85rem;
+  bottom: -1px;
 }

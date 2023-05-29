@@ -30,4 +30,8 @@ $media-largeDesktop: 1440px;
 			visibility: hidden;
 		}
 	}
+
+	.footer-links {
+		flex-direction: row;
+	}
 }

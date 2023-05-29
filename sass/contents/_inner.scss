@@ -5,7 +5,6 @@
 
 .booking {
   color: #fff;
-  padding: 2rem 3rem;
   margin-left: auto;
   margin-right: auto;
   max-width: 1200px;
@@ -15,7 +14,7 @@
 
 .booking-tabs {
   display: flex;
-  flex-direction: column;
+  // flex-direction: column;
   width: 100%;
   text-align: center;
   list-style-type: none;
@@ -26,15 +25,9 @@
   }
 
   li {
-    padding: 1.5rem;
+    padding: 1.5rem 0;
     width: calc(100% /3);
-
   }
-}
-
-.booking-tabItem {
-  width: 100%;
-  cursor: pointer;
 }
 
 .booking-content {
@@ -50,9 +43,10 @@
 .booking-tabItem {
   border-top: 3px solid transparent;
   font-weight: 500;
+  width: 100%;
+  cursor: pointer;
 
   &.active {
-    // display: block;
     color: #df6a2e;
     background-color: #000;
     font-weight: 600;

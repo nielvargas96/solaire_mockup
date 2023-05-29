@@ -39,6 +39,12 @@ $media-largeDesktop: 1440px;
       display: none;
     }
   }
+
+  .search-container {
+    &.active {
+      top: 0;
+    }
+  }
 }
 
 @media (max-width: $large-tablet) {

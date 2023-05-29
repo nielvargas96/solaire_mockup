@@ -1,20 +1,19 @@
-new Swiper(".mySwiper", {
+let swiper = new Swiper(".mySwiper", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-  slidesPerView: "auto",
-  loop: true,
-  spaceBetween: 0,
-  speed: 900,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   }, autoplay: {
     delay: 4000,
-  }
+  },
+  slidesPerView: "auto",
+  loop: true,
+  spaceBetween: 0,
+  speed: 900
 });
-
 
 $('.toggle-container').on('click', function () {
   $(this).toggleClass('active');
