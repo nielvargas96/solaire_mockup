@@ -18,6 +18,7 @@ let swiper = new Swiper(".mySwiper", {
 $('.toggle-container').on('click', function () {
   $(this).toggleClass('active');
   $('.toggle').toggleClass('active');
+  $('body').toggleClass('active');
   $('.header-second').find('.side-nav').toggleClass('active');
   $('.header-second').find('.side-menu-mask').toggleClass('active');
 });
@@ -41,8 +42,8 @@ $('.search-container-mask').on('click', function () {
 $('.search-btn').on('click', function () {
   $('.search-container').toggleClass('active');
   $('.search-container-mask').toggleClass('active');
+  $('body').toggleClass('active');
 });
-
 
 
 var header = document.querySelector('.header-second');
