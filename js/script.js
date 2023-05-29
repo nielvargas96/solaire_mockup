@@ -28,10 +28,24 @@ let featuredSlider = new Swiper(".featured-slider", {
   }, autoplay: {
     delay: 4000,
   },
-  slidesPerView: 4,
+  slidesPerView: 1,
   loop: true,
   spaceBetween: 2,
-  speed: 900
+  speed: 900,
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 2,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 2,
+    },
+    1024: {
+      slidesPerView: 4,
+      spaceBetween: 2,
+    },
+  },
 });
 
 // featuredSlider.slideNext();
@@ -117,34 +131,8 @@ ScrollTrigger.create({
 });
 
 
-// Footer scripts
-// var resizeTimer;
-// function handleClick() {
-//   $(this).next('.footer-menu').toggleClass('active');
-//   $(this).toggleClass('active');
-//   $(this).find('span').toggleClass('rotate');
-// }
-
-// function checkWindowWidth() {
-//   var windowWidth = $(window).width();
-//   if (windowWidth >= 1100) {
-//     $('.footer-title').off('click', handleClick);
-//   } else {
-//     $('.footer-title').on('click', handleClick);
-//   }
-// }
-
-// setTimeout(function () {
-//   checkWindowWidth();
-// }, 100);
-
-// $(window).on('resize', function () {
-//   clearTimeout(resizeTimer);
-//   resizeTimer = setTimeout(function () {
-//     checkWindowWidth();
-//   }, 100);
-// });
 $(document).ready(function () {
+
   checkWidth();
   $(window).on("resize", function () {
     checkWidth();
@@ -189,10 +177,3 @@ $(".custom-select").on("click", ".option", function () {
   $(this).closest(".select-options").hide();
   $(this).closest(".custom-select").find(".arrow").removeClass("open");
 });
-
-
-// $(".btn-lang").on("click", function () {
-//   $('.header-first-right').find('.language-container').toggleClass('active');
-//   // $('body').find('.language-container').toggleClass('active');
-// });
-

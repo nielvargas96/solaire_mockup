@@ -54,8 +54,17 @@
 }
 
 .featured-slider {
+  position: relative;
   width: 100%;
-  height: 60%;
+  height: 50%;
+
+  &:hover {
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      opacity: 1;
+    }
+  }
 
   .swiper-slide {
     width: 100%;
@@ -64,4 +73,41 @@
   .swiper-pagination {
     display: none;
   }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    opacity: 0;
+    transition: opacity 0.25 ease-in-out;
+  }
+
+  .swiper-button-prev {
+    left: 2%;
+  }
+
+  .swiper-button-next {
+    right: 2%;
+  }
+
+  article {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: flex-end;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+  }
+}
+
+.featured-content {
+  // margin-top: 100%;
+  position: relative;
+  top: 40%;
+  z-index: 2;
+  color: #fff;
 }
