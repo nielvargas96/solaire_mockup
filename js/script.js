@@ -1,4 +1,4 @@
-let swiper = new Swiper(".mySwiper", {
+let mainSlider = new Swiper(".main-slider", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -14,6 +14,27 @@ let swiper = new Swiper(".mySwiper", {
   spaceBetween: 0,
   speed: 900
 });
+
+// mainSlider.slideNext();
+
+let featuredSlider = new Swiper(".featured-slider", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  }, autoplay: {
+    delay: 4000,
+  },
+  slidesPerView: 4,
+  loop: true,
+  spaceBetween: 2,
+  speed: 900
+});
+
+// featuredSlider.slideNext();
 
 $('.toggle-container').on('click', function () {
   $(this).toggleClass('active');
@@ -146,7 +167,6 @@ $(document).ready(function () {
 $(".booking-content:first").addClass("active");
 $(".booking-tabItem:first").addClass("active");
 
-// Handle tabs click event
 $(".booking-tabItem").on('click', function () {
   var tabClass = $(this).data("tab");
   $(".booking-content").removeClass("active");

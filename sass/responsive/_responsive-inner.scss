@@ -27,8 +27,10 @@ $media-largeDesktop: 1440px;
     height: 100vh;
   }
 
-  .swiper-pagination {
-    margin-bottom: 14rem;
+  .main-slider {
+    .swiper-pagination {
+      margin-bottom: 14rem;
+    }
   }
 
   .overlay-parallax {
