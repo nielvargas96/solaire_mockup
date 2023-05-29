@@ -97,32 +97,51 @@ ScrollTrigger.create({
 
 
 // Footer scripts
-var resizeTimer;
-function handleClick() {
-  $(this).next('.footer-menu').toggleClass('active');
-  $(this).toggleClass('active');
-  $(this).find('span').toggleClass('rotate');
-}
+// var resizeTimer;
+// function handleClick() {
+//   $(this).next('.footer-menu').toggleClass('active');
+//   $(this).toggleClass('active');
+//   $(this).find('span').toggleClass('rotate');
+// }
 
-function checkWindowWidth() {
-  var windowWidth = $(window).width();
-  if (windowWidth >= 1100) {
-    $('.footer-title').off('click', handleClick);
+// function checkWindowWidth() {
+//   var windowWidth = $(window).width();
+//   if (windowWidth >= 1100) {
+//     $('.footer-title').off('click', handleClick);
+//   } else {
+//     $('.footer-title').on('click', handleClick);
+//   }
+// }
+
+// setTimeout(function () {
+//   checkWindowWidth();
+// }, 100);
+
+// $(window).on('resize', function () {
+//   clearTimeout(resizeTimer);
+//   resizeTimer = setTimeout(function () {
+//     checkWindowWidth();
+//   }, 100);
+// });
+
+checkWidth();
+
+$(window).on("resize", function () {
+  checkWidth();
+});
+
+function checkWidth() {
+  if ($(window).width() < 1100) {
+    $(".footer-title").click(function () {
+      $(this).toggleClass('active');
+      $(this).next(".footer-menu").toggleClass('active');
+      $(this).find('span').toggleClass('rotate');
+    });
   } else {
-    $('.footer-title').on('click', handleClick);
+    $(".footer-title").off("click");
+    $(".footer-menu").removeAttr("style");
   }
 }
-
-setTimeout(function () {
-  checkWindowWidth();
-});
-
-$(window).on('resize', function () {
-  clearTimeout(resizeTimer);
-  resizeTimer = setTimeout(function () {
-    checkWindowWidth();
-  });
-});
 
 
 $(".booking-content:first").addClass("active");
