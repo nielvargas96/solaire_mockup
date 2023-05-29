@@ -11,3 +11,10 @@ $media-tablet: 640px;
 $media-largeTablet: 768px;
 $media-desktop: 1024px;
 $media-largeDesktop: 1440px;
+
+
+@media (min-width: $large-tablet) {
+  .hero-parallax {
+    height: 100vh;
+  }
+}
