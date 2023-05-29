@@ -140,13 +140,7 @@ nav {
   }
 }
 
-.sub-menu-item {
-  &:not(:last-of-type) {
-    a {
-      border-bottom: 1px solid #686868;
-    }
-  }
-}
+
 
 .sub-menu-link {
   padding: 0.75rem 0;
@@ -170,6 +164,7 @@ nav {
   z-index: 1;
 
   &.active {
+    top: 2rem;
     transform: translateX(0);
     height: 100vh;
     transition: transform .3s ease-in-out;
@@ -253,6 +248,14 @@ nav {
   transition: top .35s ease 0s;
   height: 0;
 
+  .search-content {
+    height: 0;
+  }
+
+  .search-input {
+    height: 0;
+  }
+
   &.active {
     height: auto;
     opacity: 1;
@@ -262,6 +265,14 @@ nav {
 
     a {
       display: block;
+    }
+
+    .search-content {
+      height: auto;
+    }
+
+    .search-input {
+      height: auto;
     }
   }
 

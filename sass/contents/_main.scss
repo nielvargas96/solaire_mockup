@@ -46,14 +46,15 @@ main {
 .swiper-button-next,
 .swiper-button-prev {
 	padding: 1rem;
-	height: 2rem;
-	width: 2rem;
+	height: 1rem;
+	width: 1rem;
 	border-radius: 100%;
 	background-color: rgba(0, 0, 0, 0.39);
 	transition: .2s ease-in;
+	color: #fff;
 
 	&:after {
-		font-size: 2rem;
+		font-size: 1rem;
 		color: rgba(255, 255, 255, 0.548);
 	}
 
@@ -67,11 +68,11 @@ main {
 }
 
 .swiper-button-next {
-	right: 10%;
+	right: 3%;
 }
 
 .swiper-button-prev {
-	left: 10%;
+	left: 3%;
 }
 
 .overlay-parallax {
