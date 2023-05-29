@@ -115,13 +115,13 @@ function checkWindowWidth() {
 
 setTimeout(function () {
   checkWindowWidth();
-}, 100);
+});
 
 $(window).on('resize', function () {
   clearTimeout(resizeTimer);
   resizeTimer = setTimeout(function () {
     checkWindowWidth();
-  }, 100);
+  });
 });
 
 
