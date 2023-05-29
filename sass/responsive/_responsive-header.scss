@@ -25,7 +25,6 @@ $media-largeDesktop: 1440px;
     display: flex;
   }
 
-
   .header-second {
     margin-top: 2rem;
   }
@@ -43,6 +42,10 @@ $media-largeDesktop: 1440px;
   .search-container {
     &.active {
       top: 0;
+    }
+
+    .search {
+      width: 40%;
     }
   }
 }
