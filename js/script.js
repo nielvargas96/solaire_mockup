@@ -125,7 +125,6 @@ ScrollTrigger.create({
 // });
 $(document).ready(function () {
   checkWidth();
-
   $(window).on("resize", function () {
     checkWidth();
   });
