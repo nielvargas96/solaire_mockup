@@ -132,11 +132,11 @@ $(window).on("resize", function () {
 
 function checkWidth() {
   if ($(window).width() < 1100) {
-    $(".footer-title").click(function () {
+    $(".footer-title").on('click', function () {
       $(this).toggleClass('active');
       $(this).next(".footer-menu").toggleClass('active');
       $(this).find('span').toggleClass('rotate');
-    });
+    })
   } else {
     $(".footer-title").off("click");
     $(".footer-menu").removeAttr("style");
