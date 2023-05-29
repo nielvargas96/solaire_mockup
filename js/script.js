@@ -123,25 +123,26 @@ ScrollTrigger.create({
 //     checkWindowWidth();
 //   }, 100);
 // });
-
-checkWidth();
-
-$(window).on("resize", function () {
+$(document).ready(function () {
   checkWidth();
-});
 
-function checkWidth() {
-  if ($(window).width() < 1100) {
-    $(".footer-title").on('click', function () {
-      $(this).toggleClass('active');
-      $(this).next(".footer-menu").toggleClass('active');
-      $(this).find('span').toggleClass('rotate');
-    })
-  } else {
-    $(".footer-title").off("click");
-    $(".footer-menu").removeAttr("style");
+  $(window).on("resize", function () {
+    checkWidth();
+  });
+
+  function checkWidth() {
+    if ($(window).width() < 1100) {
+      $(".footer-title").on('click', function () {
+        $(this).toggleClass('active');
+        $(this).next(".footer-menu").toggleClass('active');
+        $(this).find('span').toggleClass('rotate');
+      })
+    } else {
+      $(".footer-title").off("click");
+      $(".footer-menu").removeAttr("style");
+    }
   }
-}
+})
 
 $(".booking-content:first").addClass("active");
 $(".booking-tabItem:first").addClass("active");
