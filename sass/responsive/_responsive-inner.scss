@@ -1,7 +1,7 @@
 $media-string: "only screen and ";
 $smallmobile: $media-string+"(max-width: 320px)";
 $tablet: $media-string+"(max-width: 768px)";
-$large-tablet: 1024px;
+$large-tablet: 1100px;
 $large-desktop: $media-string+"(min-width: 1200px)";
 $larger-desktop: $media-string+"(min-width: 1400px)";
 $largest-desktop: $media-string+"(min-width: 1860px)";
@@ -15,10 +15,8 @@ $media-largeDesktop: 1440px;
 @media (min-width: $large-tablet) {
   .booking {
     padding: 2rem 3rem;
-  }
-
-  .booking-tabs {
-    // flex-direction: row;
+    transform: translateY(-140px);
+    margin-bottom: -140px;
   }
 
   .hero-parallax {
@@ -26,6 +24,11 @@ $media-largeDesktop: 1440px;
   }
 
   .swiper-pagination {
-    margin-bottom: 10rem;
+    margin-bottom: 14rem;
+  }
+
+  .overlay-parallax {
+    margin-top: 100vh;
+    height: 100%;
   }
 }

@@ -1,7 +1,7 @@
 $media-string: "only screen and ";
 $smallmobile: $media-string+"(max-width: 320px)";
 $tablet: $media-string+"(max-width: 768px)";
-$large-tablet: $media-string+"(max-width: 1024px)";
+$large-tablet: 1100px;
 $large-desktop: $media-string+"(min-width: 1200px)";
 $larger-desktop: $media-string+"(min-width: 1400px)";
 $largest-desktop: $media-string+"(min-width: 1860px)";
@@ -13,8 +13,4 @@ $media-desktop: 1024px;
 $media-largeDesktop: 1440px;
 
 
-@media (min-width: $large-tablet) {
-  .hero-parallax {
-    height: 100vh;
-  }
-}
+@media (min-width: $large-tablet) {}
