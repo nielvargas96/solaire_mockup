@@ -1,11 +1,17 @@
+button {
+  cursor: pointer;
+}
+
 .btn {}
 
 
-.btn-lang {}
+.btn-lang {
+  font-size: 0.7rem;
+  border: 0;
+}
 
 .search-btn {
   border: 0;
   background-color: transparent;
-  cursor: pointer;
   padding-right: 2rem;
 }

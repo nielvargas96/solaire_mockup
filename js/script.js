@@ -152,3 +152,9 @@ $(".custom-select").on("click", ".option", function () {
   $(this).closest(".custom-select").find(".arrow").removeClass("open");
 });
 
+
+// $(".btn-lang").on("click", function () {
+//   $('.header-first-right').find('.language-container').toggleClass('active');
+//   // $('body').find('.language-container').toggleClass('active');
+// });
+
