@@ -18,6 +18,14 @@ let mainSlider = new Swiper(".main-slider", {
 // mainSlider.slideNext();
 
 let featuredSlider = new Swiper(".featured-slider", {
+  effect: 'coverflow',
+  coverflowEffect: {
+    rotate: 15,
+    slideShadows: true,
+    depth: 10,
+    modifier: 2,
+    // scale: 
+  },
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -30,7 +38,7 @@ let featuredSlider = new Swiper(".featured-slider", {
   },
   slidesPerView: 1,
   loop: true,
-  spaceBetween: 2,
+  spaceBetween: 1,
   speed: 900,
   breakpoints: {
     640: {
@@ -42,8 +50,8 @@ let featuredSlider = new Swiper(".featured-slider", {
       spaceBetween: 2,
     },
     1024: {
-      slidesPerView: 4,
-      spaceBetween: 2,
+      slidesPerView: 3,
+      spaceBetween: 50,
     },
   },
 });
