@@ -8,6 +8,11 @@ $gap: calc((26 - 14) * ((100vw - 300px) / (1600 - 300)));
 //ex: padding-top: calc(1rem + $gap);
 
 /*DOMS*/
+:root {
+	--base-font: 'Montserrat', sans-serif;
+	--base-font-size: 16px;
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -22,6 +27,7 @@ body {
 
 	font-size: var(--base-font-size);
 	font-family: var(--base-font);
+	font-weight: 400;
 	scroll-behavior: smooth;
 }
 
@@ -42,7 +48,11 @@ header {
 	width: 100%;
 	z-index: 999;
 	background-color: #eee;
-	color: #444;
+}
+
+a {
+	font-family: $font_family_sec;
+	text-decoration: none;
 }
 
 
@@ -92,9 +102,6 @@ footer {
 	}
 }
 
-a {
-	text-decoration: none;
-}
 
 @mixin shadow {
 	box-shadow: 0 .3rem 1rem alpha($c3-dgray, 0.3);
