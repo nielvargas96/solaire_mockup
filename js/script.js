@@ -18,14 +18,7 @@ let mainSlider = new Swiper(".main-slider", {
 // mainSlider.slideNext();
 
 let featuredSlider = new Swiper(".featured-slider", {
-  effect: 'coverflow',
-  coverflowEffect: {
-    rotate: 15,
-    slideShadows: true,
-    depth: 10,
-    modifier: 2,
-    // scale: 
-  },
+
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",

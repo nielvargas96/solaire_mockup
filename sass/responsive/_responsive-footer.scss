@@ -15,8 +15,7 @@ $media-largeDesktop: 1440px;
 @media screen and (min-width: 1100px) {
 	.footer-content {
 		display: flex;
-		width: calc(100% - 10rem);
-		padding: 3rem 5rem;
+		padding: 1rem 0;
 	}
 
 	.footer-menu {
@@ -33,5 +32,14 @@ $media-largeDesktop: 1440px;
 
 	.footer-links {
 		flex-direction: row;
+	}
+
+	.footer-copyright {
+		display: flex;
+		justify-content: space-between;
+
+		a {
+			padding: 0 .75rem;
+		}
 	}
 }

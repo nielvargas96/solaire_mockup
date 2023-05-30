@@ -1,12 +1,13 @@
 footer {
   position: relative;
   bottom: 0;
-  background-color: rgb(244, 244, 244);
+  background-color: #231e1a;
   z-index: 2;
+  padding-bottom: 1px;
 
 
   a {
-    color: rgb(52, 52, 52);
+    color: #fff;
 
     &:hover {
       text-decoration: underline;
@@ -14,10 +15,12 @@ footer {
   }
 }
 
-.footer-content {
-  width: calc(100% - 4rem);
-  padding: 3rem 2rem;
+.footer-wrapper {
+  max-width: 1140px;
+  margin: 0 auto;
 }
+
+.footer-content {}
 
 .footer-title {
   display: flex;
@@ -27,6 +30,10 @@ footer {
   justify-content: space-between;
   cursor: pointer;
   user-select: none;
+
+  p {
+    color: #fff;
+  }
 
   span {
     transform: rotate(0);
@@ -71,10 +78,10 @@ footer {
 
 .footer-copyright {
   position: relative;
-  background-color: #343434;
   color: #fff;
   text-align: center;
   padding: .75rem;
   font-size: 0.85rem;
   bottom: -1px;
+  border-top: 1px solid #3f3f3f;
 }
