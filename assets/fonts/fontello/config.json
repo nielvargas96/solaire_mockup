@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "fontello",
   "css_prefix_text": "icon-",
   "css_use_suffix": false,
   "hinting": true,
@@ -7,106 +7,196 @@
   "ascent": 850,
   "glyphs": [
     {
-      "uid": "f6fa10cb3ffec7becb60834f50bb0182",
-      "css": "adjust",
+      "uid": "8704cd847a47b64265b8bb110c8b4d62",
+      "css": "down-open",
       "code": 59392,
       "src": "entypo"
     },
     {
-      "uid": "f8e120c48c070f8afd2d072651b4fb9f",
-      "css": "light-up",
+      "uid": "c311c48d79488965b0fab7f9cd12b6b5",
+      "css": "left-open",
       "code": 59393,
       "src": "entypo"
     },
     {
-      "uid": "7f6916533c0842b6cec699fd773693d3",
-      "css": "hourglass",
+      "uid": "749e7d90a9182938180f1d2d8c33584e",
+      "css": "right-open",
+      "code": 59394,
+      "src": "entypo"
+    },
+    {
+      "uid": "9c7ff134960bb5a82404e4aeaab366d9",
+      "css": "up-open",
       "code": 59395,
       "src": "entypo"
     },
     {
-      "uid": "4b20e1deee87faf4c3fab735fbd4bc1a",
-      "css": "lamp",
+      "uid": "f11c9e95ae5eaa84d193e8fa1d38c6f9",
+      "css": "down-open-mini",
       "code": 59396,
       "src": "entypo"
     },
     {
-      "uid": "679d36f8485f05180a2719c91b3f621e",
-      "css": "comment",
+      "uid": "592717bd601645d61517d2a584d04127",
+      "css": "left-open-mini",
       "code": 59397,
-      "src": "iconic"
+      "src": "entypo"
     },
     {
-      "uid": "acb5a542eef1c187078a9af1ede3db01",
-      "css": "comment-alt",
+      "uid": "37f6cfbb4062ed0d01b351ec35c334ff",
+      "css": "right-open-mini",
       "code": 59398,
-      "src": "iconic"
+      "src": "entypo"
     },
     {
-      "uid": "7cf0c6fefa5327473dec91427434ae26",
-      "css": "block",
+      "uid": "9e251fb8e9e1c71ab09683468e0479a3",
+      "css": "up-open-mini",
       "code": 59399,
-      "src": "iconic"
+      "src": "entypo"
     },
     {
-      "uid": "4815ddddea76d90e367a9694a93b7e24",
-      "css": "resize-full",
+      "uid": "289b5f92f23acf1059c93fbf401c1ad5",
+      "css": "down-open-big",
       "code": 59400,
-      "src": "iconic"
+      "src": "entypo"
     },
     {
-      "uid": "776687efbdb973ebc67e049cc4c41b13",
-      "css": "resize-full-alt",
+      "uid": "884cfc3e6e2d456dd2a2ca0dbb9e6337",
+      "css": "left-open-big",
       "code": 59401,
-      "src": "iconic"
+      "src": "entypo"
     },
     {
-      "uid": "b05c5a209b56e7ea6632a31e4bd0b41d",
-      "css": "resize-small",
+      "uid": "004882ab2d5c418c5b2060e80596279b",
+      "css": "right-open-big",
       "code": 59402,
-      "src": "iconic"
+      "src": "entypo"
     },
     {
-      "uid": "8596dc69a5e7e0297e8926b6e2563509",
-      "css": "resize-small-alt",
+      "uid": "0805cca616b3c12714f35af4d0912c10",
+      "css": "up-open-big",
       "code": 59403,
-      "src": "iconic"
+      "src": "entypo"
     },
     {
-      "uid": "41d90aea465750c2a5dc6cb0bdef9617",
-      "css": "down",
+      "uid": "c16a63e911bc47b46dc2a7129d2f0c46",
+      "css": "down-small",
       "code": 59404,
-      "src": "iconic"
+      "src": "typicons"
     },
     {
-      "uid": "971be54c1452e2558926d36786e6b1d7",
-      "css": "popup",
+      "uid": "58b78b6ca784d5c3db5beefcd9e18061",
+      "css": "left-small",
       "code": 59405,
-      "src": "iconic"
+      "src": "typicons"
     },
     {
-      "uid": "be25d23b15c3294588947a6b959811ec",
-      "css": "move",
+      "uid": "877a233d7fdca8a1d82615b96ed0d7a2",
+      "css": "right-small",
       "code": 59406,
-      "src": "iconic"
+      "src": "typicons"
     },
     {
-      "uid": "7dde84b4f180e3c07523faecda81caa6",
-      "css": "resize-vertical",
+      "uid": "62bc6fe2a82e4864e2b94d4c0985ee0c",
+      "css": "up-small",
       "code": 59407,
-      "src": "iconic"
+      "src": "typicons"
     },
     {
-      "uid": "63493102fc6b827e4a7be30b13cbf3b4",
-      "css": "resize-horizontal",
+      "uid": "13289e807e02b1d46f2fe10d81d6fba6",
+      "css": "location-outline",
       "code": 59408,
-      "src": "iconic"
+      "src": "typicons"
     },
     {
-      "uid": "531359183f9fedb14b23666f1308591f",
-      "css": "telegram",
-      "code": 62150,
+      "uid": "gjt8ba5q0n3nn8ptw6324sflr8qoaeam",
+      "css": "location",
+      "code": 59409,
+      "src": "typicons"
+    },
+    {
+      "uid": "531bc468eecbb8867d822f1c11f1e039",
+      "css": "calendar",
+      "code": 59410,
       "src": "fontawesome"
+    },
+    {
+      "uid": "413717f5ea649e8d8b93938be277264a",
+      "css": "calendar-1",
+      "code": 59411,
+      "src": "entypo"
+    },
+    {
+      "uid": "53d4dc777eeba379412efba3ee1cac9e",
+      "css": "facebook",
+      "code": 61522,
+      "src": "mfglabs"
+    },
+    {
+      "uid": "25a30265650b260ef03df4cbbff80272",
+      "css": "linkedin",
+      "code": 59412,
+      "src": "typicons"
+    },
+    {
+      "uid": "ec3648a34c41b70671dc38dbb72deb04",
+      "css": "twitter",
+      "code": 61528,
+      "src": "mfglabs"
+    },
+    {
+      "uid": "47a1f80457068fbeab69fdb83d7d0817",
+      "css": "youtube-play",
+      "code": 61802,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "4c1ef492f1d2c39a2250ae457cee2a6e",
+      "css": "instagram",
+      "code": 61805,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "70370693ada58ef0a60fa0984fe8d52a",
+      "css": "plus",
+      "code": 59413,
+      "src": "entypo"
+    },
+    {
+      "uid": "221947bea81f49a11b863c686a7bd235",
+      "css": "search",
+      "code": 59414,
+      "src": "websymbols"
+    },
+    {
+      "uid": "2d6150442079cbda7df64522dc24f482",
+      "css": "down-dir",
+      "code": 59415,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "80cd1022bd9ea151d554bec1fa05f2de",
+      "css": "up-dir",
+      "code": 59416,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "9dc654095085167524602c9acc0c5570",
+      "css": "left-dir",
+      "code": 59417,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "fb1c799ffe5bf8fb7f8bcb647c8fe9e6",
+      "css": "right-dir",
+      "code": 59418,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "1e89103762be72b0720eda0468e62b90",
+      "css": "globe",
+      "code": 59423,
+      "src": "linecons"
     }
   ]
 }
