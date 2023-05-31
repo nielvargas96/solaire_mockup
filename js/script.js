@@ -29,9 +29,10 @@ let featuredSlider = new Swiper(".featured-slider", {
   }, autoplay: {
     delay: 4000,
   },
+  centeredSlides: true,
   slidesPerView: 1,
   loop: true,
-  spaceBetween: 1,
+  spaceBetween: 15,
   speed: 900,
   breakpoints: {
     640: {
@@ -73,9 +74,10 @@ $('.side-menu-item .menu-link').on('click', function () {
 
 $('.search-container-mask').on('click', function () {
   $('.header-second').find('.search-btn').trigger("click");
+  $('.header-second').find('.search-btn-top').trigger("click");
 });
 
-$('.search-btn').on('click', function () {
+$('.search-btn, .search-btn-top').on('click', function () {
   $('.search-container').toggleClass('active');
   $('.search-container-mask').toggleClass('active');
   $('body').toggleClass('active');
@@ -95,7 +97,7 @@ ScrollTrigger.create({
   end: 'bottom top',
   onEnter: function () {
     gsap.to(header, {
-      top: '-2rem',
+      top: '-2.5rem',
       duration: 0.25,
       overwrite: true
     });

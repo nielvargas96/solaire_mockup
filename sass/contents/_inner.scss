@@ -55,9 +55,10 @@
 
 .featured-slider {
   position: relative;
-  width: 100%;
+  margin: 0 auto;
+  width: 95vw;
   overflow-x: hidden;
-  // height: 50%;
+  height: 50%;
 
   &:hover {
 
@@ -110,5 +111,5 @@
   position: relative;
   top: 40%;
   z-index: 2;
-  color: #fff;
+  color: $black;
 }

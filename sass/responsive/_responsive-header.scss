@@ -26,7 +26,7 @@ $media-largeDesktop: 1440px;
   }
 
   .header-second {
-    margin-top: 2rem;
+    margin-top: 2.5rem;
   }
 
   .toggle {
@@ -48,6 +48,10 @@ $media-largeDesktop: 1440px;
       width: 40%;
     }
   }
+
+  .search-btn {
+    display: none;
+  }
 }
 
 @media (max-width: $large-tablet) {
@@ -55,7 +59,7 @@ $media-largeDesktop: 1440px;
     top: 0 !important;
     padding: 0 !important;
     height: 60px;
-    background-color: #000;
+    background-color: $white;
   }
 
   .logo-container {

@@ -8,11 +8,20 @@ nav {
   left: 0;
 }
 
+.btn-location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .icon-location-outline {
+    font-size: 1rem;
+  }
+}
 
 .header-first {
   display: none;
   position: absolute;
-  height: 2rem;
+  height: 2.5rem;
   background-color: $brown;
   width: 100%;
   align-items: center;
@@ -26,11 +35,37 @@ nav {
   a,
   span {
     color: $white;
-    font-size: 0.7rem;
-    padding: 0.6rem;
+  }
+
+  i {
+    color: $orange;
+  }
+
+  .icon-down-open-big {
+    color: $white;
+    padding-left: 0.6rem;
+    transform: rotate(0);
+    transition: transform .25s ease-in-out;
+  }
+
+  .icon-globe {
+    font-size: 0.875rem;
+  }
+
+
+
+  // a,
+  // .btn-lang {
+  //   padding: 0.75rem;
+  // }
+
+  .btn-lang {
+    padding-left: .5rem;
   }
 
   a {
+    font-size: 0.7rem;
+
     &:hover {
       text-decoration: underline;
     }
@@ -53,13 +88,11 @@ nav {
 }
 
 .header-first-right {
-  padding-left: 2rem;
-  // padding-right: 2rem;
-}
-
-.header-first-right {
   display: flex;
   align-items: center;
+  height: 40px;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .header-second {
@@ -155,7 +188,7 @@ nav {
   z-index: 1;
 
   &.active {
-    top: 2rem;
+    top: 2.2rem;
     transform: translateX(0);
     height: 100vh;
     transition: transform .3s ease-in-out;
@@ -182,6 +215,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    color: #fff;
   }
 }
 
@@ -189,7 +223,7 @@ nav {
 .menu-wrapper {
   display: flex;
   position: relative;
-  z-index: 1;
+  z-index: 2;
 
   &:first-of-type {
     margin-right: 7.7rem;
@@ -255,7 +289,7 @@ nav {
   &.active {
     height: auto;
     opacity: 1;
-    top: 2rem;
+    top: 2.2rem;
     z-index: 1;
     padding-bottom: 2rem;
 
@@ -327,7 +361,21 @@ nav {
 .language-container {
   position: relative;
   display: flex;
-  padding-right: 1rem;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+  margin-left: 1rem;
+  height: 100%;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 30%;
+    width: 1px;
+    height: 40%;
+    background-color: #7b7b7b;
+  }
 
   .btn-lang {
     cursor: default;
@@ -349,6 +397,13 @@ nav {
       display: flex;
       width: 8rem;
     }
+
+    .icon-down-open-big {
+      &:before {
+        transform: rotate(-180deg);
+        transition: transform .25s ease-in-out;
+      }
+    }
   }
 }
 
@@ -357,9 +412,9 @@ nav {
   flex-direction: column;
   position: absolute;
   background: #fff;
-  top: 2rem;
+  top: 40px;
   right: 0;
-  z-index: 2;
+  z-index: 3;
 }
 
 // .side-menu-mask {
