@@ -38,18 +38,19 @@ nav {
   }
 
   i {
-    color: $orange;
+    color: $primary;
   }
 
   .icon-down-open-big {
+    font-size: 0.575rem;
     color: $white;
-    padding-left: 0.6rem;
+    padding-left: 0.4rem;
     transform: rotate(0);
     transition: transform .25s ease-in-out;
   }
 
   .icon-globe {
-    font-size: 0.875rem;
+    font-size: 1.125rem;
   }
 
 
@@ -122,7 +123,7 @@ nav {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #DF6A2E;
+  background-color: $primary;
   transform-origin: bottom left;
   transition: transform 0.25s ease-out;
 }
@@ -168,7 +169,10 @@ nav {
 
 .sub-menu-link {
   padding: 0.75rem 0;
+  display: block;
   color: $white;
+  font-size: 0.875rem;
+  // padding: 27px 13px;
 }
 
 .menu-link,
@@ -176,7 +180,7 @@ nav {
   transition: 0.2s ease 0s;
 
   &:hover {
-    color: #df6a2e;
+    color: $primary;
   }
 }
 
@@ -184,7 +188,7 @@ nav {
   position: relative;
   top: 0;
   transform: translateX(-100%);
-  width: 85%;
+  // width: 85%;
   z-index: 1;
 
   &.active {
@@ -200,6 +204,7 @@ nav {
   height: 100vh;
   z-index: 3;
   background-color: $brown;
+  padding-top: 1rem;
 }
 
 .side-sub-menu {
@@ -216,6 +221,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     color: #fff;
+    padding: 1rem;
   }
 }
 
@@ -366,6 +372,7 @@ nav {
   padding: 0 1rem;
   margin-left: 1rem;
   height: 100%;
+  cursor: pointer;
 
   &:before {
     content: '';
@@ -377,25 +384,27 @@ nav {
     background-color: #7b7b7b;
   }
 
-  .btn-lang {
-    cursor: default;
-  }
+  // .btn-lang {
+  //   cursor: default;
+  // }
 
   button {
     font-size: 0.7rem;
     border: 0;
     padding: 0.5rem 1.5rem;
     transition: 0.15s ease-in-out;
+    background-color: $brown;
+    color: $white;
 
     &:hover {
-      background: #DF6A2E;
+      background: $primary;
     }
   }
 
   &:hover {
     .language-wrapper {
       display: flex;
-      width: 8rem;
+      width: 8.5rem;
     }
 
     .icon-down-open-big {
@@ -411,7 +420,7 @@ nav {
   display: none;
   flex-direction: column;
   position: absolute;
-  background: #fff;
+  background: $brown;
   top: 40px;
   right: 0;
   z-index: 3;

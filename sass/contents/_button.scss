@@ -2,8 +2,25 @@ button {
   cursor: pointer;
 }
 
-.btn {}
+.btn {
+  font-size: 1rem;
+  height: auto;
+  width: auto;
+  font-family: $font_family_sec;
+  line-height: 1;
+  border: 1px solid transparent;
+  padding: 0.75rem;
 
+  &.pri-btn {
+    color: #fff;
+    background-color: $primary;
+    transition: 0.3s;
+
+    &:hover {
+      // background-color: darken($pri-color, 10);
+    }
+  }
+}
 
 .btn-lang {
   font-size: 0.7rem;
@@ -14,4 +31,10 @@ button {
   border: 0;
   background-color: transparent;
   padding-right: 2rem;
+}
+
+.book-now {
+  position: absolute;
+  top: 20%;
+  right: 3%;
 }

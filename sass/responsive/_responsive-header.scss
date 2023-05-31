@@ -1,6 +1,6 @@
 $media-string: "only screen and ";
 $smallmobile: $media-string+"(max-width: 320px)";
-$tablet: $media-string+"(max-width: 768px)";
+$tablet: 768px;
 $large-tablet: 1100px;
 $large-desktop: $media-string+"(min-width: 1200px)";
 $larger-desktop: $media-string+"(min-width: 1400px)";
@@ -95,5 +95,12 @@ $media-largeDesktop: 1440px;
     &.active {
       display: block;
     }
+  }
+}
+
+
+@media (min-width: $tablet) {
+  .side-nav {
+    width: 85%;
   }
 }

@@ -29,18 +29,26 @@ let featuredSlider = new Swiper(".featured-slider", {
   }, autoplay: {
     delay: 4000,
   },
+  effect: 'coverflow',
+  coverflowEffect: {
+    rotate: 0,
+    stretch: 0,
+    depth: 10,
+    modifier: 1,
+    slideShadows: false,
+  },
   centeredSlides: true,
   slidesPerView: 1,
   loop: true,
-  spaceBetween: 15,
+  spaceBetween: 1,
   speed: 900,
   breakpoints: {
     640: {
-      slidesPerView: 2,
+      slidesPerView: 1,
       spaceBetween: 2,
     },
     768: {
-      slidesPerView: 3,
+      slidesPerView: 1,
       spaceBetween: 2,
     },
     1024: {
@@ -147,7 +155,7 @@ $(document).ready(function () {
       $(".footer-title").on('click', function () {
         $(this).toggleClass('active');
         $(this).next(".footer-menu").toggleClass('active');
-        $(this).find('span').toggleClass('rotate');
+        $(this).find('span').toggleClass('active');
       })
     } else {
       $(".footer-title").off("click");
