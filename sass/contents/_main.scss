@@ -26,8 +26,12 @@ main {
 
 	.content-text {
 		position: relative;
-		padding: 2% 15%;
+		padding: 0 15% 2%;
 		z-index: 2;
+
+		h1 {
+			margin-top: 0;
+		}
 	}
 }
 
@@ -54,11 +58,13 @@ main {
 .swiper-pagination-bullet {
 	width: 10px;
 	height: 10px;
+	background-color: #c8c8c8;
 }
 
 .swiper-pagination-bullet-active {
-	background-color: #e0e0e0;
+	background-color: #ffb084;
 }
+
 
 .swiper-button-next,
 .swiper-button-prev {
@@ -94,12 +100,19 @@ main {
 	height: 100%;
 }
 
+.main-pagination {
+	position: relative;
+	z-index: 1;
+	bottom: 3rem !important;
+	text-align: center;
+}
+
 .hero-parallax {
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
-	margin-top: 40px;
+	margin-top: 70px;
 	height: calc(50vh - 40px);
 }
 
@@ -133,8 +146,6 @@ main {
 	border-bottom: 1px solid #ffffff;
 	transform: rotate(315deg);
 	transition: transform 0.2s;
-
-	&.open {}
 }
 
 .select-options {

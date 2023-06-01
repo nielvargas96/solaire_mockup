@@ -1,21 +1,9 @@
-header {}
-
-
-nav {
-  position: absolute;
-  width: 100%;
+.header-container {
+  position: fixed;
   top: 0;
   left: 0;
-}
-
-.btn-location {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  .icon-location-outline {
-    font-size: 1rem;
-  }
+  width: 100%;
+  font-family: $font_family_sec;
 }
 
 .header-first {
@@ -24,9 +12,12 @@ nav {
   height: 2.5rem;
   background-color: $brown;
   width: 100%;
-  align-items: center;
-  justify-content: space-between;
   // z-index: 5;
+
+  .wrapper {
+    align-items: center;
+    justify-content: space-between;
+  }
 
   img {
     height: 90px;
@@ -46,7 +37,7 @@ nav {
     color: $white;
     padding-left: 0.4rem;
     transform: rotate(0);
-    transition: transform .25s ease-in-out;
+    transition: transform .25s cubic-bezier(.43, .43, .77, .77);
   }
 
   .icon-globe {
@@ -88,6 +79,16 @@ nav {
   padding-right: 2rem;
 }
 
+.btn-location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .icon-location-outline {
+    font-size: 1rem;
+  }
+}
+
 .header-first-right {
   display: flex;
   align-items: center;
@@ -96,18 +97,13 @@ nav {
   padding-right: 2rem;
 }
 
-.header-second {
-  // z-index: 10;
-}
 
-.header-container {
-  position: fixed;
+.header-second {
+  position: absolute;
+  width: 100%;
   top: 0;
   left: 0;
-  width: 100%;
-  font-family: $font_family_sec;
 }
-
 
 .menu-item {
   display: inline-block;
@@ -139,6 +135,7 @@ nav {
   height: 70px;
   width: 100%;
   background-color: $white;
+  padding-left: 2rem;
 }
 
 .sub-menu {
@@ -150,6 +147,7 @@ nav {
   transition: top 0.2s ease 0s;
   padding: 1rem;
   min-width: 230px;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
 }
 
 .menu-link {
@@ -198,10 +196,10 @@ nav {
   z-index: 1;
 
   &.active {
-    top: 2.2rem;
+    // top: 2.2rem;
     transform: translateX(0);
     height: 100vh;
-    transition: transform .3s ease-in-out;
+    transition: transform .3s cubic-bezier(.43, .43, .77, .77);
   }
 }
 
@@ -228,6 +226,13 @@ nav {
     justify-content: space-between;
     color: $white;
     padding: 1rem;
+
+    &.active {
+      .icon-down-open-big {
+        transform: rotate(-180deg);
+        transition: transform .15s cubic-bezier(.43, .43, .77, .77);
+      }
+    }
   }
 
   .sub-menu-link {
@@ -244,11 +249,11 @@ nav {
   z-index: 2;
 
   &:first-of-type {
-    margin-right: 9rem;
+    margin-right: 1rem;
   }
 
   &:last-of-type {
-    margin-left: 9rem;
+    margin-left: 1rem;
   }
 }
 
@@ -257,31 +262,33 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  top: 0;
   left: 0;
   width: 100%;
 }
 
 .logo {
   position: relative;
-  // height: 75px;
-  // padding: 12px 8px 15px;
   top: 1rem;
-  left: 1rem;
+}
 
-  .small {
-    max-width: 220px;
-  }
+.logo-img {
+  width: 200px;
+}
 
-  .xs {
-    display: none;
-  }
+.logo-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .search-btn {
   position: absolute;
+  top: 0;
   right: 0;
-  top: 1rem;
+  border: 0;
+  height: 70px;
+  padding: 1.25rem;
+  background-color: transparent;
 }
 
 .search-container {
@@ -307,7 +314,7 @@ nav {
   &.active {
     height: auto;
     opacity: 1;
-    top: 2.2rem;
+    top: 0;
     z-index: 1;
     padding-bottom: 2rem;
 
@@ -366,7 +373,7 @@ nav {
   position: absolute;
   width: 100vw;
   height: 100vh;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(3px);
   left: 0px;
   top: 70px;
   display: none;
@@ -400,7 +407,7 @@ nav {
     font-size: 0.7rem;
     border: 0;
     padding: 0.5rem 1.5rem;
-    transition: 0.15s ease-in-out;
+    transition: 0.15s cubic-bezier(.43, .43, .77, .77);
     background-color: $brown;
     color: $white;
 
@@ -418,7 +425,7 @@ nav {
     .icon-down-open-big {
       &:before {
         transform: rotate(-180deg);
-        transition: transform .25s ease-in-out;
+        transition: transform .25s cubic-bezier(.43, .43, .77, .77);
       }
     }
   }
@@ -430,7 +437,7 @@ nav {
   position: absolute;
   background: $brown;
   top: 40px;
-  right: 0;
+  left: 0;
   z-index: 3;
 }
 

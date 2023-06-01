@@ -37,18 +37,6 @@ footer {
   p {
     color: #fff;
   }
-
-  // span {
-  //   transform: rotate(0);
-  //   transition: transform .25s ease-in-out;
-  // }
-
-  // &.active {
-  //   span {
-  //     transform: rotate(90deg);
-  //     transition: transform .25s ease-in-out;
-  //   }
-  // }
 }
 
 .footer-link {
@@ -106,8 +94,8 @@ footer {
   &:before {
     content: "";
     position: absolute;
-    width: 1rem;
-    height: 1px;
+    width: 10px;
+    height: 2px;
     background-color: #fff;
     right: 0;
     top: 50%;
@@ -117,8 +105,8 @@ footer {
   &:after {
     content: "";
     position: absolute;
-    width: 1rem;
-    height: 1px;
+    width: 10px;
+    height: 2px;
     background-color: #fff;
     right: 0;
     top: 50%;

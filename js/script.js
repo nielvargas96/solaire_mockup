@@ -4,12 +4,12 @@ let mainSlider = new Swiper(".main-slider", {
     prevEl: ".swiper-button-prev",
   },
   pagination: {
-    el: ".swiper-pagination",
+    el: ".main-pagination",
     clickable: true,
   }, autoplay: {
     delay: 4000,
   },
-  slidesPerView: "auto",
+  slidesPerView: 1,
   loop: true,
   spaceBetween: 0,
   speed: 900
@@ -96,6 +96,7 @@ var header = document.querySelector('.header-second');
 var logo = document.querySelector('.logo .small');
 var logoXs = document.querySelector('.logo .xs');
 var logoContainer = document.querySelector('.logo');
+var logoInner = document.querySelector('.logo-img');
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -106,15 +107,15 @@ ScrollTrigger.create({
   onEnter: function () {
     gsap.to(header, {
       top: '-2.5rem',
+      duration: 0.15,
+      overwrite: true
+    });
+    gsap.to(logoInner, {
+      top: '0.5rem',
+      height: '40px',
       duration: 0.25,
       overwrite: true
     });
-    // gsap.to(logo, {
-    //   top: '0.5rem',
-    //   height: '40px',
-    //   duration: 0.25,
-    //   overwrite: true
-    // });
     // gsap.to(logoContainer, {
     //   padding: '4px',
     //   top: '0',
@@ -125,7 +126,7 @@ ScrollTrigger.create({
   onLeaveBack: function () {
     gsap.to(header, {
       top: '0',
-      duration: 0.25,
+      duration: 0.15,
       overwrite: true
     });
     // gsap.to(logo, {
