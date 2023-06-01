@@ -61,7 +61,7 @@ nav {
   // }
 
   .btn-lang {
-    padding-left: .5rem;
+    padding-left: 3px;
   }
 
   a {
@@ -145,8 +145,8 @@ nav {
   visibility: hidden;
   opacity: 0;
   position: absolute;
-  top: 70px;
-  background-color: rgba(35, 30, 26, 0.925);
+  top: 100px;
+  background-color: $white;
   transition: top 0.2s ease 0s;
   padding: 1rem;
   min-width: 230px;
@@ -160,19 +160,25 @@ nav {
 }
 
 .menu-item {
-  &:hover .sub-menu {
-    visibility: visible;
-    opacity: 1;
-    top: 70px;
+  &:hover {
+
+    .menu-link {
+      color: $primary;
+    }
+
+    .sub-menu {
+      visibility: visible;
+      opacity: 1;
+      top: 70px;
+    }
   }
 }
 
 .sub-menu-link {
   padding: 0.75rem 0;
   display: block;
-  color: $white;
+  color: $brown;
   font-size: 0.875rem;
-  // padding: 27px 13px;
 }
 
 .menu-link,
@@ -220,8 +226,14 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: #fff;
+    color: $white;
     padding: 1rem;
+  }
+
+  .sub-menu-link {
+    color: $white;
+    padding-left: 0.875rem;
+    padding-right: 0.875rem;
   }
 }
 
@@ -232,11 +244,11 @@ nav {
   z-index: 2;
 
   &:first-of-type {
-    margin-right: 7.7rem;
+    margin-right: 9rem;
   }
 
   &:last-of-type {
-    margin-left: 7.5rem;
+    margin-left: 9rem;
   }
 }
 
@@ -369,8 +381,8 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 1rem;
-  margin-left: 1rem;
+  padding: 0 1rem 0 8px;
+  margin-left: 8px;
   height: 100%;
   cursor: pointer;
 
@@ -380,13 +392,9 @@ nav {
     left: 0;
     top: 30%;
     width: 1px;
-    height: 40%;
+    height: 42%;
     background-color: #7b7b7b;
   }
-
-  // .btn-lang {
-  //   cursor: default;
-  // }
 
   button {
     font-size: 0.7rem;
