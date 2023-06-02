@@ -32,7 +32,7 @@ footer {
   justify-content: space-between;
   cursor: pointer;
   user-select: none;
-  font-family: $font_family_sec_900;
+  font-family: $font_family_sec;
   text-transform: uppercase;
 
   p {
@@ -43,7 +43,7 @@ footer {
 
 .footer-link {
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 14px;
 
   &:last-of-type {
     margin-bottom: 1rem;
@@ -54,10 +54,8 @@ footer {
   display: none;
   padding: 0 1.2rem;
 
-
   .footer-title {
     padding: 0;
-    text-transform: uppercase;
     cursor: pointer;
   }
 
