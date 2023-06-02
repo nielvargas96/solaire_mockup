@@ -64,8 +64,8 @@ $('.toggle-container').on('click', function () {
   $(this).toggleClass('active');
   $('.toggle').toggleClass('active');
   $('body').toggleClass('active');
-  $('.header-second').find('.side-nav').toggleClass('active');
-  $('.header-second').find('.side-menu-mask').toggleClass('active');
+  $('.header-second').find('.side-nav, .side-menu-mask').toggleClass('active');
+  $('.header-second').find('.search-btn.active, .search-container.active, .search-container-mask.active').removeClass('active');
 });
 
 $('.side-menu-mask').on('click', function () {
@@ -89,6 +89,7 @@ $('.search-btn, .search-btn-top').on('click', function () {
   $('.search-container').toggleClass('active');
   $('.search-container-mask').toggleClass('active');
   $('body').toggleClass('active');
+  $('.header-second').find('.side-nav.active, .toggle-container.active, .toggle.active, .side-menu-mask.active,body.active').removeClass('active');
 });
 
 

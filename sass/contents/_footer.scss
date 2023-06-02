@@ -27,21 +27,27 @@ footer {
 .footer-title {
   position: relative;
   display: flex;
-  font-size: 1.2rem;
+  font-size: 1rem;
   padding: 1.2rem;
-  font-weight: 700;
   justify-content: space-between;
   cursor: pointer;
   user-select: none;
+  font-family: $font_family_sec_900;
+  text-transform: uppercase;
 
   p {
     color: #fff;
+    text-transform: uppercase;
   }
 }
 
 .footer-link {
   display: block;
-  margin-bottom: 1rem;
+  margin-bottom: 8px;
+
+  &:last-of-type {
+    margin-bottom: 1rem;
+  }
 }
 
 .footer-menu {
@@ -49,16 +55,20 @@ footer {
   padding: 0 1.2rem;
 
 
+  .footer-title {
+    padding: 0;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
   &.active {
     display: block;
   }
 }
 
 .footer-block {
-  flex-grow: 1;
-
-  &:not(:last-of-type) {
-    border-bottom: 1px solid #ffffff71;
+  &.added {
+    // display: ;
   }
 }
 
@@ -81,6 +91,13 @@ footer {
   font-size: 0.85rem;
   bottom: -1px;
   border-top: 1px solid #3f3f3f;
+  font-size: 13px;
+
+  a {
+    font-family: $font_family_sec;
+    font-size: 13px;
+    font-weight: 100;
+  }
 }
 
 .plus-minus {
@@ -122,5 +139,66 @@ footer {
     &:after {
       transform: rotate(180deg);
     }
+  }
+}
+
+.footer-inner-title {
+  display: none;
+}
+
+.footer-logo {
+  display: block;
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+
+  img {
+    width: 260px;
+  }
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 38px;
+    width: 38px;
+    background-color: #393430;
+    border-radius: 50px;
+    margin-right: 9px;
+    transition: .2s ease-in-out;
+    font-size: 1.245rem;
+
+    &:hover {
+      background-color: $white;
+      color: #393430;
+    }
+  }
+}
+
+.social {
+  text-align: center;
+
+  p {
+    font-family: $font_family_sec_900;
+    margin-bottom: 1rem;
+    color: $white;
+    text-transform: uppercase;
+  }
+}
+
+.footer-address {
+  padding: 0 1.2rem;
+
+  p {
+    font-size: 13px;
+    color: $white;
+    font-family: $font_family_sec;
+    line-height: 2;
+    margin-bottom: 2rem;
   }
 }

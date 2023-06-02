@@ -8,7 +8,7 @@
 @font-face {
   font-family: 'Avenir_Book';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   src: url('../avenir/AvenirLTStd-Book.otf') format('truetype');
 }
 
@@ -17,4 +17,12 @@
   font-style: normal;
   font-weight: 400;
   src: url('../avenir/AvenirLTStd-Roman.otf') format('truetype');
+}
+
+
+@font-face {
+  font-family: 'Avenir_Light';
+  font-style: normal;
+  font-weight: 100;
+  src: url('../avenir/AvenirLTStd-Light.otf') format('truetype');
 }
