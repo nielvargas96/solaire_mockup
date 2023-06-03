@@ -16,7 +16,6 @@ let mainSlider = new Swiper(".main-slider", {
 });
 
 let featuredSlider = new Swiper(".featured-slider", {
-
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
