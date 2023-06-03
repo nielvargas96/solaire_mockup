@@ -32,7 +32,7 @@ footer {
   justify-content: space-between;
   cursor: pointer;
   user-select: none;
-  font-family: $font_family_sec;
+  font-family: $font_family_sec_700;
   text-transform: uppercase;
 
   p {
@@ -44,6 +44,7 @@ footer {
 .footer-link {
   display: block;
   margin-bottom: 14px;
+  font-family: $font_family_sec_300;
 
   &:last-of-type {
     margin-bottom: 1rem;
@@ -64,11 +65,6 @@ footer {
   }
 }
 
-.footer-block {
-  &.added {
-    // display: ;
-  }
-}
 
 .footer-links {
   display: flex;

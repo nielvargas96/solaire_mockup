@@ -15,8 +15,6 @@ let mainSlider = new Swiper(".main-slider", {
   speed: 900
 });
 
-// mainSlider.slideNext();
-
 let featuredSlider = new Swiper(".featured-slider", {
 
   navigation: {
@@ -58,14 +56,12 @@ let featuredSlider = new Swiper(".featured-slider", {
   },
 });
 
-// featuredSlider.slideNext();
 
 $('.toggle-container').on('click', function () {
   $(this).toggleClass('active');
   $('.toggle').toggleClass('active');
   $('.header-second').find('.side-nav, .side-menu-mask').toggleClass('active');
   $('.header-second').find('.search-btn.active, .search-container.active, .search-container-mask.active').removeClass('active');
-  // $('.header-second').find('.search-btn').trigger("click");
   $('html').find('body.active').removeClass('active');
 });
 
@@ -94,78 +90,85 @@ $('.search-btn, .search-btn-top').on('click', function () {
 });
 
 
-var header = document.querySelector('.header-second');
-var logo = document.querySelector('.logo .small');
-var logoXs = document.querySelector('.logo .xs');
-var logoContainer = document.querySelector('.logo');
-var logoInner = document.querySelector('.logo-img');
+// var header = document.querySelector('.header-second');
+// var logo = document.querySelector('.logo .small');
+// var logoXs = document.querySelector('.logo .xs');
+// var logoContainer = document.querySelector('.logo');
+// var logoInner = document.querySelector('.logo-img');
 
-gsap.registerPlugin(ScrollTrigger);
+// gsap.registerPlugin(ScrollTrigger);
 
-ScrollTrigger.create({
-  trigger: '.header-second',
-  start: 'top top',
-  end: 'bottom top',
-  onEnter: function () {
-    gsap.to(header, {
-      top: '-2.5rem',
-      duration: 0.15,
-      overwrite: true
-    });
-    gsap.to(logoInner, {
-      top: '0.5rem',
-      height: '40px',
-      duration: 0.25,
-      overwrite: true
-    });
-    // gsap.to(logoContainer, {
-    //   padding: '4px',
-    //   top: '0',
-    //   duration: 0.25,
-    //   overwrite: true
-    // });
-  },
-  onLeaveBack: function () {
-    gsap.to(header, {
-      top: '0',
-      duration: 0.15,
-      overwrite: true
-    });
-    // gsap.to(logo, {
-    //   height: '45px',
-    //   duration: 0.25,
-    //   overwrite: true
-    // });
-    // gsap.to(logoContainer, {
-    //   padding: '24px 8px 15px 8px',
-    //   top: '-2rem',
-    //   duration: 0.25,
-    //   overwrite: true
-    // });
-  }
-});
+// ScrollTrigger.create({
+//   trigger: '.header-second',
+//   start: 'top top',
+//   end: 'bottom top',
+//   onEnter: function () {
+//     gsap.to(header, {
+//       top: '-2.5rem',
+//       duration: 0.15,
+//       overwrite: true
+//     });
+//     gsap.to(logoInner, {
+//       top: '0.5rem',
+//       height: '40px',
+//       duration: 0.25,
+//       overwrite: true
+//     });
+//     // gsap.to(logoContainer, {
+//     //   padding: '4px',
+//     //   top: '0',
+//     //   duration: 0.25,
+//     //   overwrite: true
+//     // });
+//   },
+//   onLeaveBack: function () {
+//     gsap.to(header, {
+//       top: '0',
+//       duration: 0.15,
+//       overwrite: true
+//     });
+//     // gsap.to(logo, {
+//     //   height: '45px',
+//     //   duration: 0.25,
+//     //   overwrite: true
+//     // });
+//     // gsap.to(logoContainer, {
+//     //   padding: '24px 8px 15px 8px',
+//     //   top: '-2rem',
+//     //   duration: 0.25,
+//     //   overwrite: true
+//     // });
+//   }
+// });
+
 
 
 $(document).ready(function () {
-
-  checkWidth();
-  $(window).on("resize", function () {
-    checkWidth();
-  });
-
-  function checkWidth() {
+  function checkWindowWidth() {
     if ($(window).width() < 1100) {
+      // Footer
       $(".footer-title").on('click', function () {
         $(this).toggleClass('active');
         $(this).next(".footer-menu").toggleClass('active');
         $(this).find('span').toggleClass('active');
       })
     } else {
-      $(".footer-title").off("click");
-      $(".footer-menu").removeAttr("style");
+      // Header
+      $(window).on('scroll', function () {
+        if ($(this).scrollTop() > 1) {
+          $('.header-second').addClass('on-scroll');
+        } else {
+          $('.header-second').removeClass('on-scroll');
+        }
+      });
     }
   }
-})
+
+  checkWindowWidth();
+
+  $(window).on('resize', checkWindowWidth);
+});
+
 
 $(".booking-content:first").addClass("active");
 $(".booking-tabItem:first").addClass("active");

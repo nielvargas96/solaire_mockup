@@ -32,18 +32,11 @@
     color: $primary;
   }
 
-  .icon-down-open-big {
-    font-size: 0.575rem;
-    color: $white;
-    padding-left: 0.4rem;
-    transform: rotate(0);
-    transition: transform .25s cubic-bezier(.43, .43, .77, .77);
-  }
+
 
   .icon-globe {
     font-size: 1.125rem;
   }
-
 
 
   // a,
@@ -103,6 +96,14 @@
   width: 100%;
   top: 0;
   left: 0;
+  transform: translateY(0);
+
+  transition: transform .2s cubic-bezier(0.39, 0.575, 0.565, 1);
+
+  &.on-scroll {
+    transform: translateY(-2.5rem);
+    transition: transform .2s cubic-bezier(0.39, 0.575, 0.565, 1);
+  }
 }
 
 .menu-item {
@@ -231,6 +232,11 @@
     color: $white;
     padding: 1rem 1.875rem;
     height: auto;
+
+    .icon-down-open-big {
+      transform: rotate(0);
+      transition: transform .15s cubic-bezier(.43, .43, .77, .77);
+    }
 
     &.active {
       color: $primary;
@@ -443,6 +449,12 @@
     background-color: #7b7b7b;
   }
 
+  .icon-down-open-big {
+    font-size: 0.575rem;
+    color: $white;
+    padding-left: 0.4rem;
+  }
+
   button {
     font-size: 0.7rem;
     border: 0;
@@ -456,6 +468,13 @@
     }
   }
 
+  .icon-down-open-big {
+    &::before {
+      transform: rotate(0);
+      transition: transform .2s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+  }
+
   &:hover {
     .language-wrapper {
       display: flex;
@@ -465,7 +484,7 @@
     .icon-down-open-big {
       &:before {
         transform: rotate(-180deg);
-        transition: transform .25s cubic-bezier(.43, .43, .77, .77);
+        transition: transform .2s cubic-bezier(0.165, 0.84, 0.44, 1);
       }
     }
   }
