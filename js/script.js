@@ -168,6 +168,14 @@ $(document).ready(function () {
   $(window).on('resize', checkWindowWidth);
 });
 
+$(window).on('scroll', function () {
+  if ($(this).scrollTop() > 1) {
+    $('.booking').addClass('on-scroll');
+  } else {
+    $('.booking').removeClass('on-scroll');
+  }
+});
+
 
 $(".booking-content:first").addClass("active");
 $(".booking-tabItem:first").addClass("active");

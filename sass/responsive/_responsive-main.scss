@@ -6,8 +6,16 @@
 
   .booking {
     padding: 2rem 3rem;
-    transform: translateY(-100px);
-    margin-bottom: -100px;
+    // transform: translateY(-80px);
+    // margin-bottom: -80px;
+    transform: translateY(-82px);
+    transition: transform .25s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    padding: 0 2rem;
+
+    &.on-scroll {
+      transform: translateY(-45px);
+      transition: transform .25s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    }
 
     li {
       padding: 1.5rem 0;
