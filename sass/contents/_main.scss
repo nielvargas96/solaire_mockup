@@ -132,53 +132,53 @@ main {
 	background-color: $white;
 }
 
-.custom-select {
-	position: relative;
-	width: 200px;
-}
+// .custom-select {
+// 	position: relative;
+// 	width: 200px;
+// }
 
-.select-header {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding: 10px;
-	border: 1px solid #ccc;
-	cursor: pointer;
-}
+// .select-header {
+// 	display: flex;
+// 	align-items: center;
+// 	justify-content: space-between;
+// 	padding: 10px;
+// 	border: 1px solid #ccc;
+// 	cursor: pointer;
+// }
 
-.selected-option {
-	flex-grow: 1;
-}
+// .selected-option {
+// 	flex-grow: 1;
+// }
 
-.arrow {
-	width: 10px;
-	height: 10px;
-	border-left: 1px solid #ffffff;
-	border-bottom: 1px solid #ffffff;
-	transform: rotate(315deg);
-	transition: transform 0.2s;
-}
+// .arrow {
+// 	width: 10px;
+// 	height: 10px;
+// 	border-left: 1px solid #ffffff;
+// 	border-bottom: 1px solid #ffffff;
+// 	transform: rotate(315deg);
+// 	transition: transform 0.2s;
+// }
 
-.select-options {
-	position: absolute;
-	top: 100%;
-	left: 0;
-	right: 0;
-	display: none;
-	background-color: #000000;
-	border: 1px solid #ccc;
-	z-index: 999;
-}
+// .select-options {
+// 	position: absolute;
+// 	top: 100%;
+// 	left: 0;
+// 	right: 0;
+// 	display: none;
+// 	background-color: #000000;
+// 	border: 1px solid #ccc;
+// 	z-index: 999;
+// }
 
-.option {
-	padding: 10px;
-	cursor: pointer;
-}
+// .option {
+// 	padding: 10px;
+// 	cursor: pointer;
+// }
 
-.option:hover {
-	background-color: #f0f0f0;
-	color: #000000;
-}
+// .option:hover {
+// 	background-color: #f0f0f0;
+// 	color: #000000;
+// }
 
 .back-to-top {
 	position: fixed;
@@ -230,8 +230,6 @@ main {
 
 .book-item {
 	position: relative;
-	padding: 2rem 2.5rem;
-	cursor: pointer;
 
 	&:after {
 		content: '';
@@ -249,6 +247,33 @@ main {
 			display: none;
 		}
 	}
+}
+
+.book-select {
+	padding: 1.5rem 2.5rem;
+	cursor: pointer;
+}
+
+.book-list {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 90%;
+	background: $brown_light;
+	padding-top: 1rem;
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+	padding-bottom: 1rem;
+	display: none;
+
+	&.active {
+		display: block;
+	}
+}
+
+.book-list-item {
+	padding: .575rem 0;
+	cursor: pointer;
 }
 
 .action-booking {
@@ -275,6 +300,7 @@ main {
 }
 
 .book-details {
+	position: relative;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -284,6 +310,11 @@ main {
 	.icon-down-open-big {
 		font-size: 13px;
 		color: $primary;
+		transform: rotate(0);
+
+		&.active {
+			transform: rotate(-180deg);
+		}
 	}
 
 	.icon-calendar-1 {

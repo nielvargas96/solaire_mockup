@@ -162,43 +162,37 @@ $(document).ready(function () {
       });
     }
   }
-
   checkWindowWidth();
-
   $(window).on('resize', checkWindowWidth);
+
+  $(window).on('scroll', function () {
+    if ($(this).scrollTop() > 1) {
+      $('.booking').addClass('on-scroll');
+    } else {
+      $('.booking').removeClass('on-scroll');
+    }
+  });
 });
 
-$(window).on('scroll', function () {
-  if ($(this).scrollTop() > 1) {
-    $('.booking').addClass('on-scroll');
-  } else {
-    $('.booking').removeClass('on-scroll');
-  }
+
+// $(".booking-content:first").addClass("active");
+// $(".booking-tabItem:first").addClass("active");
+
+// $(".booking-tabItem").on('click', function () {
+//   var tabClass = $(this).data("tab");
+//   $(".booking-content").removeClass("active");
+//   $(".booking-tabItem").removeClass("active");
+//   $("." + tabClass).addClass("active");
+//   $(this).addClass("active");
+//   return false;
+// });
+
+$(".book-select").on("click", function () {
+  $(this).parent('.book-item').find('.book-list, .icon-down-open-big').toggleClass('active');
 });
 
-
-$(".booking-content:first").addClass("active");
-$(".booking-tabItem:first").addClass("active");
-
-$(".booking-tabItem").on('click', function () {
-  var tabClass = $(this).data("tab");
-  $(".booking-content").removeClass("active");
-  $(".booking-tabItem").removeClass("active");
-  $("." + tabClass).addClass("active");
-  $(this).addClass("active");
-  return false;
-});
-
-$(".custom-select").on("click", ".select-header", function () {
-  $(this).siblings(".select-options").toggle();
-  $(this).find(".arrow").toggleClass("open");
-});
-
-$(".custom-select").on("click", ".option", function () {
-  var selectedOption = $(this).text();
-  $(this).closest(".custom-select").find(".selected-option").text(selectedOption);
-  $(this).siblings().removeClass("selected");
-  $(this).addClass("selected");
-  $(this).closest(".select-options").hide();
-  $(this).closest(".custom-select").find(".arrow").removeClass("open");
+$(".book-list-item").on("click", function () {
+  let selectedOption = $(this).attr('data-value');
+  $('.book-list-item').parents('.book-item').find('.selected-item').text(selectedOption);
+  $('.book-item').find('.book-select, .icon-down-open-big, .book-list').removeClass('active');
 });
