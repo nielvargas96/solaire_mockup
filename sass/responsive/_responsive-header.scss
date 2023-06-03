@@ -6,6 +6,7 @@
 
   .header-menu {
     display: flex;
+    padding-left: 6rem;
   }
 
   .header-first {
@@ -46,18 +47,64 @@
     display: none;
   }
 
-
   .logo-img {
-    width: 280px;
+    width: 200px;
+    // width: 280px;
+  }
+
+  .menu-link {
+    padding: 0 8px;
+    font-size: 14px;
+  }
+
+  .book-now {
+    right: auto;
+    left: 2rem;
   }
 
 }
 
-// Screen 1350px up
-@media only screen and (max-width: 1350px) {
+
+@media only screen and (min-width: 1280px) {
   .book-now {
-    display: none;
+    right: 3%;
+    left: auto;
   }
+
+  .logo-img {
+    width: 220px;
+  }
+
+}
+
+@media only screen and (min-width: 1420px) {
+  .menu-link {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .book-now {
+    font-size: 14px;
+  }
+}
+
+
+@media only screen and (min-width: 1580px) {
+  .logo-img {
+    width: 280px;
+  }
+
+  .menu-link {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  .btn.book-now {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 1360px) {
 
   .side-menu-item {
     .menu-link {
@@ -76,7 +123,7 @@
   }
 }
 
-// Screen below 1024px
+// Screen below 1100px
 @media only screen and (max-width: $screen_1100) {
   .header-second {
     top: 0 !important;

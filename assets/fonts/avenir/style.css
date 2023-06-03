@@ -1,28 +1,62 @@
-@font-face {
+/* @font-face {
   font-family: 'Avenir_Black';
   font-style: normal;
   font-weight: 900;
-  src: url('../avenir/AvenirLTStd-Black.otf') format('truetype');
+  src: url('../avenir/AvenirLTStd-Black.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'Avenir_Book';
   font-style: normal;
   font-weight: 300;
-  src: url('../avenir/AvenirLTStd-Book.otf') format('truetype');
+  src: url('../avenir/AvenirLTStd-Book.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'Avenir_Roman';
   font-style: normal;
   font-weight: 400;
-  src: url('../avenir/AvenirLTStd-Roman.otf') format('truetype');
-}
-
+  src: url('../avenir/AvenirLTStd-Roman.otf') format('opentype');
+} */
 
 @font-face {
   font-family: 'Avenir_Light';
   font-style: normal;
-  font-weight: 100;
-  src: url('../avenir/AvenirLTStd-Light.otf') format('truetype');
+  font-weight: 300;
+  src: url('../avenir/Avenir-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Avenir_Book';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../avenir/Avenir-Book.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Avenir_Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../avenir/Avenir-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Avenir_Medium';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../avenir/Avenir-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Avenir_Heavy';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../avenir/Avenir-Heavy.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Avenir_Black';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../avenir/Avenir-Black.ttf') format('truetype');
 }

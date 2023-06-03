@@ -63,9 +63,10 @@ let featuredSlider = new Swiper(".featured-slider", {
 $('.toggle-container').on('click', function () {
   $(this).toggleClass('active');
   $('.toggle').toggleClass('active');
-  $('body').toggleClass('active');
   $('.header-second').find('.side-nav, .side-menu-mask').toggleClass('active');
   $('.header-second').find('.search-btn.active, .search-container.active, .search-container-mask.active').removeClass('active');
+  // $('.header-second').find('.search-btn').trigger("click");
+  $('html').find('body.active').removeClass('active');
 });
 
 $('.side-menu-mask').on('click', function () {

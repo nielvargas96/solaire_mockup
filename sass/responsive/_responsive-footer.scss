@@ -1,7 +1,7 @@
 @media only screen and (min-width: $screen_1100) {
 	.footer-content {
 		display: flex;
-		padding: 3rem 0 3rem;
+		padding: 3rem 2rem 3rem;
 	}
 
 	.footer-block {
@@ -63,6 +63,7 @@
 	.footer-copyright {
 		display: flex;
 		justify-content: space-between;
+		padding: 1rem;
 
 		a {
 			padding: 0 .75rem;
@@ -83,5 +84,13 @@
 
 	.social {
 		margin-bottom: 2.4rem
+	}
+
+	.footer-copyright {
+		div {
+			display: flex;
+			justify-content: space-around;
+			margin: .765rem 0;
+		}
 	}
 }

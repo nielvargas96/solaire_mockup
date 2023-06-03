@@ -134,9 +134,8 @@
   display: none;
   justify-content: center;
   height: 100px;
-  width: 100%;
+  // width: 100%;
   background-color: $white;
-  padding-left: 2rem;
 }
 
 .sub-menu {
@@ -195,11 +194,12 @@
   top: 0;
   transform: translateX(-100%);
   z-index: 1;
+  transition: transform .25s cubic-bezier(0.075, 0.82, 0.165, 1);
 
   &.active {
     transform: translateX(0);
     height: 100vh;
-    transition: transform .3s cubic-bezier(.43, .43, .77, .77);
+    transition: transform .25s cubic-bezier(0.165, 0.84, 0.44, 1);
   }
 }
 
@@ -339,7 +339,7 @@
   justify-content: center;
   opacity: 0;
   top: 60px;
-  transition: top .35s ease 0s;
+  transition: top .25s cubic-bezier(0.165, 0.84, 0.44, 1);
   height: 0;
 
   .search-content {
@@ -481,12 +481,12 @@
   z-index: 3;
 }
 
-.book-now {
+.btn.book-now {
   position: absolute;
   top: 30%;
-  right: 3%;
-  font-size: 0.875rem;
-  padding: 0.5rem 0.875rem;
+  font-size: 12px;
+  padding-left: 10px;
+  padding-right: 10px;
 
   &:hover {
     background-color: darken($primary, 5);
