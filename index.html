@@ -209,7 +209,19 @@
 
           <div class="side-nav">
             <div class="side-menu-wrapper">
-              <div class="language-side-nav"></div>
+              <div class="language-side-nav">
+                <div class="side-language">
+                  <i class="icon-globe"></i>
+                  <span class="btn-lang"> <span>Language</span><i class="icon-down-open-big"></i></span>
+                  <div class="language-wrapper">
+                    <button>English</button>
+                    <button>Filipino</button>
+                    <button>한국어</button>
+                    <button>ภาษาไทย</button>
+                    <button>简体中文</button>
+                  </div>
+                </div>
+              </div>
               <div class="side-menu-item">
                 <a class="menu-link" href="#">Offers<span class="icon-down-open-big"></span></a>
                 <div class="side-sub-menu">
@@ -288,7 +300,7 @@
                 </div>
               </div>
             </div>
-            <div class="side-menu-bottom">
+            <!-- <div class="side-menu-bottom">
               <div>
                 <a href="#">Login</a>
               </div>
@@ -300,7 +312,7 @@
                   <a href="#">English</a>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
           <div class="side-menu-mask"></div>
         </nav>
@@ -386,56 +398,86 @@
       <section class="overlay-parallax">
         <div class="main">
           <section class="booking">
-            <div class="book-widget">
+            <form action="">
+              <div class="book-widget">
+                <div class="book-item">
+                  <div class="book-select">
+                    <span class="book-label">Select Booking Type</span>
+                    <div class="book-details">
+                      <!-- <input type="text" value="" required /> -->
+                      <span class="selected-item">
+                        Events/Shows
+                      </span>
+                      <span class="icon-down-open-big"></span>
+                    </div>
+                  </div>
+                  <div class="book-list">
+                    <div class="book-list-item" data-value="Events">Events</div>
+                    <div class="book-list-item" data-value="Shows 1">Shows 1</div>
+                    <div class="book-list-item" data-value="Shows 2">Shows 2</div>
+                    <div class="book-list-item" data-value="Shows 3">Shows 3</div>
+                    <div class="book-list-item" data-value="Shows 4">Shows 4</div>
+                  </div>
+                </div>
 
-              <div class="book-item">
-                <div class="book-select">
-                  <span class="book-label">Select Booking Type</span>
-                  <div class="book-details">
-                    <span class="selected-item">Events/Shows</span>
-                    <span class="icon-down-open-big"></span>
+                <div class="book-item">
+                  <div class="book-select">
+                    <span class="book-label">Events/Shows</span>
+                    <div class="book-details">
+                      <span class="selected-item">Select a show</span>
+                      <span class="icon-down-open-big"></span>
+                    </div>
+                  </div>
+                  <div class="book-list">
+                    <div class="book-list-item" data-value="Events">Events</div>
+                    <div class="book-list-item" data-value="Shows 1">Shows 1</div>
+                    <div class="book-list-item" data-value="Shows 2">Shows 2</div>
+                    <div class="book-list-item" data-value="Shows 3">Shows 3</div>
+                    <div class="book-list-item" data-value="Shows 4">Shows 4</div>
                   </div>
                 </div>
-                <div class="book-list">
-                  <div class="book-list-item" data-value="Events">Events</div>
-                  <div class="book-list-item" data-value="Shows 1">Shows 1</div>
-                  <div class="book-list-item" data-value="Shows 2">Shows 2</div>
-                  <div class="book-list-item" data-value="Shows 3">Shows 3</div>
-                  <div class="book-list-item" data-value="Shows 4">Shows 4</div>
+                <div class="book-item">
+                  <div class="book-select">
+                    <span class="book-label">Tickets</span>
+                    <div class="book-details">
+                      <span class="selected-item">Select no. of tickets</span>
+                      <span class="icon-down-open-big"></span>
+                    </div>
+                  </div>
+                  <div class="book-list">
+                    <div class="book-list-item" data-value="Events">Events</div>
+                    <div class="book-list-item" data-value="Shows 1">Shows 1</div>
+                    <div class="book-list-item" data-value="Shows 2">Shows 2</div>
+                    <div class="book-list-item" data-value="Shows 3">Shows 3</div>
+                    <div class="book-list-item" data-value="Shows 4">Shows 4</div>
+                  </div>
                 </div>
-              </div>
+                <!-- <input type="date" class="booking-date"> -->
+                <!-- <input class="booking-date flatpickr flatpickr-input" type="text" placeholder="Select Date.." readonly="readonly"> -->
 
-              <div class="book-item">
-                <div class="book-select">
-                  <span class="book-label">Events/Shows</span>
-                  <div class="book-details">
-                    <span class="selected-item">Select a show</span>
-                    <span class="icon-down-open-big"></span>
+                <!-- <input type="text" class="booking-date" placeholder="Select Date.." data-input readonly="readonly" required> -->
+
+                <div class="book-item">
+                  <div class="book-select">
+                    <span class="book-label">Visiting Date</span>
+                    <div class="book-details">
+                      <span class="selected-item">Select date</span>
+                      <span class="icon-calendar-1"></span>
+                    </div>
+                  </div>
+                  <div class="book-list">
+                    <div class="book-list-item" data-value="Events">Events</div>
+                    <div class="book-list-item" data-value="Shows 1">Shows 1</div>
+                    <div class="book-list-item" data-value="Shows 2">Shows 2</div>
+                    <div class="book-list-item" data-value="Shows 3">Shows 3</div>
+                    <div class="book-list-item" data-value="Shows 4">Shows 4</div>
                   </div>
                 </div>
-              </div>
-              <div class="book-item">
-                <div class="book-select">
-                  <span class="book-label">Tickets</span>
-                  <div class="book-details">
-                    <span class="selected-item">Select no. of tickets</span>
-                    <span class="icon-down-open-big"></span>
-                  </div>
+                <div class="book-item action-booking">
+                  <button class="btn pri-btn">Book Now</button>
                 </div>
               </div>
-              <div class="book-item">
-                <div class="book-select">
-                  <span class="book-label">Visiting Date</span>
-                  <div class="book-details">
-                    <span class="selected-item">Select date</span>
-                    <span class="icon-calendar-1"></span>
-                  </div>
-                </div>
-              </div>
-              <div class="book-item action-booking">
-                <button class="btn pri-btn">Book Now</button>
-              </div>
-            </div>
+            </form>
             <!-- <div class="booking-container">
               <div class="booking-content tab1 active">
                 <div class="custom-select">
@@ -453,24 +495,185 @@
             </div> -->
           </section>
 
-          <section class="container-block">
-            <div class="heading-top">
+          <section class="block-content">
+            <div class="content-wrapper">
+              <div class="heading-top">
+                <h2>Solaire happenings</h2>
+              </div>
+
+              <div class="card-container">
+                <div class="card-img">
+                  <img loading="lazy" src="./assets/img/card-img.png" alt="">
+                </div>
+                <div class="card-details">
+                  <h3>Dad's Day Offers</h3>
+                  <p>Treat Dad to an unforgettable day of luscious foods, luxurious gifts, unforgettable stay, and a chance to bring home a brand-new car in June.</p>
+                  <p>Recusandae, maxime labore? Quaerat minima facilis quo vitae ducimus, libero porro rerum laborum illum.</p>
+
+                  <div class="card-action">
+                    <a href="#" class="btn-text from-left" title="Read more">Read More</a>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+
+            <!-- <div class="heading-top">
               <div class="sub-title">
                 <span>Our Projects</span>
               </div>
               <h2>Explore Recent Projects</h2>
-            </div>
-
-            <div class="heading-top">
-              <div class="sub-title">
-                <span>Our Projects</span>
-              </div>
-              <h2>Explore Recent Projects</h2>
-            </div>
-
+            </div> -->
           </section>
 
+          <section class="block-content relative">
+            <div class="featured-slider-container">
+              <div class="featured-slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <article>
+                      <div class="img-container">
+                        <img loading="lazy" src="./assets/img/featured-img.png" alt="">
+                      </div>
+                      <div class="description">
+                        <h4>Quaerat repudiandae aut, eaque eligendi nostrum voluptas illum</h4>
+                        <p> Aque eligendi nostrum voluptas illum, quo molestiae distinctio vero eveniet explicabo similique beatae iure provident. Assumenda.</p>
+                        <a href="#" class="btn-text" title="Read More">Read More</a>
+                      </div>
+                    </article>
+                  </div>
 
+                  <div class="swiper-slide">
+                    <article>
+                      <div class="img-container">
+                        <img loading="lazy" src="./assets/img/featured-img.png" alt="">
+                      </div>
+                      <div class="description">
+                        <h4>Quaerat repudiandae aut, eaque eligendi nostrum voluptas illum</h4>
+                        <p> Aque eligendi nostrum voluptas illum, quo molestiae distinctio vero eveniet explicabo similique beatae iure provident. Assumenda.</p>
+                        <a href="#" class="btn-text" title="Read More">Read More</a>
+                      </div>
+                    </article>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <article>
+                      <div class="img-container">
+                        <img loading="lazy" src="./assets/img/featured-img.png" alt="">
+                      </div>
+                      <div class="description">
+                        <h4>Quaerat repudiandae aut, eaque eligendi nostrum voluptas illum</h4>
+                        <p> Aque eligendi nostrum voluptas illum, quo molestiae distinctio vero eveniet explicabo similique beatae iure provident. Assumenda.</p>
+                        <a href="#" class="btn-text" title="Read More">Read More</a>
+                      </div>
+                    </article>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <article>
+                      <div class="img-container">
+                        <img loading="lazy" src="./assets/img/featured-img.png" alt="">
+                      </div>
+                      <div class="description">
+                        <h4>Quaerat repudiandae aut, eaque eligendi nostrum voluptas illum</h4>
+                        <p> Aque eligendi nostrum voluptas illum, quo molestiae distinctio vero eveniet explicabo similique beatae iure provident. Assumenda.</p>
+                        <a href="#" class="btn-text" title="Read More">Read More</a>
+                      </div>
+                    </article>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <article>
+                      <div class="img-container">
+                        <img loading="lazy" src="./assets/img/featured-img.png" alt="">
+                      </div>
+                      <div class="description">
+                        <h4>Quaerat repudiandae aut, eaque eligendi nostrum voluptas illum</h4>
+                        <p> Aque eligendi nostrum voluptas illum, quo molestiae distinctio vero eveniet explicabo similique beatae iure provident. Assumenda.</p>
+                        <a href="#" class="btn-text" title="Read More">Read More</a>
+                      </div>
+                    </article>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <article>
+                      <div class="img-container">
+                        <img loading="lazy" src="./assets/img/featured-img.png" alt="">
+                      </div>
+                      <div class="description">
+                        <h4>Quaerat repudiandae aut, eaque eligendi nostrum voluptas illum</h4>
+                        <p> Aque eligendi nostrum voluptas illum, quo molestiae distinctio vero eveniet explicabo similique beatae iure provident. Assumenda.</p>
+                        <a href="#" class="btn-text" title="Read More">Read More</a>
+                      </div>
+                    </article>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <article>
+                      <div class="img-container">
+                        <img loading="lazy" src="./assets/img/featured-img.png" alt="">
+                      </div>
+                      <div class="description">
+                        <h4>Quaerat repudiandae aut, eaque eligendi nostrum voluptas illum</h4>
+                        <p> Aque eligendi nostrum voluptas illum, quo molestiae distinctio vero eveniet explicabo similique beatae iure provident. Assumenda.</p>
+                        <a href="#" class="btn-text" title="Read More">Read More</a>
+                      </div>
+                    </article>
+                  </div>
+
+                </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </section>
+
+          <section class="block-content">
+            <div class="content-wrapper">
+              <div class="heading-top">
+                <h2 class="text-left">Witness world-class entertainment</h2>
+              </div>
+              <div class="featured-slider-container-2">
+                <div class="featured-slider-layout-2">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="./assets/img/featured-img-2.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./assets/img/featured-img-2.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./assets/img/featured-img-2.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./assets/img/featured-img-2.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./assets/img/featured-img-2.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./assets/img/featured-img-2.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./assets/img/featured-img-2.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./assets/img/featured-img-2.png" alt="">
+                    </div>
+                  </div>
+                </div>
+
+
+                <!-- <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div> -->
+              </div>
+
+            </div>
+          </section>
 
           <!-- <div class="back-to-top">
             <a href="#">

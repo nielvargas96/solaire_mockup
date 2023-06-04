@@ -11,6 +11,7 @@
     transform: translateY(-82px);
     transition: transform .25s cubic-bezier(0.445, 0.05, 0.55, 0.95);
     padding: 0 2rem;
+    margin-bottom: 4rem;
 
     &.on-scroll {
       transform: translateY(-45px);
@@ -48,11 +49,7 @@
     margin-top: 40px;
   }
 
-  .main-slider {
-    .swiper-pagination {
-      margin-bottom: 14rem;
-    }
-  }
+
 
   .swiper-button-next,
   .swiper-button-prev {
@@ -73,11 +70,38 @@
     left: 2%;
   }
 
+
   .main-slider {
+    .swiper-pagination {
+      margin-bottom: 14rem;
+    }
 
     .swiper-button-next,
     .swiper-button-prev {
+      display: block;
+    }
+
+    .main-pagination {
       display: none;
     }
   }
+
+  .heading-top {
+    padding-bottom: 3rem;
+  }
+
+  // Card 
+  .card-container {
+    flex-direction: row;
+
+    .card-img,
+    .card-details {
+      width: calc(100%/2);
+    }
+  }
+
+  .card-details {
+    padding-left: 2.5rem;
+  }
+
 }
