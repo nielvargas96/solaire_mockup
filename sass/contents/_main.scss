@@ -255,14 +255,12 @@ main {
 }
 
 .book-list {
-	position: absolute;
 	top: 100%;
 	left: 0;
-	width: 90%;
 	background: $brown_light;
 	padding-top: 1rem;
-	padding-left: 1.5rem;
-	padding-right: 1.5rem;
+	padding-left: 2.5rem;
+	padding-right: 2.5rem;
 	padding-bottom: 1rem;
 	display: none;
 
@@ -272,6 +270,7 @@ main {
 }
 
 .book-list-item {
+	font-size: 0.875rem;
 	padding: .575rem 0;
 	cursor: pointer;
 }
