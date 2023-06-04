@@ -1,8 +1,8 @@
 let mainSlider = new Swiper(".main-slider", {
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
+  // navigation: {
+  //   nextEl: ".swiper-button-next",
+  //   prevEl: ".swiper-button-prev",
+  // },
   pagination: {
     el: ".main-pagination",
     clickable: true,
@@ -215,18 +215,14 @@ $(document).ready(function () {
 
 $(".book-select").on("click", function () {
   $(this).parent('.book-item').find('.book-list, .icon-down-open-big').toggleClass('active');
-
+  let bookItem = $(this).closest('.book-item');
   let bookWidget = bookItem.closest('.book-widget');
-
   bookWidget.find('.book-item').not(bookItem).find('.book-list-item').removeClass('active');
-
 });
 
 $(".book-list-item").on("click", function () {
   let selectedOption = $(this).attr('data-value');
   let bookItem = $(this).closest('.book-item');
-
-
   bookItem.find('input').val(selectedOption);
   bookItem.find('.selected-item').text(selectedOption);
   bookItem.find('.book-select, .icon-down-open-big, .book-list').removeClass('active');

@@ -80,6 +80,7 @@
 
 .featured-slider-container-2 {
   max-width: 1920px;
+  overflow-x: hidden;
 
   .swiper-slide.swiper-slide-next,
   .swiper-slide.swiper-slide-prev {
