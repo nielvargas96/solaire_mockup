@@ -1,8 +1,8 @@
 let mainSlider = new Swiper(".main-slider", {
-  // navigation: {
-  //   nextEl: ".swiper-button-next",
-  //   prevEl: ".swiper-button-prev",
-  // },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
   pagination: {
     el: ".main-pagination",
     clickable: true,
