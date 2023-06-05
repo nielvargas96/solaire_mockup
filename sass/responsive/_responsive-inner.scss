@@ -26,12 +26,14 @@
   }
 
   .featured-slider-container {
-    background-color: red;
+    // background-color: red;
 
     .img-holder {
+      max-height: 200px !important;
+
       img {
         // max-width: 300px;
-        // max-height: 225px;
+        max-height: 200px;
       }
     }
   }
