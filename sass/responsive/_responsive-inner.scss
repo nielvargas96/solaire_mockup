@@ -22,9 +22,13 @@
 
 @media only screen and (max-width: 480px) {
   .featured-slider-container {
+    background-color: red;
+
     .img-holder {
-      max-width: 300px;
-      max-height: 225px;
+      img {
+        max-width: 300px;
+        max-height: 225px;
+      }
     }
   }
 }
