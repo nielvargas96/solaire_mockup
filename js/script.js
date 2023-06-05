@@ -180,6 +180,13 @@ $(document).ready(function () {
       //   $(this).next(".footer-menu").toggleClass('active');
       //   $(this).find('span').toggleClass('active');
       // })
+      $(window).on('scroll', function () {
+        if ($(this).scrollTop() > 1) {
+          $('.header-second').removeClass('on-scroll');
+        } else {
+          $('.header-second').removeClass('on-scroll');
+        }
+      });
     } else {
       // Header
       $(window).on('scroll', function () {
@@ -193,14 +200,6 @@ $(document).ready(function () {
   }
   checkWindowWidth();
   $(window).on('resize', checkWindowWidth);
-
-  $(window).on('scroll', function () {
-    if ($(this).scrollTop() > 1) {
-      $('.booking').addClass('on-scroll');
-    } else {
-      $('.booking').removeClass('on-scroll');
-    }
-  });
 });
 
 
