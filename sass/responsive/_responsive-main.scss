@@ -1,3 +1,20 @@
+@media only screen and (max-width: $screen_768) {
+  .main-slider {
+    .content-text {
+      padding: 6% 2%;
+
+      h1 {
+        font-size: 1.875rem;
+      }
+
+      p {
+        font-size: 0.875rem;
+        max-width: 85%;
+      }
+    }
+  }
+}
+
 @media only screen and (min-width: $screen_1024) {
   .book-widget {
     flex-direction: row;
@@ -102,6 +119,16 @@
 
   .card-details {
     padding-left: 2.5rem;
+
+
+    h3 {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    p {
+      margin-bottom: 2rem;
+    }
   }
 
   .block-content {

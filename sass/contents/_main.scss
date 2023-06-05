@@ -129,7 +129,7 @@ main {
 .main-pagination {
 	position: absolute;
 	z-index: 1;
-	bottom: 25% !important;
+	bottom: 30% !important;
 	text-align: center;
 }
 
@@ -409,13 +409,13 @@ main {
 .card-details {
 
 	h3 {
-		margin-top: 2rem;
-		margin-bottom: 2rem;
+		margin-top: 1.75rem;
+		margin-bottom: 1rem;
 	}
 
 	p {
 		font-family: $font_family_500;
 		line-height: 26px;
-		margin-bottom: 2rem;
+		margin-bottom: 1rem;
 	}
 }

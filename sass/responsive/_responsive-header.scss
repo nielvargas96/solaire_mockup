@@ -169,23 +169,3 @@
   //   right: 15%;
   // }
 }
-
-
-
-
-@media only screen and (max-width: $screen_768) {
-  .main-slider {
-    .content-text {
-      padding: 6%;
-
-      h1 {
-        font-size: 1.5rem;
-      }
-
-      p {
-        font-size: 0.875rem;
-        max-width: 75%;
-      }
-    }
-  }
-}
