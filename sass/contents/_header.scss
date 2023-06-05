@@ -242,7 +242,7 @@
   max-height: 0;
   overflow-y: hidden;
   background-color: $brown_light;
-  animation: slideUp .3s cubic-bezier(0.87, 0, 0.13, 1);
+  transition: slideUp .2s cubic-bezier(0.87, 0, 0.13, 1);
 
   &:first-child {
     padding-top: 1rem;
@@ -251,7 +251,7 @@
   &.active {
     // display: block;
     max-height: 600px;
-    animation: slideDown .3s cubic-bezier(0.87, 0, 0.13, 1);
+    transition: slideDown .2s cubic-bezier(0.87, 0, 0.13, 1);
   }
 
   @keyframes slideDown {
@@ -586,6 +586,11 @@
     padding: .875rem;
     cursor: pointer;
 
+    .icon-down-open-big {
+      transform: rotate(0);
+      transition: transform .25s cubic-bezier(0.43, 0.43, 0.77, 0.77);
+    }
+
     &.active {
       .language-wrapper {
         display: flex;
@@ -596,6 +601,11 @@
         padding-top: 1rem;
         background-color: $brown_light;
         border-top: 1px solid rgba(238, 238, 238, 0.13);
+      }
+
+      .icon-down-open-big {
+        transform: rotate(-180deg);
+        transition: transform .25s cubic-bezier(0.43, 0.43, 0.77, 0.77);
       }
     }
   }
