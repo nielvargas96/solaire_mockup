@@ -54,11 +54,11 @@ footer {
 .footer-menu {
   padding: 0 1.2rem;
   max-height: 0;
-  transition: max-height .35s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  transition: max-height .3s cubic-bezier(0.87, 0, 0.13, 1);
   overflow: hidden;
 
   // &.active {
-  //   transition: max-height .25s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  //   transition: max-height .25s cubic-bezier(0.87, 0, 0.13, 1);
   //   max-height: 600px;
   // }
 
@@ -66,12 +66,13 @@ footer {
     padding: 0;
     cursor: pointer;
   }
-
 }
 
 .footer-checkbox {
+  display: none;
+
   &:checked+.footer-title+.footer-menu {
-    transition: max-height .35s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    transition: max-height .25s cubic-bezier(0.87, 0, 0.13, 1);
     max-height: 600px;
   }
 

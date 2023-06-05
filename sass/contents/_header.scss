@@ -238,14 +238,40 @@
 }
 
 .side-sub-menu {
-  display: none;
+  // display: none;
+  max-height: 0;
+  overflow-y: hidden;
+  background-color: $brown_light;
+  animation: slideUp .3s cubic-bezier(0.87, 0, 0.13, 1);
 
   &:first-child {
     padding-top: 1rem;
   }
 
   &.active {
-    display: block;
+    // display: block;
+    max-height: 600px;
+    animation: slideDown .3s cubic-bezier(0.87, 0, 0.13, 1);
+  }
+
+  @keyframes slideDown {
+    from {
+      max-height: 0;
+    }
+
+    to {
+      max-height: 600px;
+    }
+  }
+
+  @keyframes slideUp {
+    from {
+      max-height: 600px;
+    }
+
+    to {
+      max-height: 0;
+    }
   }
 }
 
@@ -260,7 +286,7 @@
 
     .icon-down-open-big {
       transform: rotate(0);
-      transition: transform .15s cubic-bezier(.43, .43, .77, .77);
+      transition: transform .25s cubic-bezier(.43, .43, .77, .77);
     }
 
     &.active {
@@ -269,7 +295,7 @@
       .icon-down-open-big {
         color: $primary;
         transform: rotate(-180deg);
-        transition: transform .15s cubic-bezier(.43, .43, .77, .77);
+        transition: transform .25s cubic-bezier(.43, .43, .77, .77);
       }
     }
   }
@@ -308,13 +334,7 @@
   }
 }
 
-.side-sub-menu {
 
-  &.active {
-    background-color: $brown_light;
-
-  }
-}
 
 
 .menu-wrapper {
