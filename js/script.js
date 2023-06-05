@@ -61,6 +61,7 @@ let featuredSlider2 = new Swiper(".featured-slider-layout-2", {
   grabCursor: true,
   centeredSlides: true,
   slidesPerView: 'auto',
+  scale: 1,
   coverflowEffect: {
     rotate: 3,
     stretch: 80,
