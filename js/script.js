@@ -24,6 +24,7 @@ let featuredSlider = new Swiper(".featured-slider", {
     el: ".swiper-pagination",
     clickable: true,
   },
+  lazyLoading: true,
   // autoplay: {
   //   delay: 4000,
   // },
@@ -39,6 +40,7 @@ let featuredSlider = new Swiper(".featured-slider", {
       spaceBetween: 30,
     },
     1024: {
+      centeredSlides: false,
       slidesPerView: 3,
       spaceBetween: 30,
     },
@@ -239,6 +241,6 @@ $(".booking-date").flatpickr({
   dateFormat: "Y-m-d",
   allowInput: true,
   mode: "range",
-  minDate: "today",
-  maxDate: new Date().fp_incr(30)
+  minDate: "today"
+  // maxDate: new Date().fp_incr(15)
 });

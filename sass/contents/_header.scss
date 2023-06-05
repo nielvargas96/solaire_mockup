@@ -240,9 +240,9 @@
 .side-sub-menu {
   // display: none;
   max-height: 0;
-  overflow-y: hidden;
+  overflow: hidden;
   background-color: $brown_light;
-  transition: slideUp .2s cubic-bezier(0.87, 0, 0.13, 1);
+  transition: max-height .35s cubic-bezier(0.87, 0, 0.13, 1);
 
   &:first-child {
     padding-top: 1rem;
@@ -251,28 +251,9 @@
   &.active {
     // display: block;
     max-height: 600px;
-    transition: slideDown .2s cubic-bezier(0.87, 0, 0.13, 1);
+    transition: max-height .35s cubic-bezier(0.87, 0, 0.13, 1);
   }
 
-  @keyframes slideDown {
-    from {
-      max-height: 0;
-    }
-
-    to {
-      max-height: 600px;
-    }
-  }
-
-  @keyframes slideUp {
-    from {
-      max-height: 600px;
-    }
-
-    to {
-      max-height: 0;
-    }
-  }
 }
 
 .side-menu-item {

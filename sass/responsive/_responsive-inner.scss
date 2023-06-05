@@ -19,3 +19,11 @@
     }
   }
 }
+
+@media only screen and (max-width: 400px) {
+  .featured-slider-container {
+    .img-holder {
+      max-width: 400px;
+    }
+  }
+}
