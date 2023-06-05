@@ -25,9 +25,9 @@ let featuredSlider = new Swiper(".featured-slider", {
     clickable: true,
   },
   lazyLoading: true,
-  // autoplay: {
-  //   delay: 4000,
-  // },
+  autoplay: {
+    delay: 4000,
+  },
   centeredSlides: true,
   slidesPerView: 1,
   loop: true,
@@ -47,36 +47,38 @@ let featuredSlider = new Swiper(".featured-slider", {
   }
 });
 
-let featuredSlider2 = new Swiper(".featured-slider-layout-2", {
-  // navigation: {
-  //   nextEl: ".swiper-button-next",
-  //   prevEl: ".swiper-button-prev",
-  // },
-  // pagination: {
-  //   el: ".swiper-pagination",
-  //   clickable: true,
-  // },
-  autoplay: {
-    delay: 4000,
-  },
-  effect: 'coverflow',
-  grabCursor: true,
-  centeredSlides: true,
-  slidesPerView: 'auto',
-  // scale: 1,
-  coverflowEffect: {
-    rotate: 3,
-    stretch: 80,
-    depth: 100,
-    modifier: 1,
-    slideShadows: false,
-  },
-  centeredSlides: true,
-  slidesPerView: 'auto',
-  loop: true,
-  spaceBetween: 200,
-  speed: 1000
-});
+
+
+// let featuredSlider2 = new Swiper(".featured-slider-layout-2", {
+//   // navigation: {
+//   //   nextEl: ".swiper-button-next",
+//   //   prevEl: ".swiper-button-prev",
+//   // },
+//   // pagination: {
+//   //   el: ".swiper-pagination",
+//   //   clickable: true,
+//   // },
+//   autoplay: {
+//     delay: 4000,
+//   },
+//   effect: 'coverflow',
+//   grabCursor: true,
+//   centeredSlides: true,
+//   slidesPerView: 'auto',
+//   // scale: 1,
+//   coverflowEffect: {
+//     rotate: 3,
+//     stretch: 80,
+//     depth: 100,
+//     modifier: 1,
+//     slideShadows: false,
+//   },
+//   centeredSlides: true,
+//   slidesPerView: 'auto',
+//   loop: true,
+//   spaceBetween: 200,
+//   speed: 1000
+// });
 
 
 
