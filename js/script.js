@@ -28,7 +28,7 @@ let featuredSlider = new Swiper(".featured-slider", {
   //   delay: 4000,
   // },
   centeredSlides: true,
-  slidesPerView: 'auto',
+  slidesPerView: 1,
   loop: true,
   spaceBetween: 20,
   speed: 900,
@@ -173,11 +173,11 @@ $(document).ready(function () {
   function checkWindowWidth() {
     if ($(window).width() < 1100) {
       // Footer
-      $(".footer-title").on('click', function () {
-        $(this).toggleClass('active');
-        $(this).next(".footer-menu").toggleClass('active');
-        $(this).find('span').toggleClass('active');
-      })
+      // $(".footer-title").on('click', function () {
+      //   $(this).toggleClass('active');
+      //   $(this).next(".footer-menu").toggleClass('active');
+      //   $(this).find('span').toggleClass('active');
+      // })
     } else {
       // Header
       $(window).on('scroll', function () {

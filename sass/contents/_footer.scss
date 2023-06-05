@@ -52,18 +52,33 @@ footer {
 }
 
 .footer-menu {
-  display: none;
   padding: 0 1.2rem;
+  max-height: 0;
+  transition: max-height .25s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  overflow: hidden;
+
+  // &.active {
+  //   transition: max-height .25s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  //   max-height: 600px;
+  // }
 
   .footer-title {
     padding: 0;
     cursor: pointer;
   }
 
-  &.active {
-    display: block;
+}
+
+.footer-checkbox {
+  &:checked+.footer-title+.footer-menu {
+    transition: max-height .25s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    max-height: 600px;
   }
 }
+
+.footer-title {}
+
+
 
 
 .footer-links {
