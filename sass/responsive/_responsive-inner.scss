@@ -14,31 +14,28 @@
 
 @media only screen and (max-width: 768px) {
   .featured-slider-container {
-    background-color: rgb(206, 206, 206);
-
     .img-holder {
-      // max-width: 768px;
-      max-height: 50%;
+      max-height: 80%;
     }
   }
 }
 
-@media only screen and (max-width: 480px) {
+// @media only screen and (max-width: 480px) {
 
-  .featured-slider-container {
-    // background-color: red;
+//   .featured-slider-container {
+//     // background-color: red;
 
-    .img-holder {
-      // max-height: 200px !important;
+//     .img-holder {
+//       // max-height: 200px !important;
 
-      max-height: 300px;
+//       max-height: 300px;
 
-      img {
-        // max-width: 300px;
-        // max-height: 200px;
-        // max-height: 100%;
-        // max-width: 100%;
-      }
-    }
-  }
-}
+//       img {
+//         // max-width: 300px;
+//         // max-height: 200px;
+//         // max-height: 100%;
+//         // max-width: 100%;
+//       }
+//     }
+//   }
+// }
