@@ -14,8 +14,11 @@
 
 @media only screen and (max-width: 768px) {
   .featured-slider-container {
+    background-color: rgb(206, 206, 206);
+
     .img-holder {
       max-width: 768px;
+      max-height: 480px;
     }
   }
 }
@@ -28,11 +31,13 @@
     .img-holder {
       // max-height: 200px !important;
 
+      max-height: 300px;
+
       img {
         // max-width: 300px;
         // max-height: 200px;
-        max-height: 100%;
-        max-width: 100%;
+        // max-height: 100%;
+        // max-width: 100%;
       }
     }
   }
