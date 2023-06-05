@@ -15,7 +15,7 @@
   }
 }
 
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: $screen_1024) {
 
   .overlay-parallax {
     margin-top: 100vh;
