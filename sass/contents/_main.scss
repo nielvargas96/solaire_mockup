@@ -19,14 +19,14 @@ main {
 // 	width: 100%;
 // 	height: 100%;
 // }
-.swiper-slide img {
+// .swiper-slide img {
 
-	display: block !important;
-	width: 100% !important;
-	height: 100% !important;
-	object-fit: cover !important;
-	max-height: 250px !important;
-}
+// 	display: block !important;
+// 	width: 100% !important;
+// 	height: 100% !important;
+// 	object-fit: cover !important;
+// 	max-height: 250px !important;
+// }
 
 
 .main-slider {
@@ -131,8 +131,8 @@ main {
 }
 
 .overlay-parallax {
-	margin-top: 100vh;
-	height: 100%;
+	margin-top: calc(50vh + 70px);
+	// height: 100%;
 	background-color: $white;
 }
 
@@ -149,7 +149,7 @@ main {
 	left: 0;
 	width: 100%;
 	margin-top: 70px;
-	height: 100vh;
+	height: 50vh;
 }
 
 .main {
