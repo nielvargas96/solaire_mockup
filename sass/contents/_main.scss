@@ -155,7 +155,9 @@ main {
 }
 
 .main {
+	max-width: 1200px;
 	background-color: $white;
+	margin: 0 auto;
 }
 
 // .custom-select {
@@ -402,7 +404,6 @@ main {
 .content-wrapper {
 	display: flex;
 	flex-direction: column;
-	max-width: 1200px;
 	margin: 0 auto;
 }
 
