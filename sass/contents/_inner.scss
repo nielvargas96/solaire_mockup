@@ -110,9 +110,9 @@
     opacity: 1;
   }
 
-  .swiper-slide {
-    max-width: 1200px;
-  }
+  // .swiper-slide {
+  //   max-width: 1200px;
+  // }
 
   .swiper-slide.swiper-slide-next,
   .swiper-slide.swiper-slide-prev {
@@ -134,6 +134,7 @@
     justify-content: space-between;
     align-items: flex-start;
     align-content: flex-start;
+    flex-direction: column;
     text-align: left;
   }
 
