@@ -122,6 +122,9 @@
 
 
 .featured-slider-layout-2 {
+  overflow-x: hidden;
+  background-color: aqua;
+
   .description {
     padding-top: 2rem;
     display: flex;
