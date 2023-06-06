@@ -9,6 +9,7 @@ let mainSlider = new Swiper(".main-slider", {
   }, autoplay: {
     delay: 4000,
   },
+  centeredSlides: true,
   slidesPerView: 1,
   loop: true,
   spaceBetween: 0,
