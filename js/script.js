@@ -80,7 +80,6 @@ let featuredSlider2 = new Swiper(".featured-slider-layout-2", {
 });
 
 
-
 $('.toggle-container').on('click', function () {
   $(this).toggleClass('active');
 
@@ -92,10 +91,7 @@ $('.toggle-container').on('click', function () {
 
   // $('html').find('body.active').removeClass('active');
 
-  $(this).hasClass('active').parent().find('.search-btn').off('click');
 });
-
-
 
 
 // $('.toggle-container').hasClass('active').parents('body').addClass('active');
