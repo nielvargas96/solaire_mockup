@@ -95,7 +95,7 @@
 
 .featured-slider-container-2 {
   max-width: 1920px;
-  overflow-x: hidden;
+  // overflow-x: hidden;
 
   .heading-top {
     max-width: 1200px;
@@ -116,6 +116,38 @@
   .swiper-slide.swiper-slide-prev {
     opacity: 0.85;
   }
+
+
+
+}
+
+
+.featured-slider-layout-2 {
+  .description {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    text-align: left;
+  }
+
+  .img-holder {
+    max-width: 1150px;
+    max-height: 480px;
+  }
+
+  .info {
+    padding-right: 2rem;
+  }
+
+  .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
 }
 
 
