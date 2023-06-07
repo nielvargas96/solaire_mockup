@@ -22,7 +22,7 @@ let featuredSlider = new Swiper(".featured-slider-layout-1", {
     prevEl: ".swiper-button-prev",
   },
   pagination: {
-    el: ".swiper-pagination",
+    el: ".swiper-pagination-1",
     clickable: true,
   },
   lazyLoading: true,
@@ -55,10 +55,10 @@ let featuredSlider2 = new Swiper(".featured-slider-layout-2", {
     prevEl: ".swiper-button-prev",
   },
   lazyLoading: true,
-  // pagination: {
-  //   el: ".swiper-pagination",
-  //   clickable: true,
-  // },
+  pagination: {
+    el: ".swiper-pagination-2",
+    clickable: true,
+  },
   // autoplay: {
   //   delay: 4000,
   // },
