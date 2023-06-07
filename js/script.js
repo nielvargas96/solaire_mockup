@@ -50,10 +50,11 @@ let featuredSlider = new Swiper(".featured-slider", {
 
 
 let featuredSlider2 = new Swiper(".featured-slider-layout-2", {
-  // navigation: {
-  //   nextEl: ".swiper-button-next",
-  //   prevEl: ".swiper-button-prev",
-  // },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  lazyLoading: true,
   // pagination: {
   //   el: ".swiper-pagination",
   //   clickable: true,
@@ -61,23 +62,21 @@ let featuredSlider2 = new Swiper(".featured-slider-layout-2", {
   // autoplay: {
   //   delay: 4000,
   // },
-  effect: 'coverflow',
-  grabCursor: true,
+  // effect: 'coverflow',
+  // grabCursor: true,
+  // coverflowEffect: {
+  //   rotate: 2,
+  //   depth: 30,
+  //   slideShadows: false,
+  //   slidesPerView: 1,
+  //   centeredSlides: true,
+  //   loop: true,
+  // },
   centeredSlides: true,
-  slidesPerView: 'auto',
-  // scale: 1,
-  coverflowEffect: {
-    rotate: 3,
-    stretch: 80,
-    depth: 100,
-    modifier: 1,
-    slideShadows: false,
-  },
-  centeredSlides: true,
-  slidesPerView: 'auto',
+  slidesPerView: 1,
   loop: true,
-  spaceBetween: 200,
-  speed: 1000
+  spaceBetween: 90,
+  speed: 800
 });
 
 
