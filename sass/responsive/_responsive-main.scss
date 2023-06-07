@@ -16,6 +16,12 @@
   }
 }
 
+@media only screen and (max-width: $screen_768) {
+  .main-slider .content-text h1 {
+    font-size: 1.275rem;
+  }
+}
+
 @media only screen and (min-width: $screen_768) {
   .content-wrapper {
     max-width: 70%;
@@ -151,11 +157,11 @@
 
   .featured-slider-container {
     .swiper-button-next {
-      right: -3%;
+      right: -5%;
     }
 
     .swiper-button-prev {
-      left: -3%;
+      left: -5%;
     }
   }
 }
