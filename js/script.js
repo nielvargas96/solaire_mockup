@@ -161,6 +161,20 @@ $('.search-btn, .search-btn-top').on('click', function () {
 
 $(document).ready(function () {
 
+  $('.slider-tab a.active').each(function () {
+    var index = $(this).index();
+    $('.slider-tab-content').eq(index).addClass('active');
+  });
+
+  $('.slider-tab a').on('click', function (e) {
+    e.preventDefault();
+    var index = $(this).index();
+    $('.slider-tab a').removeClass('active');
+    $(this).addClass('active');
+    $('.slider-tab-content').removeClass('active');
+    $('.slider-tab-content').eq(index).addClass('active');
+  });
+
   function checkWindowWidth() {
     if ($(window).width() < 1100) {
       // Footer
