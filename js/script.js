@@ -75,7 +75,7 @@ let featuredSlider2 = new Swiper(".featured-slider-layout-2", {
   centeredSlides: true,
   slidesPerView: 1,
   loop: true,
-  spaceBetween: 90,
+  spaceBetween: 50,
   speed: 800
 });
 
