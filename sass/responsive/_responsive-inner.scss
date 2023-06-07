@@ -1,7 +1,12 @@
 @media only screen and (min-width: $screen_1024) {
-  .featured-slider-layout-1 {
+  .featured-slider-container {
     .swiper-pagination {
       display: none;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      display: block;
     }
   }
 
