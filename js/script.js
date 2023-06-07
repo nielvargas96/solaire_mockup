@@ -1,7 +1,7 @@
 let mainSlider = new Swiper(".main-slider", {
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".main-swiper-button-next",
+    prevEl: ".main-swiper-button-prev",
   },
   pagination: {
     el: ".main-pagination",
@@ -18,8 +18,8 @@ let mainSlider = new Swiper(".main-slider", {
 
 let featuredSlider = new Swiper(".featured-slider-layout-1", {
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".swiper-button-next-1",
+    prevEl: ".swiper-button-prev-1",
   },
   pagination: {
     el: ".swiper-pagination-1",
@@ -43,6 +43,7 @@ let featuredSlider = new Swiper(".featured-slider-layout-1", {
     1024: {
       centeredSlides: false,
       slidesPerView: 3,
+      slidesPerGroup: 3,
       spaceBetween: 30,
     },
   }
@@ -51,27 +52,14 @@ let featuredSlider = new Swiper(".featured-slider-layout-1", {
 
 let featuredSlider2 = new Swiper(".featured-slider-layout-2", {
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".swiper-button-next-2",
+    prevEl: ".swiper-button-prev-2",
   },
   lazyLoading: true,
   pagination: {
     el: ".swiper-pagination-2",
     clickable: true,
   },
-  // autoplay: {
-  //   delay: 4000,
-  // },
-  // effect: 'coverflow',
-  // grabCursor: true,
-  // coverflowEffect: {
-  //   rotate: 2,
-  //   depth: 30,
-  //   slideShadows: false,
-  //   slidesPerView: 1,
-  //   centeredSlides: true,
-  //   loop: true,
-  // },
   centeredSlides: true,
   slidesPerView: 1,
   loop: true,
@@ -88,9 +76,6 @@ $('.toggle-container').on('click', function () {
   $('.toggle').toggleClass('active');
   $('.header-second').find('.side-nav, .side-menu-mask').toggleClass('active');
   $('.header-second').find('.search-btn.active, .search-container.active, .search-container-mask.active').removeClass('active');
-
-  // $('html').find('body.active').removeClass('active');
-
 });
 
 
@@ -175,8 +160,6 @@ $('.search-btn, .search-btn-top').on('click', function () {
 
 
 $(document).ready(function () {
-
-
 
   function checkWindowWidth() {
     if ($(window).width() < 1100) {
