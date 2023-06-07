@@ -16,7 +16,7 @@ let mainSlider = new Swiper(".main-slider", {
   speed: 900
 });
 
-let featuredSlider = new Swiper(".featured-slider", {
+let featuredSlider = new Swiper(".featured-slider-layout-1", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
