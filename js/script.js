@@ -176,6 +176,9 @@ $('.search-btn, .search-btn-top').on('click', function () {
 
 
 $(document).ready(function () {
+
+
+
   function checkWindowWidth() {
     if ($(window).width() < 1100) {
       // Footer
