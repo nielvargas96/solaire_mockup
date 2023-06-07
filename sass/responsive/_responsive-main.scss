@@ -5,7 +5,7 @@
       margin-bottom: 6rem;
 
       h1 {
-        font-size: 1.875rem;
+        font-size: 1.575rem;
       }
 
       p {
@@ -16,11 +16,7 @@
   }
 }
 
-@media only screen and (max-width: $screen_768) {
-  .main-slider .content-text h1 {
-    font-size: 1.275rem;
-  }
-}
+
 
 @media only screen and (min-width: $screen_768) {
   .content-wrapper {
@@ -112,6 +108,14 @@
     .card-img,
     .card-details {
       width: calc(100%/2);
+    }
+
+    &.reversed {
+      flex-direction: row-reverse;
+
+      .card-img {
+        padding-left: 2rem;
+      }
     }
   }
 

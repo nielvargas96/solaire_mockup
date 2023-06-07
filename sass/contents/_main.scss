@@ -425,7 +425,20 @@ main {
 	display: flex;
 	flex-direction: column;
 	margin-top: 1.5rem;
+
+	&.reversed {
+		.card-details {
+			padding-left: 0;
+		}
+
+		.card-img {
+			padding-left: 0;
+			box-shadow: 95px 72px 0px 2px rgba(15, 15, 15, 0.09);
+
+		}
+	}
 }
+
 
 .card-img {
 	img {
