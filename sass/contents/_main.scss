@@ -475,12 +475,12 @@ main {
 
 		&:hover {
 			font-size: 1.6rem;
-			transition: font-size 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+			transition: font-size 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
 
 			span {
 				font-size: 1.125rem;
 				transform: translateX(10px);
-				transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+				transition: transform 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
 			}
 
 			// &:before {
@@ -497,13 +497,13 @@ main {
 			height: 1px;
 			margin-right: 1rem;
 			background-color: $primary;
-			transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+			transition: transform 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
 		}
 
 		span {
 			font-size: 14px;
 			margin-left: 1rem;
-			transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+			transition: transform 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
 		}
 	}
 }

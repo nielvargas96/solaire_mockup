@@ -132,6 +132,39 @@ let slider4 = new Swiper(".slider-4", {
   }
 });
 
+let slider5 = new Swiper(".slider-5", {
+  // navigation: {
+  //   nextEl: ".button-next-slider-5",
+  //   prevEl: ".button-prev-slider-5",
+  // },
+  // pagination: {
+  //   el: ".pagination-slider-5",
+  //   clickable: true,
+  // },
+  lazyLoading: true,
+  // autoplay: {
+  //   delay: 4000,
+  // },
+  centeredSlides: true,
+  slidesPerView: 1,
+  loop: true,
+  spaceBetween: 20,
+  speed: 900,
+  breakpoints: {
+    768: {
+      centeredSlides: false,
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+    1024: {
+      centeredSlides: false,
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+      spaceBetween: 30,
+    },
+  }
+});
+
 $('.toggle-container').on('click', function () {
   $(this).toggleClass('active');
 
