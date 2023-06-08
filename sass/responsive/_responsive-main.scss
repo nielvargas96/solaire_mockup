@@ -16,6 +16,11 @@
   }
 }
 
+@media only screen and (max-width: $screen_1024) {
+  .card-container {
+    align-items: center;
+  }
+}
 
 
 @media only screen and (min-width: $screen_768) {
@@ -120,15 +125,18 @@
 
       .card-img {
         max-width: 480px;
+        margin-right: auto;
         padding-left: 2rem;
+        box-shadow: 110px 100px 0px -30px rgba(239, 239, 239, 1);
       }
     }
+
   }
 
   .card-details {
     padding-left: 2.5rem;
 
-
+    h2,
     h3 {
       margin-top: 2rem;
       margin-bottom: 2rem;
@@ -159,17 +167,4 @@
     text-align: left;
   }
 
-}
-
-@media only screen and (min-width: 1440px) {
-
-  .featured-slider-container {
-    .swiper-button-next {
-      right: -6.5%;
-    }
-
-    .swiper-button-prev {
-      left: -6.5%;
-    }
-  }
 }

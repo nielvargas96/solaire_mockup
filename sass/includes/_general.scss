@@ -119,6 +119,10 @@ footer {
 	padding: 0;
 }
 
+.icon-light-search:before {
+	font-size: 1.1rem;
+	color: $primary;
+}
 
 @mixin shadow {
 	box-shadow: 0 .3rem 1rem alpha($c3-dgray, 0.3);

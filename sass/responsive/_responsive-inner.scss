@@ -1,18 +1,48 @@
 @media only screen and (min-width: $screen_1024) {
   .featured-slider-container {
+    &:hover {
+
+      .swiper-button-next,
+      .swiper-button-prev {
+        background-color: $white;
+      }
+    }
+
     .swiper-pagination {
       display: none;
     }
 
     .swiper-button-next,
     .swiper-button-prev {
-      display: block;
+      display: flex;
+      background-color: rgb(255, 255, 255, .25);
     }
   }
 
   .slider-2 {
     .description {
       flex-direction: row;
+    }
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+
+  .featured-slider-container {
+    &:hover {
+
+      div.swiper-button-next,
+      div.swiper-button-prev {
+        background-color: $white;
+      }
+    }
+
+    .swiper-button-next {
+      right: -6.5%;
+    }
+
+    .swiper-button-prev {
+      left: -6.5%;
     }
   }
 }

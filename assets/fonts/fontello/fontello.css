@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'fontello';
-  src: url('./font/fontello.eot?70728769');
-  src: url('./font/fontello.eot?70728769#iefix') format('embedded-opentype'),
-    url('./font/fontello.woff2?70728769') format('woff2'),
-    url('./font/fontello.woff?70728769') format('woff'),
-    url('./font/fontello.ttf?70728769') format('truetype'),
-    url('./font/fontello.svg?70728769#fontello') format('svg');
+  src: url('./font/fontello.eot?54900193');
+  src: url('./font/fontello.eot?54900193#iefix') format('embedded-opentype'),
+    url('./font/fontello.woff2?54900193') format('woff2'),
+    url('./font/fontello.woff?54900193') format('woff'),
+    url('./font/fontello.ttf?54900193') format('truetype'),
+    url('./font/fontello.svg?54900193#fontello') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -16,11 +16,10 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'fontello';
-    src: url('../font/fontello.svg?70728769#fontello') format('svg');
+    src: url('../font/fontello.svg?54900193#fontello') format('svg');
   }
 }
 */
-
 [class^="icon-"]:before,
 [class*=" icon-"]:before {
   font-family: "fontello";
@@ -30,8 +29,8 @@
 
   display: inline-block;
   text-decoration: inherit;
-  width: 1em;
-  margin-right: .2em;
+  /* width: 1em; */
+  /* margin-right: .2em; */
   text-align: center;
   /* opacity: .8; */
 
@@ -40,11 +39,11 @@
   text-transform: none;
 
   /* fix buttons height, for twitter bootstrap */
-  line-height: 1em;
+  /* line-height: 1em; */
 
   /* Animation center compensation - margins should be symmetric */
   /* remove if not needed */
-  margin-left: .2em;
+  /* margin-left: .2em; */
 
   /* you can be more comfortable with increased icons size */
   /* font-size: 120%; */
@@ -192,11 +191,131 @@
 }
 
 /* '' */
+.icon-light-arrow-right:before {
+  content: '\e81b';
+}
+
+/* '' */
+.icon-light-beds:before {
+  content: '\e81c';
+}
+
+/* '' */
+.icon-light-bathroom:before {
+  content: '\e81d';
+}
+
+/* '' */
+.icon-light-share:before {
+  content: '\e81e';
+}
+
+/* '' */
 .icon-globe:before {
   content: '\e81f';
 }
 
 /* '' */
+.icon-light-show-date:before {
+  content: '\e820';
+}
+
+/* '' */
+.icon-light-public-sale:before {
+  content: '\e821';
+}
+
+/* '' */
+.icon-light-ticket-price:before {
+  content: '\e822';
+}
+
+/* '' */
+.icon-light-event:before {
+  content: '\e823';
+}
+
+/* '' */
+.icon-light-clock:before {
+  content: '\e824';
+}
+
+/* '' */
+.icon-light-date:before {
+  content: '\e825';
+}
+
+/* '' */
+.icon-light-adult:before {
+  content: '\e826';
+}
+
+/* '' */
+.icon-light-tickets:before {
+  content: '\e827';
+}
+
+/* '' */
+.icon-light-restaurant:before {
+  content: '\e828';
+}
+
+/* '' */
+.icon-light-rooms:before {
+  content: '\e829';
+}
+
+/* '' */
+.icon-light-arrow-up:before {
+  content: '\e82a';
+}
+
+/* '' */
+.icon-light-globe:before {
+  content: '\e82b';
+}
+
+/* '' */
+.icon-light-search:before {
+  content: '\e82c';
+}
+
+/* '' */
+.icon-light-arrow-right-1:before {
+  content: '\e82d';
+}
+
+/* '' */
+.icon-light-book:before {
+  content: '\e82e';
+}
+
+/* '' */
+.icon-light-tel:before {
+  content: '\e82f';
+}
+
+/* '' */
+.icon-light-dress:before {
+  content: '\e830';
+}
+
+/* '' */
+.icon-light-book-1:before {
+  content: '\e831';
+}
+
+/* '' */
+.icon-light-trip-advisor:before {
+  content: '\e832';
+}
+
+/* '' */
+.icon-light-suite-size:before {
+  content: '\e833';
+}
+
+/* '' */
 .icon-facebook:before {
   content: '\f052';
 }
