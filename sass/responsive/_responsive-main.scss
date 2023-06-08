@@ -104,16 +104,22 @@
   // Card 
   .card-container {
     flex-direction: row;
+    align-items: flex-start;
 
     .card-img,
     .card-details {
       width: calc(100%/2);
     }
 
+    .card-img {
+      max-width: 560px;
+    }
+
     &.reversed {
       flex-direction: row-reverse;
 
       .card-img {
+        max-width: 480px;
         padding-left: 2rem;
       }
     }
@@ -155,17 +161,15 @@
 
 }
 
-
-
 @media only screen and (min-width: 1440px) {
 
   .featured-slider-container {
     .swiper-button-next {
-      right: -5%;
+      right: -6.5%;
     }
 
     .swiper-button-prev {
-      left: -5%;
+      left: -6.5%;
     }
   }
 }

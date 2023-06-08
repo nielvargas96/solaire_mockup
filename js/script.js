@@ -16,19 +16,69 @@ let mainSlider = new Swiper(".main-slider", {
   speed: 900
 });
 
-let featuredSlider = new Swiper(".featured-slider-layout-1", {
+let slider1 = new Swiper(".slider-1", {
   navigation: {
-    nextEl: ".swiper-button-next-1",
-    prevEl: ".swiper-button-prev-1",
+    nextEl: ".button-next-slider-1",
+    prevEl: ".button-prev-slider-1",
   },
   pagination: {
-    el: ".swiper-pagination-1",
+    el: ".pagination-slider-1",
     clickable: true,
   },
   lazyLoading: true,
-  autoplay: {
-    delay: 4000,
+  // autoplay: {
+  //   delay: 4000,
+  // },
+  centeredSlides: true,
+  slidesPerView: 1,
+  loop: true,
+  spaceBetween: 20,
+  speed: 900,
+  breakpoints: {
+    768: {
+      centeredSlides: false,
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+    1024: {
+      centeredSlides: false,
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+      spaceBetween: 30,
+    }
+  }
+});
+
+let slider2 = new Swiper(".slider-2", {
+  navigation: {
+    nextEl: ".button-next-slider-2",
+    prevEl: ".button-prev-slider-2",
   },
+  lazyLoading: true,
+  pagination: {
+    el: ".pagination-slider-2",
+    clickable: true,
+  },
+  centeredSlides: true,
+  slidesPerView: 1,
+  loop: true,
+  spaceBetween: 50,
+  speed: 800
+});
+
+let slider3 = new Swiper(".slider-3", {
+  navigation: {
+    nextEl: ".button-next-slider-3",
+    prevEl: ".button-prev-slider-3",
+  },
+  pagination: {
+    el: ".pagination-slider-3",
+    clickable: true,
+  },
+  lazyLoading: true,
+  // autoplay: {
+  //   delay: 4000,
+  // },
   centeredSlides: true,
   slidesPerView: 1,
   loop: true,
@@ -49,24 +99,38 @@ let featuredSlider = new Swiper(".featured-slider-layout-1", {
   }
 });
 
-
-let featuredSlider2 = new Swiper(".featured-slider-layout-2", {
+let slider4 = new Swiper(".slider-4", {
   navigation: {
-    nextEl: ".swiper-button-next-2",
-    prevEl: ".swiper-button-prev-2",
+    nextEl: ".button-next-slider-4",
+    prevEl: ".button-prev-slider-4",
   },
-  lazyLoading: true,
   pagination: {
-    el: ".swiper-pagination-2",
+    el: ".pagination-slider-4",
     clickable: true,
   },
+  lazyLoading: true,
+  // autoplay: {
+  //   delay: 4000,
+  // },
   centeredSlides: true,
   slidesPerView: 1,
   loop: true,
-  spaceBetween: 50,
-  speed: 800
+  spaceBetween: 20,
+  speed: 900,
+  breakpoints: {
+    768: {
+      centeredSlides: false,
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+    1024: {
+      centeredSlides: false,
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+      spaceBetween: 30,
+    },
+  }
 });
-
 
 $('.toggle-container').on('click', function () {
   $(this).toggleClass('active');
@@ -77,7 +141,6 @@ $('.toggle-container').on('click', function () {
   $('.header-second').find('.side-nav, .side-menu-mask').toggleClass('active');
   $('.header-second').find('.search-btn.active, .search-container.active, .search-container-mask.active').removeClass('active');
 });
-
 
 // $('.toggle-container').hasClass('active').parents('body').addClass('active');
 
@@ -104,59 +167,6 @@ $('.search-btn, .search-btn-top').on('click', function () {
   $('body').toggleClass('active');
   $('.header-second').find('.side-nav.active, .toggle-container.active, .toggle.active, .side-menu-mask.active').removeClass('active');
 });
-
-
-// var header = document.querySelector('.header-second');
-// var logo = document.querySelector('.logo .small');
-// var logoXs = document.querySelector('.logo .xs');
-// var logoContainer = document.querySelector('.logo');
-// var logoInner = document.querySelector('.logo-img');
-
-// gsap.registerPlugin(ScrollTrigger);
-
-// ScrollTrigger.create({
-//   trigger: '.header-second',
-//   start: 'top top',
-//   end: 'bottom top',
-//   onEnter: function () {
-//     gsap.to(header, {
-//       top: '-2.5rem',
-//       duration: 0.15,
-//       overwrite: true
-//     });
-//     gsap.to(logoInner, {
-//       top: '0.5rem',
-//       height: '40px',
-//       duration: 0.25,
-//       overwrite: true
-//     });
-//     // gsap.to(logoContainer, {
-//     //   padding: '4px',
-//     //   top: '0',
-//     //   duration: 0.25,
-//     //   overwrite: true
-//     // });
-//   },
-//   onLeaveBack: function () {
-//     gsap.to(header, {
-//       top: '0',
-//       duration: 0.15,
-//       overwrite: true
-//     });
-//     // gsap.to(logo, {
-//     //   height: '45px',
-//     //   duration: 0.25,
-//     //   overwrite: true
-//     // });
-//     // gsap.to(logoContainer, {
-//     //   padding: '24px 8px 15px 8px',
-//     //   top: '-2rem',
-//     //   duration: 0.25,
-//     //   overwrite: true
-//     // });
-//   }
-// });
-
 
 
 $(document).ready(function () {
