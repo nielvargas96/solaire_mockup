@@ -14,10 +14,11 @@ button {
   &.pri-btn {
     color: #fff;
     background-color: $primary;
-    transition: 0.3s;
+    transition: 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
 
     &:hover {
-      // background-color: darken($pri-color, 10);
+      background-color: darken($primary, 5);
+      transition: 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
     }
   }
 }

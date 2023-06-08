@@ -54,8 +54,32 @@
 }
 
 .header-first-left {
+  display: flex;
+  justify-content: center;
   padding-left: 2rem;
   padding-right: 2rem;
+  height: 100%;
+
+  a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0 10px;
+
+    &:not(:last-of-type) {
+      &:after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: -10%;
+        width: 1px;
+        height: 16px;
+        background-color: #7b7b7b;
+      }
+    }
+  }
 }
 
 .search-btn-top {
@@ -84,7 +108,7 @@
     left: 0;
     top: 30%;
     width: 1px;
-    height: 42%;
+    height: 16px;
     background-color: #7b7b7b;
   }
 }
@@ -552,7 +576,7 @@
 
   &:hover {
     background-color: darken($primary, 5);
-    transition: 0.3s;
+    transition: 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
   }
 }
 
