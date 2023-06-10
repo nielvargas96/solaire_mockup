@@ -171,6 +171,8 @@ $('.toggle-container').on('click', function () {
   $('body').toggleClass('active');
 
   $('.toggle').toggleClass('active');
+
+  $('.header-second').toggleClass('active');
   $('.header-second').find('.side-nav, .side-menu-mask').toggleClass('active');
   $('.header-second').find('.search-btn.active, .search-container.active, .search-container-mask.active').removeClass('active');
 });

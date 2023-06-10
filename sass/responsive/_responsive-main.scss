@@ -13,6 +13,12 @@
         max-width: 85%;
       }
     }
+
+
+  }
+
+  .block-content {
+    padding-bottom: 4.5rem;
   }
 
   // .slider-with-tab {
@@ -22,6 +28,14 @@
   .swiper-pagination-bullet {
     width: 8px;
     height: 8px;
+  }
+
+  .feaured-banner {
+    .text-content {
+      h2 {
+        font-size: 1.125rem;
+      }
+    }
   }
 }
 
@@ -37,6 +51,14 @@
 
       &:before {
         display: none;
+      }
+    }
+  }
+
+  .feaured-banner {
+    .text-content {
+      h2 {
+        padding: 0 1rem;
       }
     }
   }

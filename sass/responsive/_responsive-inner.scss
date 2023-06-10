@@ -58,6 +58,20 @@
   }
 }
 
+@media only screen and (max-width: $screen_768) {
+
+  .featured-slider-container {
+    .description {
+      padding-top: 1.5rem;
+
+      p {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+}
+
 
 // @media only screen and (max-width: 768px) {
 //   .featured-slider-container {
