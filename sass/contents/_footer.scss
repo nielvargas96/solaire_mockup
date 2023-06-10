@@ -32,12 +32,12 @@ footer {
   justify-content: space-between;
   cursor: pointer;
   user-select: none;
-  font-family: $font_family_sec_700;
   text-transform: uppercase;
 
   p {
     color: #fff;
     text-transform: uppercase;
+    font-family: $font_family_sec_700;
   }
 }
 

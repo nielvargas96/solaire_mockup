@@ -12,7 +12,17 @@
 
   }
 
-  .slider-2 {
+
+  .indulgent-dining {
+    margin-bottom: 6rem;
+  }
+
+  .full-width {
+    h2 {
+      text-align: left;
+      padding-bottom: 0;
+    }
+
     .info {
       padding-right: 2rem;
       width: 80%;
@@ -23,11 +33,9 @@
     }
   }
 
-  .indulgent-dining {
-    margin-bottom: 6rem;
+  .date-select {
+    width: 26%;
   }
-
-
 }
 
 @media only screen and (min-width: 1440px) {
@@ -59,6 +67,18 @@
       }
     }
   }
+
+  .full-width {
+    background-color: #F2F2F2;
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+  }
+
+  .card-container-2 {
+    img {
+      width: 100%;
+    }
+  }
 }
 
 @media only screen and (max-width: $screen_768) {
@@ -66,13 +86,12 @@
   .featured-slider-container {
 
     .description {
-      padding-top: 1.5rem;
-
       p {
         margin-bottom: 1rem;
       }
     }
   }
+
 
 }
 

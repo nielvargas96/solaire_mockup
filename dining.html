@@ -6,7 +6,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Solaire - Dining</title>
+  <title>Solaire</title>
   <link rel="stylesheet" href="./assets/fonts/avenir/style.css">
   <link rel="stylesheet" href="./assets/fonts/montserrat/style.css">
   <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
@@ -335,6 +335,9 @@
               </div>
             </div>
           </div>
+          <!-- <div class="main-pagination"></div>
+          <div class="main-swiper-button-next swiper-button-next"></div>
+          <div class="main-swiper-button-prev swiper-button-prev"></div> -->
         </div>
       </section>
 
@@ -398,25 +401,26 @@
                 <!-- <input type="date" class="booking-date"> -->
                 <!-- <input class="booking-date flatpickr flatpickr-input" type="text" placeholder="Select Date.." readonly="readonly"> -->
 
-                <!-- <input type="text" class="booking-date" placeholder="Select Date.." data-input readonly="readonly" required> -->
+
 
                 <!-- <span class="booking-date">Select Date</span> -->
 
-                <div class="book-item">
-                  <div class="book-select">
+                <div class="book-item date-select">
+                  <div class="book-select ">
                     <span class="book-label">Visiting Date</span>
                     <div class="book-details">
-                      <span class="selected-item">Select date</span>
-                      <span class="icon-calendar-1"></span>
+                      <!-- <span class="selected-item">Select date</span> -->
+                      <input type="text" class="booking-date" placeholder="Select Date.." data-input readonly="readonly" required>
+                      <span class="icon-light-date"></span>
                     </div>
                   </div>
-                  <div class="book-list">
+                  <!-- <div class="book-list">
                     <div class="book-list-item" data-value="Events">Events</div>
                     <div class="book-list-item" data-value="Shows 1">Shows 1</div>
                     <div class="book-list-item" data-value="Shows 2">Shows 2</div>
                     <div class="book-list-item" data-value="Shows 3">Shows 3</div>
                     <div class="book-list-item" data-value="Shows 4">Shows 4</div>
-                  </div>
+                  </div> -->
                 </div>
                 <div class="book-item action-booking">
                   <button class="btn pri-btn">Book Now</button>
@@ -445,19 +449,21 @@
               <h2>All Dining Offers</h2>
               <p class="sub-title">Est sed varius praesent vivamus mauris elit. Accumsan enim elementum iaculis viverra felis.</p>
             </div>
+
             <div class="featured-slider-container">
-              <div class="slider-layout slider-1">
+              <div class="slider-layout slider-dining-offers">
                 <div class="swiper-wrapper">
+
                   <div class="swiper-slide">
                     <article>
-                      <div class="img-container">
+                      <a href="#" class="img-container">
                         <div class="img-holder">
                           <img loading="lazy" src="./assets/img/slider-img-380x260.png" alt="">
                         </div>
-                      </div>
+                      </a>
                       <div class="description text-left">
-                        <h4> Quaerat repudiandae aut, eaque eligendi nostrum voluptas illum</h4>
-                        <p> Aque eligendi nostrum voluptas illum, quo molestiae distinctio vero eveniet explicabo similique beatae iure provident. Assumenda.</p>
+                        <h4>Lucky Noodles: Tastes Like Home</h4>
+                        <p> Experience the best Filipino cuisine in Manila at Lucky Noodles all this month as we feature authentic flavors of the Philippines for you to enjoy.</p>
                         <p class="date">
                           <span class="icon-light-date"></span>
                           From now until June 30, 2023
@@ -469,105 +475,95 @@
 
                   <div class="swiper-slide">
                     <article>
-                      <div class="img-container">
+                      <a href="#" class="img-container">
                         <div class="img-holder">
                           <img loading="lazy" src="./assets/img/slider-img-380x260.png" alt="">
                         </div>
-                      </div>
-                      <div class="description">
-                        <h4>Quaerat repudiandae aut, eaque eligendi nostrum voluptas illum</h4>
-                        <p> Aque eligendi nostrum voluptas illum, quo molestiae distinctio vero eveniet explicabo similique beatae iure provident. Assumenda.</p>
-                        <a href="#" class="btn-text" title="Read More">Read More</a>
+                      </a>
+                      <div class="description text-left">
+                        <h4>Lucky Noodles: Tastes Like Home</h4>
+                        <p> Experience the best Filipino cuisine in Manila at Lucky Noodles all this month as we feature authentic flavors of the Philippines for you to enjoy.</p>
+                        <p class="date">
+                          <span class="icon-light-date"></span>
+                          From now until June 30, 2023
+                        </p>
+                        <a href="#" class="btn-text" title="Read More">Learn More</a>
                       </div>
                     </article>
                   </div>
 
                   <div class="swiper-slide">
                     <article>
-                      <div class="img-container">
+                      <a href="#" class="img-container">
                         <div class="img-holder">
                           <img loading="lazy" src="./assets/img/slider-img-380x260.png" alt="">
                         </div>
-                      </div>
-                      <div class="description">
-                        <h4>Quaerat repudiandae aut, eaque eligendi nostrum voluptas illum</h4>
-                        <p> Aque eligendi nostrum voluptas illum, quo molestiae distinctio vero eveniet explicabo similique beatae iure provident. Assumenda.</p>
-                        <a href="#" class="btn-text" title="Read More">Read More</a>
+                      </a>
+                      <div class="description text-left">
+                        <h4>Lucky Noodles: Tastes Like Home</h4>
+                        <p> Experience the best Filipino cuisine in Manila at Lucky Noodles all this month as we feature authentic flavors of the Philippines for you to enjoy.</p>
+                        <p class="date">
+                          <span class="icon-light-date"></span>
+                          From now until June 30, 2023
+                        </p>
+                        <a href="#" class="btn-text" title="Read More">Learn More</a>
                       </div>
                     </article>
                   </div>
 
                   <div class="swiper-slide">
                     <article>
-                      <div class="img-container">
+                      <a href="#" class="img-container">
                         <div class="img-holder">
                           <img loading="lazy" src="./assets/img/slider-img-380x260.png" alt="">
                         </div>
-                      </div>
-                      <div class="description">
-                        <h4>Quaerat repudiandae aut, eaque eligendi nostrum voluptas illum</h4>
-                        <p> Aque eligendi nostrum voluptas illum, quo molestiae distinctio vero eveniet explicabo similique beatae iure provident. Assumenda.</p>
-                        <a href="#" class="btn-text" title="Read More">Read More</a>
+                      </a>
+                      <div class="description text-left">
+                        <h4>Lucky Noodles: Tastes Like Home</h4>
+                        <p> Experience the best Filipino cuisine in Manila at Lucky Noodles all this month as we feature authentic flavors of the Philippines for you to enjoy.</p>
+                        <p class="date">
+                          <span class="icon-light-date"></span>
+                          From now until June 30, 2023
+                        </p>
+                        <a href="#" class="btn-text" title="Read More">Learn More</a>
                       </div>
                     </article>
                   </div>
 
                   <div class="swiper-slide">
                     <article>
-                      <div class="img-container">
+                      <a href="#" class="img-container">
                         <div class="img-holder">
                           <img loading="lazy" src="./assets/img/slider-img-380x260.png" alt="">
                         </div>
-                      </div>
-                      <div class="description">
-                        <h4>Quaerat repudiandae aut, eaque eligendi nostrum voluptas illum</h4>
-                        <p> Aque eligendi nostrum voluptas illum, quo molestiae distinctio vero eveniet explicabo similique beatae iure provident. Assumenda.</p>
-                        <a href="#" class="btn-text" title="Read More">Read More</a>
+                      </a>
+                      <div class="description text-left">
+                        <h4>Lucky Noodles: Tastes Like Home</h4>
+                        <p> Experience the best Filipino cuisine in Manila at Lucky Noodles all this month as we feature authentic flavors of the Philippines for you to enjoy.</p>
+                        <p class="date">
+                          <span class="icon-light-date"></span>
+                          From now until June 30, 2023
+                        </p>
+                        <a href="#" class="btn-text" title="Read More">Learn More</a>
                       </div>
                     </article>
                   </div>
 
                   <div class="swiper-slide">
                     <article>
-                      <div class="img-container">
+                      <a href="#" class="img-container">
                         <div class="img-holder">
                           <img loading="lazy" src="./assets/img/slider-img-380x260.png" alt="">
                         </div>
-                      </div>
-                      <div class="description">
-                        <h4>Quaerat repudiandae aut, eaque eligendi nostrum voluptas illum</h4>
-                        <p> Aque eligendi nostrum voluptas illum, quo molestiae distinctio vero eveniet explicabo similique beatae iure provident. Assumenda.</p>
-                        <a href="#" class="btn-text" title="Read More">Read More</a>
-                      </div>
-                    </article>
-                  </div>
-
-                  <div class="swiper-slide">
-                    <article>
-                      <div class="img-container">
-                        <div class="img-holder">
-                          <img loading="lazy" src="./assets/img/slider-img-380x260.png" alt="">
-                        </div>
-                      </div>
-                      <div class="description">
-                        <h4>Quaerat repudiandae aut, eaque eligendi nostrum voluptas illum</h4>
-                        <p> Aque eligendi nostrum voluptas illum, quo molestiae distinctio vero eveniet explicabo similique beatae iure provident. Assumenda.</p>
-                        <a href="#" class="btn-text" title="Read More">Read More</a>
-                      </div>
-                    </article>
-                  </div>
-
-                  <div class="swiper-slide">
-                    <article>
-                      <div class="img-container">
-                        <div class="img-holder">
-                          <img loading="lazy" src="./assets/img/slider-img-380x260.png" alt="">
-                        </div>
-                      </div>
-                      <div class="description">
-                        <h4>Quaerat repudiandae aut, eaque eligendi nostrum voluptas illum</h4>
-                        <p> Aque eligendi nostrum voluptas illum, quo molestiae distinctio vero eveniet explicabo similique beatae iure provident. Assumenda.</p>
-                        <a href="#" class="btn-text" title="Read More">Read More</a>
+                      </a>
+                      <div class="description text-left">
+                        <h4>Lucky Noodles: Tastes Like Home</h4>
+                        <p> Experience the best Filipino cuisine in Manila at Lucky Noodles all this month as we feature authentic flavors of the Philippines for you to enjoy.</p>
+                        <p class="date">
+                          <span class="icon-light-date"></span>
+                          From now until June 30, 2023
+                        </p>
+                        <a href="#" class="btn-text" title="Read More">Learn More</a>
                       </div>
                     </article>
                   </div>
@@ -575,146 +571,43 @@
                 </div>
               </div>
 
-              <div class="button-next-slider-1 swiper-button-next"></div>
-              <div class="button-prev-slider-1 swiper-button-prev"></div>
-              <div class="pagination-slider-1 swiper-pagination"></div>
+              <div class="button-next-slider-6 swiper-button-next"></div>
+              <div class="button-prev-slider-6 swiper-button-prev"></div>
+              <div class="pagination-slider-6 swiper-pagination"></div>
             </div>
-          </section>
 
-          <section class="block-content ">
-            <div class="heading-top">
-              <h2 class="text-left">Witness world-class entertainment</h2>
-            </div>
-            <div class="featured-slider-container">
-              <div class="slider-layout slider-2">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <article>
-                      <div class="img-container">
-                        <div class="img-holder">
-                          <img loading="lazy" src="./assets/img/slider-img-1200x500.png" alt="">
-                        </div>
-                      </div>
-                      <div class="description">
-                        <div class="info">
-                          <h3>The Return of the Voice of Fralippo Lippi </h3>
-                          <p class="date">June 16, 2023 | 8:00 PM at The Theatre at Solaire</p>
-                        </div>
-                        <a href="#" class="btn pri-btn" title="Read More">Ticketing Info</a>
-                      </div>
-                    </article>
-                  </div>
-                  <div class="swiper-slide">
-                    <article>
-                      <div class="img-container">
-                        <div class="img-holder">
-                          <img loading="lazy" src="./assets/img/slider-img-1200x500.png" alt="">
-                        </div>
-                      </div>
-                      <div class="description">
-                        <div class="info">
-                          <h3>The Return of the Voice of Fralippo Lippi </h3>
-                          <p class="date">June 16, 2023 | 8:00 PM at The Theatre at Solaire</p>
-                        </div>
-                        <a href="#" class="btn pri-btn" title="Read More">Ticketing Info</a>
-                      </div>
-                    </article>
-                  </div>
-                  <div class="swiper-slide">
-                    <article>
-                      <div class="img-container">
-                        <div class="img-holder">
-                          <img loading="lazy" src="./assets/img/slider-img-1200x500.png" alt="">
-                        </div>
-                      </div>
-                      <div class="description">
-                        <div class="info">
-                          <h3>The Return of the Voice of Fralippo Lippi </h3>
-                          <p class="date">June 16, 2023 | 8:00 PM at The Theatre at Solaire</p>
-                        </div>
-                        <a href="#" class="btn pri-btn" title="Read More">Ticketing Info</a>
-                      </div>
-                    </article>
-                  </div>
-                  <div class="swiper-slide">
-                    <article>
-                      <div class="img-container">
-                        <div class="img-holder">
-                          <img loading="lazy" src="./assets/img/slider-img-1200x500.png" alt="">
-                        </div>
-                      </div>
-                      <div class="description">
-                        <div class="info">
-                          <h3>The Return of the Voice of Fralippo Lippi </h3>
-                          <p class="date">June 16, 2023 | 8:00 PM at The Theatre at Solaire</p>
-                        </div>
-                        <a href="#" class="btn pri-btn" title="Read More">Ticketing Info</a>
-                      </div>
-                    </article>
-                  </div>
-                  <div class="swiper-slide">
-                    <article>
-                      <div class="img-container">
-                        <div class="img-holder">
-                          <img loading="lazy" src="./assets/img/slider-img-1200x500.png" alt="">
-                        </div>
-                      </div>
-                      <div class="description">
-                        <div class="info">
-                          <h3>The Return of the Voice of Fralippo Lippi </h3>
-                          <p class="date">June 16, 2023 | 8:00 PM at The Theatre at Solaire</p>
-                        </div>
-                        <a href="#" class="btn pri-btn" title="Read More">Ticketing Info</a>
-                      </div>
-                    </article>
-                  </div>
-                  <div class="swiper-slide">
-                    <article>
-                      <div class="img-container">
-                        <div class="img-holder">
-                          <img loading="lazy" src="./assets/img/slider-img-1200x500.png" alt="">
-                        </div>
-                      </div>
-                      <div class="description">
-                        <div class="info">
-                          <h3>The Return of the Voice of Fralippo Lippi </h3>
-                          <p class="date">June 16, 2023 | 8:00 PM at The Theatre at Solaire</p>
-                        </div>
-                        <a href="#" class="btn pri-btn" title="Read More">Ticketing Info</a>
-                      </div>
-                    </article>
-                  </div>
-                </div>
-              </div>
-
-              <div class="button-next-slider-2 swiper-button-next"></div>
-              <div class="button-prev-slider-2 swiper-button-prev"></div>
-              <div class="pagination-slider-2 swiper-pagination"></div>
+            <div class="see-all-container">
+              <button class="btn pri-btn">
+                See all dining offers
+              </button>
             </div>
           </section>
 
           <section class="block-content slider-with-tab">
             <div class="heading-top">
-              <h2 class="text-left">Explore our Rooms & Suites</h2>
+              <h2 class="text-left">Restaurants</h2>
             </div>
             <div class="slider-tab">
-              <a href="#" id="sky_tower" class="active">Sky Tower</a>
-              <a href="#">Bay Tower</a>
+              <a href="#" class="active">All</a>
+              <a href="#">Signature</a>
+              <a href="#">Casual</a>
+              <a href="#">Bars</a>
+              <a href="#">VIP Exclusive</a>
             </div>
 
             <div class="slider-tab-content featured-slider-container">
-              <div class="slider-layout slider-3">
+              <div class="slider-layout see-all-restaurants">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <article class="article-layout-2">
-                      <div class="img-container">
+                      <a href="#" class="img-container">
                         <div class="img-holder">
                           <img loading="lazy" src="./assets/img/slider-img-380x260.png" alt="">
                         </div>
-                      </div>
+                      </a>
                       <div class="description">
-                        <h4> Sky Studio</h4>
-                        <p>65 square meters of lavish sophistication await the discerning guest that's checked into the Sky Studios. </p>
+                        <h4>All Restaurants</h4>
+                        <p>Enjoy an exquisite steak experience that's a cut above the rest.</p>
                         <a href="#" class="btn-text" title="Read More">Read More</a>
                       </div>
                     </article>
@@ -722,14 +615,14 @@
 
                   <div class="swiper-slide">
                     <article class="article-layout-2">
-                      <div class="img-container">
+                      <a href="#" class="img-container">
                         <div class="img-holder">
                           <img loading="lazy" src="./assets/img/slider-img-380x260.png" alt="">
                         </div>
-                      </div>
+                      </a>
                       <div class="description">
-                        <h4>Prestige Suite Sky</h4>
-                        <p>The Prestige Suites are furnished and decorated according to world-class standards. </p>
+                        <h4>All Restaurants</h4>
+                        <p>Enjoy an exquisite steak experience that's a cut above the rest.</p>
                         <a href="#" class="btn-text" title="Read More">Read More</a>
                       </div>
                     </article>
@@ -737,30 +630,14 @@
 
                   <div class="swiper-slide">
                     <article class="article-layout-2">
-                      <div class="img-container">
+                      <a href="#" class="img-container">
                         <div class="img-holder">
                           <img loading="lazy" src="./assets/img/slider-img-380x260.png" alt="">
                         </div>
-                      </div>
+                      </a>
                       <div class="description">
-                        <h4>Signature Suite</h4>
-                        <p>At 158 square meters, the Grand Suite boasts of a breathtaking view of the gorgeous Manila Bay.</p>
-                        <a href="#" class="btn-text" title="Read More">Read More</a>
-                      </div>
-                    </article>
-                  </div>
-                  <div class="swiper-slide">
-                    <article class="article-layout-2">
-                      <div class="img-container">
-                        <div class="img-holder">
-                          <img loading="lazy" src="./assets/img/slider-img-380x260.png" alt="">
-                        </div>
-                      </div>
-                      <div class="description">
-                        <h4> Sky Suite</h4>
-                        <p>
-                          At 188 square meters, the Grand Suite is a spacious sanctuary that features top-of-the-line amenities and lets you experience the heights of comfort and luxury.
-                        </p>
+                        <h4>All Restaurants</h4>
+                        <p>Enjoy an exquisite steak experience that's a cut above the rest.</p>
                         <a href="#" class="btn-text" title="Read More">Read More</a>
                       </div>
                     </article>
@@ -768,16 +645,14 @@
 
                   <div class="swiper-slide">
                     <article class="article-layout-2">
-                      <div class="img-container">
+                      <a href="#" class="img-container">
                         <div class="img-holder">
                           <img loading="lazy" src="./assets/img/slider-img-380x260.png" alt="">
                         </div>
-                      </div>
+                      </a>
                       <div class="description">
-                        <h4>Presidential Suite</h4>
-                        <p>
-                          The Presidential Suite offers a luxurious and exclusive accommodation. Experience only the highest levels of elegance, sophistication, comfort, honed from Solaire brand of service and Filipino hospitality.
-                        </p>
+                        <h4>All Restaurants</h4>
+                        <p>Enjoy an exquisite steak experience that's a cut above the rest.</p>
                         <a href="#" class="btn-text" title="Read More">Read More</a>
                       </div>
                     </article>
@@ -785,30 +660,29 @@
 
                   <div class="swiper-slide">
                     <article class="article-layout-2">
-                      <div class="img-container">
+                      <a href="#" class="img-container">
                         <div class="img-holder">
                           <img loading="lazy" src="./assets/img/slider-img-380x260.png" alt="">
                         </div>
-                      </div>
+                      </a>
                       <div class="description">
-                        <h4>Chairman’s Suite</h4>
-                        <p>At 158 square meters, the Grand Suite boasts of a breathtaking view of the gorgeous Manila Bay.</p>
+                        <h4>All Restaurants</h4>
+                        <p>Enjoy an exquisite steak experience that's a cut above the rest.</p>
                         <a href="#" class="btn-text" title="Read More">Read More</a>
                       </div>
                     </article>
                   </div>
+
                   <div class="swiper-slide">
                     <article class="article-layout-2">
-                      <div class="img-container">
+                      <a href="#" class="img-container">
                         <div class="img-holder">
                           <img loading="lazy" src="./assets/img/slider-img-380x260.png" alt="">
                         </div>
-                      </div>
+                      </a>
                       <div class="description">
-                        <h4> Sky Studio</h4>
-                        <p>
-                          The exclusive and lavish 395 square meters Chairman’s Suite has the finest panoramic view of the Manila Bay.&nbsp;This luxurious suite features classical elegance combined with contemporary décor and furnishings.
-                        </p>
+                        <h4>All Restaurants</h4>
+                        <p>Enjoy an exquisite steak experience that's a cut above the rest.</p>
                         <a href="#" class="btn-text" title="Read More">Read More</a>
                       </div>
                     </article>
@@ -816,25 +690,24 @@
 
                 </div>
               </div>
-              <div class="button-next-slider-3 swiper-button-next"></div>
-              <div class="button-prev-slider-3 swiper-button-prev"></div>
-              <div class="pagination-slider-3 swiper-pagination"></div>
+              <div class="button-next-slider-7 swiper-button-next"></div>
+              <div class="button-prev-slider-7 swiper-button-prev"></div>
+              <div class="pagination-slider-7 swiper-pagination"></div>
             </div>
 
             <div class="slider-tab-content featured-slider-container">
-              <div class="slider-layout slider-4">
+              <div class="slider-layout signature-resturants">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <article class="article-layout-2">
-                      <div class="img-container">
+                      <a href="#" class="img-container">
                         <div class="img-holder">
                           <img loading="lazy" src="./assets/img/slider-img-380x260.png" alt="">
                         </div>
-                      </div>
+                      </a>
                       <div class="description">
-                        <h4>Deluxe Room</h4>
-                        <p> Enjoy luxurious accommodations in the most spacious deluxe rooms in the country. Each 43 square meter room is designed for ultimate comfort with a stunning city view or a panoramic view of Manila Bay.
-                        </p>
+                        <h4>Signature</h4>
+                        <p>Enjoy an exquisite steak experience that's a cut above the rest.</p>
                         <a href="#" class="btn-text" title="Read More">Read More</a>
                       </div>
                     </article>
@@ -842,15 +715,14 @@
 
                   <div class="swiper-slide">
                     <article class="article-layout-2">
-                      <div class="img-container">
+                      <a href="#" class="img-container">
                         <div class="img-holder">
                           <img loading="lazy" src="./assets/img/slider-img-380x260.png" alt="">
                         </div>
-                      </div>
+                      </a>
                       <div class="description">
-                        <h4>Grande Deluxe</h4>
-                        <p>Experience the height of comfort and luxury with 52 square meters of tastefully designed interiors, luxurious amenities. The Grand Deluxe also has floor-to-ceiling windows providing a sweeping view of the city or a panoramic view of Manila Bay.
-                        </p>
+                        <h4>Signature</h4>
+                        <p>Enjoy an exquisite steak experience that's a cut above the rest.</p>
                         <a href="#" class="btn-text" title="Read More">Read More</a>
                       </div>
                     </article>
@@ -858,16 +730,14 @@
 
                   <div class="swiper-slide">
                     <article class="article-layout-2">
-                      <div class="img-container">
+                      <a href="#" class="img-container">
                         <div class="img-holder">
                           <img loading="lazy" src="./assets/img/slider-img-380x260.png" alt="">
                         </div>
-                      </div>
+                      </a>
                       <div class="description">
-                        <h4>Premiere Suite</h4>
-                        <p> Book at Bay Tower now and experience premium indulgence
-                          in this prestige section of Solaire Resort and Casino.
-                        </p>
+                        <h4>Signature</h4>
+                        <p>Enjoy an exquisite steak experience that's a cut above the rest.</p>
                         <a href="#" class="btn-text" title="Read More">Read More</a>
                       </div>
                     </article>
@@ -875,16 +745,14 @@
 
                   <div class="swiper-slide">
                     <article class="article-layout-2">
-                      <div class="img-container">
+                      <a href="#" class="img-container">
                         <div class="img-holder">
                           <img loading="lazy" src="./assets/img/slider-img-380x260.png" alt="">
                         </div>
-                      </div>
+                      </a>
                       <div class="description">
-                        <h4>Prestige Suite Bay</h4>
-                        <p>
-                          The Prestige Suites are furnished and decorated according to world-class standards. Each one offering 131 to 151 square meters of spacious elegance and comfort.
-                        </p>
+                        <h4>Signature</h4>
+                        <p>Enjoy an exquisite steak experience that's a cut above the rest.</p>
                         <a href="#" class="btn-text" title="Read More">Read More</a>
                       </div>
                     </article>
@@ -892,14 +760,14 @@
 
                   <div class="swiper-slide">
                     <article class="article-layout-2">
-                      <div class="img-container">
+                      <a href="#" class="img-container">
                         <div class="img-holder">
                           <img loading="lazy" src="./assets/img/slider-img-380x260.png" alt="">
                         </div>
-                      </div>
+                      </a>
                       <div class="description">
-                        <h4>Quaerat repudiandae aut, eaque eligendi nostrum voluptas illum</h4>
-                        <p> Aque eligendi nostrum voluptas illum, quo molestiae distinctio vero eveniet explicabo similique beatae iure provident. Assumenda.</p>
+                        <h4>Signature</h4>
+                        <p>Enjoy an exquisite steak experience that's a cut above the rest.</p>
                         <a href="#" class="btn-text" title="Read More">Read More</a>
                       </div>
                     </article>
@@ -907,44 +775,14 @@
 
                   <div class="swiper-slide">
                     <article class="article-layout-2">
-                      <div class="img-container">
+                      <a href="#" class="img-container">
                         <div class="img-holder">
                           <img loading="lazy" src="./assets/img/slider-img-380x260.png" alt="">
                         </div>
-                      </div>
+                      </a>
                       <div class="description">
-                        <h4>Quaerat repudiandae aut, eaque eligendi nostrum voluptas illum</h4>
-                        <p> Aque eligendi nostrum voluptas illum, quo molestiae distinctio vero eveniet explicabo similique beatae iure provident. Assumenda.</p>
-                        <a href="#" class="btn-text" title="Read More">Read More</a>
-                      </div>
-                    </article>
-                  </div>
-
-                  <div class="swiper-slide">
-                    <article class="article-layout-2">
-                      <div class="img-container">
-                        <div class="img-holder">
-                          <img loading="lazy" src="./assets/img/slider-img-380x260.png" alt="">
-                        </div>
-                      </div>
-                      <div class="description">
-                        <h4>Quaerat repudiandae aut, eaque eligendi nostrum voluptas illum</h4>
-                        <p> Aque eligendi nostrum voluptas illum, quo molestiae distinctio vero eveniet explicabo similique beatae iure provident. Assumenda.</p>
-                        <a href="#" class="btn-text" title="Read More">Read More</a>
-                      </div>
-                    </article>
-                  </div>
-
-                  <div class="swiper-slide">
-                    <article class="article-layout-2">
-                      <div class="img-container">
-                        <div class="img-holder">
-                          <img loading="lazy" src="./assets/img/slider-img-380x260.png" alt="">
-                        </div>
-                      </div>
-                      <div class="description">
-                        <h4>Quaerat repudiandae aut, eaque eligendi nostrum voluptas illum</h4>
-                        <p> Aque eligendi nostrum voluptas illum, quo molestiae distinctio vero eveniet explicabo similique beatae iure provident. Assumenda.</p>
+                        <h4>Signature</h4>
+                        <p>Enjoy an exquisite steak experience that's a cut above the rest.</p>
                         <a href="#" class="btn-text" title="Read More">Read More</a>
                       </div>
                     </article>
@@ -952,109 +790,362 @@
 
                 </div>
               </div>
-              <div class="button-next-slider-4 swiper-button-next"></div>
-              <div class="button-prev-slider4 swiper-button-prev"></div>
-              <div class="pagination-slider-4 swiper-pagination"></div>
+              <div class="button-next-slider-8 swiper-button-next"></div>
+              <div class="button-prev-slider-8 swiper-button-prev"></div>
+              <div class="pagination-slider-8 swiper-pagination"></div>
             </div>
-          </section>
 
-          <section class="block-content indulgent-dining">
-            <div class="content-wrapper">
-              <div class="card-container reversed">
-                <div class="card-img">
-                  <img loading="lazy" src="./assets/img/img-480x430.png" alt="">
-                </div>
-                <div class="card-details">
-                  <h2>Indulgent Dining</h2>
-                  <p>Volutpat interdum viverra et elit phasellus. Sed at vestibulum at orci blandit egestas. Aenean posuere ac euismod molestie. Urna elementum semper commodo nisi amet lobortis vivamus. Nec.</p>
-                  <p>Et tristique sed mauris lectus ultrices pellentesque sollicitudin.</p>
-                  <div class="card-links">
-                    <a href="#" class="card-link">Explore all restaurants <span class="icon-light-arrow-right"></span></a>
-                    <a href="#" class="card-link">Experience globally inspired dining <span class="icon-light-arrow-right"></span></a>
-                    <a href="#" class="card-link">See all dining offers <span class="icon-light-arrow-right"></span></a>
+            <div class="slider-tab-content featured-slider-container">
+              <div class="slider-layout casual-restaurants">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <article class="article-layout-2">
+                      <a href="#" class="img-container">
+                        <div class="img-holder">
+                          <img loading="lazy" src="./assets/img/slider-img-380x260.png" alt="">
+                        </div>
+                      </a>
+                      <div class="description">
+                        <h4>Casual</h4>
+                        <p>Enjoy an exquisite steak experience that's a cut above the rest.</p>
+                        <a href="#" class="btn-text" title="Read More">Read More</a>
+                      </div>
+                    </article>
                   </div>
+
+                  <div class="swiper-slide">
+                    <article class="article-layout-2">
+                      <a href="#" class="img-container">
+                        <div class="img-holder">
+                          <img loading="lazy" src="./assets/img/slider-img-380x260.png" alt="">
+                        </div>
+                      </a>
+                      <div class="description">
+                        <h4>Casual</h4>
+                        <p>Enjoy an exquisite steak experience that's a cut above the rest.</p>
+                        <a href="#" class="btn-text" title="Read More">Read More</a>
+                      </div>
+                    </article>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <article class="article-layout-2">
+                      <a href="#" class="img-container">
+                        <div class="img-holder">
+                          <img loading="lazy" src="./assets/img/slider-img-380x260.png" alt="">
+                        </div>
+                      </a>
+                      <div class="description">
+                        <h4>Casual</h4>
+                        <p>Enjoy an exquisite steak experience that's a cut above the rest.</p>
+                        <a href="#" class="btn-text" title="Read More">Read More</a>
+                      </div>
+                    </article>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <article class="article-layout-2">
+                      <a href="#" class="img-container">
+                        <div class="img-holder">
+                          <img loading="lazy" src="./assets/img/slider-img-380x260.png" alt="">
+                        </div>
+                      </a>
+                      <div class="description">
+                        <h4>Casual</h4>
+                        <p>Enjoy an exquisite steak experience that's a cut above the rest.</p>
+                        <a href="#" class="btn-text" title="Read More">Read More</a>
+                      </div>
+                    </article>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <article class="article-layout-2">
+                      <a href="#" class="img-container">
+                        <div class="img-holder">
+                          <img loading="lazy" src="./assets/img/slider-img-380x260.png" alt="">
+                        </div>
+                      </a>
+                      <div class="description">
+                        <h4>Casual</h4>
+                        <p>Enjoy an exquisite steak experience that's a cut above the rest.</p>
+                        <a href="#" class="btn-text" title="Read More">Read More</a>
+                      </div>
+                    </article>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <article class="article-layout-2">
+                      <a href="#" class="img-container">
+                        <div class="img-holder">
+                          <img loading="lazy" src="./assets/img/slider-img-380x260.png" alt="">
+                        </div>
+                      </a>
+                      <div class="description">
+                        <h4>Casual</h4>
+                        <p>Enjoy an exquisite steak experience that's a cut above the rest.</p>
+                        <a href="#" class="btn-text" title="Read More">Read More</a>
+                      </div>
+                    </article>
+                  </div>
+
                 </div>
               </div>
-
-
+              <div class="button-next-slider-9 swiper-button-next"></div>
+              <div class="button-prev-slider-9 swiper-button-prev"></div>
+              <div class="pagination-slider-9 swiper-pagination"></div>
             </div>
 
-            <!-- <div class="heading-top">
-                <div class="sub-title">
-                  <span>Our Projects</span>
-                </div>
-                <h2>Explore Recent Projects</h2>
-              </div> -->
-          </section>
+            <div class="slider-tab-content featured-slider-container">
+              <div class="slider-layout bar-restaurants">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <article class="article-layout-2">
+                      <a href="#" class="img-container">
+                        <div class="img-holder">
+                          <img loading="lazy" src="./assets/img/slider-img-380x260.png" alt="">
+                        </div>
+                      </a>
+                      <div class="description">
+                        <h4>Bar</h4>
+                        <p>Enjoy an exquisite steak experience that's a cut above the rest.</p>
+                        <a href="#" class="btn-text" title="Read More">Read More</a>
+                      </div>
+                    </article>
+                  </div>
 
+                  <div class="swiper-slide">
+                    <article class="article-layout-2">
+                      <a href="#" class="img-container">
+                        <div class="img-holder">
+                          <img loading="lazy" src="./assets/img/slider-img-380x260.png" alt="">
+                        </div>
+                      </a>
+                      <div class="description">
+                        <h4>Bar</h4>
+                        <p>Enjoy an exquisite steak experience that's a cut above the rest.</p>
+                        <a href="#" class="btn-text" title="Read More">Read More</a>
+                      </div>
+                    </article>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <article class="article-layout-2">
+                      <a href="#" class="img-container">
+                        <div class="img-holder">
+                          <img loading="lazy" src="./assets/img/slider-img-380x260.png" alt="">
+                        </div>
+                      </a>
+                      <div class="description">
+                        <h4>Bar</h4>
+                        <p>Enjoy an exquisite steak experience that's a cut above the rest.</p>
+                        <a href="#" class="btn-text" title="Read More">Read More</a>
+                      </div>
+                    </article>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <article class="article-layout-2">
+                      <a href="#" class="img-container">
+                        <div class="img-holder">
+                          <img loading="lazy" src="./assets/img/slider-img-380x260.png" alt="">
+                        </div>
+                      </a>
+                      <div class="description">
+                        <h4>Bar</h4>
+                        <p>Enjoy an exquisite steak experience that's a cut above the rest.</p>
+                        <a href="#" class="btn-text" title="Read More">Read More</a>
+                      </div>
+                    </article>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <article class="article-layout-2">
+                      <a href="#" class="img-container">
+                        <div class="img-holder">
+                          <img loading="lazy" src="./assets/img/slider-img-380x260.png" alt="">
+                        </div>
+                      </a>
+                      <div class="description">
+                        <h4>Bar</h4>
+                        <p>Enjoy an exquisite steak experience that's a cut above the rest.</p>
+                        <a href="#" class="btn-text" title="Read More">Read More</a>
+                      </div>
+                    </article>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <article class="article-layout-2">
+                      <a href="#" class="img-container">
+                        <div class="img-holder">
+                          <img loading="lazy" src="./assets/img/slider-img-380x260.png" alt="">
+                        </div>
+                      </a>
+                      <div class="description">
+                        <h4>Bar</h4>
+                        <p>Enjoy an exquisite steak experience that's a cut above the rest.</p>
+                        <a href="#" class="btn-text" title="Read More">Read More</a>
+                      </div>
+                    </article>
+                  </div>
+
+                </div>
+              </div>
+              <div class="button-next-slider-10 swiper-button-next"></div>
+              <div class="button-prev-slider-10 swiper-button-prev"></div>
+              <div class="pagination-slider-10 swiper-pagination"></div>
+            </div>
+
+            <div class="slider-tab-content featured-slider-container">
+              <div class="slider-layout vip-restaurants">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <article class="article-layout-2">
+                      <a href="#" class="img-container">
+                        <div class="img-holder">
+                          <img loading="lazy" src="./assets/img/slider-img-380x260.png" alt="">
+                        </div>
+                      </a>
+                      <div class="description">
+                        <h4>VIP Exclusive</h4>
+                        <p>Enjoy an exquisite steak experience that's a cut above the rest.</p>
+                        <a href="#" class="btn-text" title="Read More">Read More</a>
+                      </div>
+                    </article>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <article class="article-layout-2">
+                      <a href="#" class="img-container">
+                        <div class="img-holder">
+                          <img loading="lazy" src="./assets/img/slider-img-380x260.png" alt="">
+                        </div>
+                      </a>
+                      <div class="description">
+                        <h4>VIP Exclusive</h4>
+                        <p>Enjoy an exquisite steak experience that's a cut above the rest.</p>
+                        <a href="#" class="btn-text" title="Read More">Read More</a>
+                      </div>
+                    </article>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <article class="article-layout-2">
+                      <a href="#" class="img-container">
+                        <div class="img-holder">
+                          <img loading="lazy" src="./assets/img/slider-img-380x260.png" alt="">
+                        </div>
+                      </a>
+                      <div class="description">
+                        <h4>VIP Exclusive</h4>
+                        <p>Enjoy an exquisite steak experience that's a cut above the rest.</p>
+                        <a href="#" class="btn-text" title="Read More">Read More</a>
+                      </div>
+                    </article>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <article class="article-layout-2">
+                      <a href="#" class="img-container">
+                        <div class="img-holder">
+                          <img loading="lazy" src="./assets/img/slider-img-380x260.png" alt="">
+                        </div>
+                      </a>
+                      <div class="description">
+                        <h4>VIP Exclusive</h4>
+                        <p>Enjoy an exquisite steak experience that's a cut above the rest.</p>
+                        <a href="#" class="btn-text" title="Read More">Read More</a>
+                      </div>
+                    </article>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <article class="article-layout-2">
+                      <a href="#" class="img-container">
+                        <div class="img-holder">
+                          <img loading="lazy" src="./assets/img/slider-img-380x260.png" alt="">
+                        </div>
+                      </a>
+                      <div class="description">
+                        <h4>VIP Exclusive</h4>
+                        <p>Enjoy an exquisite steak experience that's a cut above the rest.</p>
+                        <a href="#" class="btn-text" title="Read More">Read More</a>
+                      </div>
+                    </article>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <article class="article-layout-2">
+                      <a href="#" class="img-container">
+                        <div class="img-holder">
+                          <img loading="lazy" src="./assets/img/slider-img-380x260.png" alt="">
+                        </div>
+                      </a>
+                      <div class="description">
+                        <h4>VIP Exclusive</h4>
+                        <p>Enjoy an exquisite steak experience that's a cut above the rest.</p>
+                        <a href="#" class="btn-text" title="Read More">Read More</a>
+                      </div>
+                    </article>
+                  </div>
+
+                </div>
+              </div>
+              <div class="button-next-slider-11 swiper-button-next"></div>
+              <div class="button-prev-slider-11 swiper-button-prev"></div>
+              <div class="pagination-slider-11 swiper-pagination"></div>
+            </div>
+
+            <div class="see-all-container">
+              <button class="btn pri-btn">
+                See all restaurants
+              </button>
+            </div>
+
+          </section>
 
           <section class="block-content">
-            <div class="feaured-banner">
-              <div class="img-container">
-                <img loading="lazy" src="./assets/img/img-1200x500.png" alt="">
-              </div>
-              <div class="text-content">
-                <h2>Discover more unforgettable journey at Solaire</h2>
-              </div>
+            <div class="heading-top">
+              <h2>Dining experience</h2>
+              <p class="sub-title">Est sed varius praesent vivamus mauris elit. Accumsan enim elementum iaculis viverra felis.</p>
             </div>
-          </section>
 
-          <section class="block-content ">
-            <div class="featured-slider-container ">
-              <div class="slider-layout slider-5">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <article class="article-layout-2">
-                      <div class="img-container">
-                        <div class="img-holder">
-                          <img loading="lazy" src="./assets/img/slider-img-380x260.png" alt="">
-                        </div>
+            <div class="featured-slider-container">
+              <div class="slider-layout dining-experience">
+                <!-- <div class="swiper-wrapper"> -->
+                <div class="swiper-slide">
+                  <article>
+                    <a href="#" class="img-container">
+                      <div class="img-holder">
+                        <img loading="lazy" src="./assets/img/slider-img-380x260.png" alt="">
                       </div>
-                      <div class="description">
-                        <h4>Fortune Favors The Game</h4>
-                        <p>Be spoiled for choice at our casino: from baccarat to an assortment of table games.
-                        </p>
-                        <a href="#" class="btn-text" title="Learn More">Learn More</a>
-                      </div>
-                    </article>
-                  </div>
+                    </a>
+                    <div class="description">
+                      <h4>Private Dining</h4>
+                      <p>Private Dining Areas that can accommodate up to 45 persons.</p>
+                      <p>Vitae amet suspendisse enim non tristique elit eget. Sit quam accumsan risus massa.</p>
 
-                  <div class="swiper-slide">
-                    <article class="article-layout-2">
-                      <div class="img-container">
-                        <div class="img-holder">
-                          <img loading="lazy" src="./assets/img/slider-img-380x260.png" alt="">
-                        </div>
-                      </div>
-                      <div class="description">
-                        <h4>Unwind with our amenities</h4>
-                        <p>Pamper yourself with our state-of-the-art luxury wellness spa.
-                        </p>
-                        <a href="#" class="btn-text" title="Learn More">Learn More</a>
-                      </div>
-                    </article>
-                  </div>
-
-                  <div class="swiper-slide">
-                    <article class="article-layout-2">
-                      <div class="img-container">
-                        <div class="img-holder">
-                          <img loading="lazy" src="./assets/img/slider-img-380x260.png" alt="">
-                        </div>
-                      </div>
-                      <div class="description">
-                        <h4>Celebrate In Spades</h4>
-                        <p>Celebrate the milestones of life’s greatest moments in luxury and style.
-                        </p>
-                        <a href="#" class="btn-text" title="Learn More">Learn More</a>
-                      </div>
-                    </article>
-                  </div>
+                      <a href="#" class="btn-text" title="View More Details">View More Details</a>
+                    </div>
+                  </article>
                 </div>
+
+                <div class="swiper-slide">
+                  <article>
+                    <a href="#" class="img-container">
+                      <div class="img-holder">
+                        <img loading="lazy" src="./assets/img/slider-img-380x260.png" alt="">
+                      </div>
+                    </a>
+                    <div class="description">
+                      <h4>Group Dining</h4>
+                      <p> Experience the best Filipino cuisine in Manila at Lucky Noodles all this month as we feature authentic flavors of the Philippines for you to enjoy.</p>
+
+                      <a href="#" class="btn-text" title="View More Details">View More Details</a>
+                    </div>
+                  </article>
+                </div>
+                <!-- </div> -->
               </div>
-              <!-- <div class="button-next-slider-5 swiper-button-next"></div>
-              <div class="button-prev-slider-5 swiper-button-prev"></div> -->
-              <!-- <div class="pagination-slider-5 swiper-pagination"></div> -->
             </div>
           </section>
 

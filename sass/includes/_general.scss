@@ -81,19 +81,23 @@ h5 {
 	color: $gray;
 }
 
-h1 {
+h1,
+.heading-1 {
 	font-size: 2.8rem;
 }
 
-h2 {
+h2,
+.heading-2 {
 	font-size: 2.2rem;
 }
 
-h3 {
+h3,
+.heading-3 {
 	font-size: 2rem
 }
 
-h4 {
+h4,
+.heading-4 {
 	font-size: 1.5rem
 }
 
@@ -125,9 +129,35 @@ footer {
 	color: $primary;
 }
 
+input {
+	font-family: $font-family-sec-500;
+}
+
+.booking-date {
+	color: #908f8f;
+	background-color: transparent;
+	border: 0;
+	width: 100%;
+	outline: 0;
+	cursor: pointer;
+}
+
+.flatpickr-calendar.animate.open {
+	margin-top: 22px;
+}
+
+.flatpickr-day.prevMonthDay.flatpickr-disabled {
+	color: #3939394d;
+}
+
+.flatpickr-day.flatpickr-disabled {
+	color: #3939396e;
+}
+
 @mixin shadow {
 	box-shadow: 0 .3rem 1rem alpha($c3-dgray, 0.3);
 }
+
 
 /*DISPLAY FLEX */
 @mixin flex($behavior, $wrap: nowrap, $gap: $gap) {
@@ -295,19 +325,23 @@ footer {
 
 @media only screen and (max-width: 768px) {
 
-	h1 {
+	h1,
+	.heading-1 {
 		font-size: 1.75rem;
 	}
 
-	h2 {
+	h2,
+	.heading-2 {
 		font-size: 1.625rem;
 	}
 
-	h3 {
+	h3,
+	.heading-3 {
 		font-size: 1.25rem;
 	}
 
-	h4 {
+	h4,
+	.heading-4 {
 		font-size: 1.2rem;
 	}
 

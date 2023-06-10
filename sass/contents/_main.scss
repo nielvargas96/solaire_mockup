@@ -58,6 +58,7 @@ main {
 			display: block;
 			margin: 0 auto;
 			max-width: 80%;
+			line-height: 24px;
 		}
 	}
 
@@ -226,12 +227,14 @@ main {
 
 
 .booking {
+	position: relative;
 	color: #fff;
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 1200px;
 	padding: 0 1.4rem;
 	transform: translateY(-4rem);
+	z-index: 1;
 
 	&.on-scroll {
 		transform: translateY(-4rem);
@@ -241,6 +244,7 @@ main {
 		box-shadow: 0px 1px 6px 2px rgba(0, 0, 0, .25);
 	}
 }
+
 
 .book-widget {
 	display: flex;
@@ -294,6 +298,10 @@ main {
 	font-size: 0.875rem;
 	padding: .575rem 0;
 	cursor: pointer;
+
+	&:hover {
+		color: $primary;
+	}
 }
 
 .action-booking {
@@ -337,13 +345,15 @@ main {
 		}
 	}
 
-	.icon-calendar-1 {
+	.icon-light-date {
 		color: $primary;
 	}
+
+	.text-changed {
+		color: $primary;
+		font-weight: 500;
+	}
 }
-
-
-
 
 // .booking-tabs {
 // 	display: flex;
@@ -425,22 +435,23 @@ main {
 	flex-direction: column;
 	align-items: flex-start;
 
-	&.reversed {
-		.card-details {
-			padding-left: 0;
-		}
 
-		.card-img {
-			padding-left: 0;
+}
 
-			img {
-				box-shadow: 0px 3px 9px 0px rgba(0, 0, 0, .2);
-			}
+.card-container-2 {
+	display: flex;
+	flex-direction: column;
 
+	.card-details {
+		padding-left: 0;
+	}
+
+	.card-img {
+		img {
+			box-shadow: 0px 3px 9px 0px rgba(0, 0, 0, .2);
 		}
 	}
 }
-
 
 .card-img {
 	img {
@@ -563,5 +574,25 @@ main {
 
 	h2 {
 		margin-bottom: 1.5rem;
+	}
+}
+
+.see-all-container {
+	margin-top: 2rem;
+}
+
+
+// DINING 
+
+.dining-experience {
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+	// gap: 3rem;
+
+	.swiper-slide {
+		width: 100%;
+		margin-bottom: 2rem;
 	}
 }

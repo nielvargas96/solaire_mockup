@@ -79,9 +79,9 @@ let slider3 = new Swiper(".slider-3", {
   // autoplay: {
   //   delay: 4000,
   // },
-  centeredSlides: true,
+  centeredSlides: false,
   slidesPerView: 1,
-  loop: true,
+  loop: false,
   spaceBetween: 20,
   speed: 900,
   breakpoints: {
@@ -112,7 +112,63 @@ let slider4 = new Swiper(".slider-4", {
   // autoplay: {
   //   delay: 4000,
   // },
-  centeredSlides: true,
+
+  centeredSlides: false,
+  slidesPerView: 1,
+  loop: false,
+  spaceBetween: 20,
+  speed: 900,
+  breakpoints: {
+    768: {
+      centeredSlides: false,
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+    1024: {
+      centeredSlides: false,
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+      spaceBetween: 30,
+    },
+  }
+});
+
+let slider5 = new Swiper(".slider-5", {
+  lazyLoading: true,
+  centeredSlides: false,
+  slidesPerView: 1,
+  loop: false,
+  spaceBetween: 20,
+  speed: 900,
+  breakpoints: {
+    768: {
+      centeredSlides: false,
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+    1024: {
+      centeredSlides: false,
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+      spaceBetween: 30,
+    },
+  }
+});
+
+let slider6 = new Swiper(".slider-dining-offers", {
+  navigation: {
+    nextEl: ".button-next-slider-6",
+    prevEl: ".button-prev-slider-6",
+  },
+  pagination: {
+    el: ".pagination-slider-6",
+    clickable: true,
+  },
+  lazyLoading: true,
+  // autoplay: {
+  //   delay: 4000,
+  // },
+  centeredSlides: false,
   slidesPerView: 1,
   loop: true,
   spaceBetween: 20,
@@ -132,22 +188,22 @@ let slider4 = new Swiper(".slider-4", {
   }
 });
 
-let slider5 = new Swiper(".slider-5", {
-  // navigation: {
-  //   nextEl: ".button-next-slider-5",
-  //   prevEl: ".button-prev-slider-5",
-  // },
-  // pagination: {
-  //   el: ".pagination-slider-5",
-  //   clickable: true,
-  // },
+let slider7 = new Swiper(".see-all-restaurants", {
+  navigation: {
+    nextEl: ".button-next-slider-7",
+    prevEl: ".button-prev-slider-7",
+  },
+  pagination: {
+    el: ".pagination-slider-7",
+    clickable: true,
+  },
   lazyLoading: true,
   // autoplay: {
   //   delay: 4000,
   // },
-  centeredSlides: true,
+  centeredSlides: false,
   slidesPerView: 1,
-  loop: true,
+  loop: false,
   spaceBetween: 20,
   speed: 900,
   breakpoints: {
@@ -164,6 +220,171 @@ let slider5 = new Swiper(".slider-5", {
     },
   }
 });
+
+let slider8 = new Swiper(".signature-resturants", {
+  navigation: {
+    nextEl: ".button-next-slider-8",
+    prevEl: ".button-prev-slider-8",
+  },
+  pagination: {
+    el: ".pagination-slider-8",
+    clickable: true,
+  },
+  lazyLoading: true,
+  // autoplay: {
+  //   delay: 4000,
+  // },
+  centeredSlides: false,
+  slidesPerView: 1,
+  loop: false,
+  spaceBetween: 20,
+  speed: 900,
+  breakpoints: {
+    768: {
+      centeredSlides: false,
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+    1024: {
+      centeredSlides: false,
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+      spaceBetween: 30,
+    },
+  }
+});
+
+let slider9 = new Swiper(".casual-restaurants", {
+  navigation: {
+    nextEl: ".button-next-slider-9",
+    prevEl: ".button-prev-slider-9",
+  },
+  pagination: {
+    el: ".pagination-slider-9",
+    clickable: true,
+  },
+  lazyLoading: true,
+  // autoplay: {
+  //   delay: 4000,
+  // },
+  centeredSlides: false,
+  slidesPerView: 1,
+  loop: false,
+  spaceBetween: 20,
+  speed: 900,
+  breakpoints: {
+    768: {
+      centeredSlides: false,
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+    1024: {
+      centeredSlides: false,
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+      spaceBetween: 30,
+    },
+  }
+});
+
+let slider10 = new Swiper(".bar-restaurants", {
+  navigation: {
+    nextEl: ".button-next-slider-10",
+    prevEl: ".button-prev-slider-10",
+  },
+  pagination: {
+    el: ".pagination-slider-10",
+    clickable: true,
+  },
+  lazyLoading: true,
+  // autoplay: {
+  //   delay: 4000,
+  // },
+  centeredSlides: false,
+  slidesPerView: 1,
+  loop: false,
+  spaceBetween: 20,
+  speed: 900,
+  breakpoints: {
+    768: {
+      centeredSlides: false,
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+    1024: {
+      centeredSlides: false,
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+      spaceBetween: 30,
+    },
+  }
+});
+
+let slider11 = new Swiper(".vip-restaurants", {
+  navigation: {
+    nextEl: ".button-next-slider-11",
+    prevEl: ".button-prev-slider-11",
+  },
+  pagination: {
+    el: ".pagination-slider-11",
+    clickable: true,
+  },
+  lazyLoading: true,
+  // autoplay: {
+  //   delay: 4000,
+  // },
+  centeredSlides: false,
+  slidesPerView: 1,
+  loop: false,
+  spaceBetween: 20,
+  speed: 900,
+  breakpoints: {
+    768: {
+      centeredSlides: false,
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+    1024: {
+      centeredSlides: false,
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+      spaceBetween: 30,
+    },
+  }
+});
+
+// let slider12 = new Swiper(".dining-experience", {
+//   // navigation: {
+//   //   nextEl: ".button-next-slider-11",
+//   //   prevEl: ".button-prev-slider-11",
+//   // },
+//   // pagination: {
+//   //   el: ".pagination-slider-11",
+//   //   clickable: true,
+//   // },
+//   lazyLoading: true,
+//   // autoplay: {
+//   //   delay: 4000,
+//   // },
+//   centeredSlides: false,
+//   slidesPerView: 1,
+//   loop: false,
+//   spaceBetween: 20,
+//   speed: 900,
+//   breakpoints: {
+//     768: {
+//       centeredSlides: false,
+//       slidesPerView: 2,
+//       spaceBetween: 30,
+//     },
+//     1024: {
+//       centeredSlides: false,
+//       slidesPerView: 2,
+//       slidesPerGroup: 3,
+//       spaceBetween: 30,
+//     },
+//   }
+// });
 
 $('.toggle-container').on('click', function () {
   $(this).toggleClass('active');
@@ -202,8 +423,6 @@ $('.search-container-mask').on('click', function () {
   $('.header-second').find('.search-btn').trigger("click");
   $('.header-second').find('.search-btn-top').trigger("click");
 });
-
-
 
 
 $(document).ready(function () {
@@ -251,7 +470,6 @@ $(document).ready(function () {
         }
       });
 
-
       $('.footer-checkbox').prop('checked', true);
       $('.footer-checkbox').prop('disabled', true);
 
@@ -261,32 +479,35 @@ $(document).ready(function () {
   $(window).on('resize', checkWindowWidth);
 });
 
-
-// $(".booking-content:first").addClass("active");
-// $(".booking-tabItem:first").addClass("active");
-
-// $(".booking-tabItem").on('click', function () {
-//   var tabClass = $(this).data("tab");
-//   $(".booking-content").removeClass("active");
-//   $(".booking-tabItem").removeClass("active");
-//   $("." + tabClass).addClass("active");
-//   $(this).addClass("active");
-//   return false;
-// });
-
 $(".book-select").on("click", function () {
-  $(this).parent('.book-item').find('.book-list, .icon-down-open-big').toggleClass('active');
-  let bookItem = $(this).closest('.book-item');
-  let bookWidget = bookItem.closest('.book-widget');
-  bookWidget.find('.book-item').not(bookItem).find('.book-list-item').removeClass('active');
+  $(".book-item").not($(this).closest(".book-item")).find(".book-list, .icon-down-open-big").removeClass("active");
+
+  $(this).parent(".book-item").find(".book-list, .icon-down-open-big").toggleClass("active");
+
+  let bookItem = $(this).closest(".book-item");
+  let bookWidget = bookItem.closest(".book-widget");
+  bookWidget.find(".book-item").not(bookItem).find(".book-list-item").removeClass("active");
 });
 
 $(".book-list-item").on("click", function () {
-  let selectedOption = $(this).attr('data-value');
-  let bookItem = $(this).closest('.book-item');
-  bookItem.find('input').val(selectedOption);
-  bookItem.find('.selected-item').text(selectedOption);
-  bookItem.find('.book-select, .icon-down-open-big, .book-list').removeClass('active');
+  let selectedOption = $(this).attr("data-value");
+  let bookItem = $(this).closest(".book-item");
+  let selectedText = selectedOption.trim();
+  let defaultText = bookItem.find(".selected-item").text().trim();
+
+  if (selectedText !== defaultText) {
+    bookItem.find(".selected-item").addClass("text-changed");
+  } else {
+    bookItem.find(".selected-item").removeClass("text-changed");
+  }
+
+  bookItem.find("input").val(selectedOption);
+  bookItem.find(".selected-item").text(selectedOption);
+  bookItem.find(".book-select, .icon-down-open-big, .book-list").removeClass("active");
+});
+
+$(".booking-date").on("change", function () {
+  $(this).addClass('text-changed');
 });
 
 $(".side-language").on("click", function () {
@@ -294,10 +515,10 @@ $(".side-language").on("click", function () {
 });
 
 $(".booking-date").flatpickr({
-  altInput: true,
-  altFormat: "F j, Y",
-  dateFormat: "Y-m-d",
-  allowInput: true,
+  // altInput: true,
+  // altFormat: "F j, Y",
+  dateFormat: "m-d-Y",
+  // allowInput: true,
   mode: "range",
   minDate: "today"
   // maxDate: new Date().fp_incr(15)
