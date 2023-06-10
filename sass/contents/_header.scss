@@ -252,7 +252,8 @@
   transition: transform .25s cubic-bezier(0.075, 0.82, 0.165, 1);
   background-color: $brown;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
+  min-height: 100vh;
 
   &.active {
     overflow-y: scroll;

@@ -1,7 +1,7 @@
 @media only screen and (max-width: $screen_768) {
   .main-slider {
     .content-text {
-      padding: 6% 2%;
+      padding: 6%;
       margin-bottom: 6rem;
 
       h1 {
@@ -23,6 +23,13 @@
     width: 8px;
     height: 8px;
   }
+}
+
+@media only screen and (max-width: $screen_1024) {
+  .card-container {
+    align-items: center;
+    text-align: center;
+  }
 
   .card-links {
     a {
@@ -35,17 +42,31 @@
   }
 }
 
-@media only screen and (max-width: $screen_1024) {
-  .card-container {
-    align-items: center;
-  }
-}
-
 
 @media only screen and (min-width: $screen_768) {
   .content-wrapper {
-    max-width: 70%;
+    max-width: 50%;
     text-align: center;
+  }
+
+  .book-select {
+    padding: 1.5rem 2.5rem;
+  }
+
+  .signup-wrapper {
+    .signup-heading {
+      width: 50%;
+    }
+
+    .img-container {
+      position: absolute;
+      right: 0;
+      top: 6rem;
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
 }
 
@@ -84,6 +105,8 @@
     }
   }
 
+
+
   .book-item {
     width: calc(100%/5);
 
@@ -105,6 +128,8 @@
     padding: 0;
     height: auto;
   }
+
+
 
   .hero-parallax {
     margin-top: 40px;
@@ -184,6 +209,13 @@
   .content-wrapper {
     max-width: 100%;
     text-align: left;
+  }
+
+
+  .signup-wrapper .img-container {
+    img {
+      width: 75%;
+    }
   }
 
 }

@@ -75,7 +75,7 @@ main {
 	}
 
 	.swiper-slide {
-		background: #fdf7f4;
+		background: #dddddd;
 	}
 }
 
@@ -230,7 +230,7 @@ main {
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 1200px;
-	padding: 0 1rem;
+	padding: 0 1.4rem;
 	transform: translateY(-4rem);
 
 	&.on-scroll {
@@ -271,7 +271,7 @@ main {
 }
 
 .book-select {
-	padding: 1.5rem 2.5rem;
+	padding: 1.5rem 1.4rem;
 	cursor: pointer;
 }
 
@@ -392,6 +392,7 @@ main {
 	text-align: center;
 
 	.sub-title {
+		margin-top: 1rem;
 		margin-bottom: 1rem;
 	}
 
@@ -532,5 +533,39 @@ main {
 		text-align: center;
 		align-items: center;
 		color: $white;
+	}
+}
+
+.signup-bottom {
+	padding-left: 1rem;
+	padding-right: 1rem;
+	background-color: #F2F2F2;
+}
+
+.signup-wrapper {
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+
+	.img-container {
+		margin-bottom: 2rem;
+
+		img {
+			display: block;
+			width: 100%;
+		}
+	}
+
+	.actions {
+		* {
+			margin-right: 1.5rem;
+		}
+	}
+}
+
+.signup-heading {
+	margin-bottom: 1.5rem;
+
+	h2 {
+		margin-bottom: 1.5rem;
 	}
 }

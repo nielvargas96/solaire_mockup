@@ -20,6 +20,11 @@
   }
 
   .slider-2 {
+    .info {
+      padding-right: 2rem;
+      width: 80%;
+    }
+
     .description {
       flex-direction: row;
     }
@@ -28,6 +33,8 @@
   .indulgent-dining {
     margin-bottom: 6rem;
   }
+
+
 }
 
 @media only screen and (min-width: 1440px) {
