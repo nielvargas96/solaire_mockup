@@ -33,12 +33,14 @@ footer {
   cursor: pointer;
   user-select: none;
   text-transform: uppercase;
+  font-family: $font_family_sec_700;
 
   p {
     color: #fff;
     text-transform: uppercase;
     font-family: $font_family_sec_700;
   }
+
 }
 
 .footer-link {
