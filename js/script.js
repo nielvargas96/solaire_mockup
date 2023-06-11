@@ -528,11 +528,11 @@ $(".booking-date").flatpickr({
 // Select script
 
 $('.select-header').click(function () {
-  $('.select-options').toggle();
+  $(this).siblings('.select-options').toggle();
 });
 
 $('.option').click(function () {
   var selectedOption = $(this).text();
-  $('.selected-option').text(selectedOption);
-  $('.select-options').hide();
+  $(this).parent('.select-options').siblings('.select-header').children('.selected-option').text(selectedOption);
+  $(this).parent('.select-options').hide();
 });

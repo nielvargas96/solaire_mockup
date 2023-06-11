@@ -140,6 +140,11 @@ input {
 	background-color: $white;
 }
 
+input[type=text] {
+	appearance: none;
+	-webkit-appearance: none;
+}
+
 select {
 	border: 1px solid #CBCBCB;
 	font-family: $font-family-sec-500;
