@@ -1,6 +1,14 @@
-.form-container{
-	
-	.form-group{
+.form-container {
 
-	}
+	.form-group {}
+}
+
+.form-group {
+	width: 100%;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 2rem;
 }

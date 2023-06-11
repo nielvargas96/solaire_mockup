@@ -600,24 +600,36 @@
     position: relative;
     display: flex;
     align-items: center;
+    flex-direction: column;
     color: $white;
     background-color: $brown_light;
     padding: .875rem;
     cursor: pointer;
 
     .icon-down-open-big {
+      font-size: 1rem;
       transform: rotate(0);
       transition: transform .25s cubic-bezier(0.43, 0.43, 0.77, 0.77);
     }
 
+    button {
+      &:first-child {
+        margin-top: 1rem;
+      }
+
+      text-align: left;
+    }
+
     &.active {
       .language-wrapper {
+        position: relative;
         display: flex;
         flex-direction: column;
         width: 100%;
         top: 100%;
         left: 0;
-        padding-top: 1rem;
+        padding-left: 1rem;
+        margin-top: 1rem;
         background-color: $brown_light;
         border-top: 1px solid rgba(238, 238, 238, 0.13);
       }
@@ -642,10 +654,18 @@
 
     span {
       font-size: 1rem;
+      margin-left: 4px;
     }
   }
 
   .icon-globe {
     color: $primary;
   }
+}
+
+.btn-side-lang {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
 }

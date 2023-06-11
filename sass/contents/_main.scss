@@ -170,53 +170,7 @@ main {
 // }
 
 
-// .custom-select {
-// 	position: relative;
-// 	width: 200px;
-// }
 
-// .select-header {
-// 	display: flex;
-// 	align-items: center;
-// 	justify-content: space-between;
-// 	padding: 10px;
-// 	border: 1px solid #ccc;
-// 	cursor: pointer;
-// }
-
-// .selected-option {
-// 	flex-grow: 1;
-// }
-
-// .arrow {
-// 	width: 10px;
-// 	height: 10px;
-// 	border-left: 1px solid #ffffff;
-// 	border-bottom: 1px solid #ffffff;
-// 	transform: rotate(315deg);
-// 	transition: transform 0.2s;
-// }
-
-// .select-options {
-// 	position: absolute;
-// 	top: 100%;
-// 	left: 0;
-// 	right: 0;
-// 	display: none;
-// 	background-color: #000000;
-// 	border: 1px solid #ccc;
-// 	z-index: 999;
-// }
-
-// .option {
-// 	padding: 10px;
-// 	cursor: pointer;
-// }
-
-// .option:hover {
-// 	background-color: #f0f0f0;
-// 	color: #000000;
-// }
 
 .back-to-top {
 	position: fixed;
@@ -283,14 +237,21 @@ main {
 	top: 100%;
 	left: 0;
 	background: $brown_light;
-	padding-top: 1rem;
 	padding-left: 2.5rem;
 	padding-right: 2.5rem;
-	padding-bottom: 1rem;
-	display: none;
+	transform: translateY(-.5rem);
+	transition: transform .2s cubic-bezier(0.25, 0.1, 0.48, 0.52) 0s;
+	// display: none;
+	visibility: hidden;
+	height: 0;
 
 	&.active {
-		display: block;
+		padding-bottom: 1rem;
+		padding-top: 1rem;
+		height: auto;
+		visibility: visible;
+		transform: translateY(0);
+		transition: transform .2s cubic-bezier(0.25, 0.1, 0.48, 0.52) 0s;
 	}
 }
 
@@ -353,7 +314,16 @@ main {
 		color: $primary;
 		font-weight: 500;
 	}
+
+	.selected-item {
+		overflow: hidden;
+		white-space: nowrap;
+		margin-right: 8px;
+	}
+
+
 }
+
 
 // .booking-tabs {
 // 	display: flex;
@@ -421,6 +391,7 @@ main {
 	padding-left: 1rem;
 	padding-right: 1rem;
 	padding-bottom: 6rem;
+	padding-top: 3rem;
 }
 
 .content-wrapper {
@@ -599,5 +570,49 @@ main {
 	.swiper-slide {
 		width: 100%;
 		margin-bottom: 2rem;
+	}
+}
+
+// Search
+
+.search-all {
+	.form-search {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+.search-container-block {
+	position: relative;
+	max-width: 1200px;
+	margin: 0 auto;
+	background-color: $white;
+	padding: 4rem 1rem 0;
+}
+
+.search-wrapper {
+	position: relative;
+	display: flex;
+	width: 100%;
+
+	.input-search {
+		width: 100%;
+		padding: 0 3rem 0 1.5rem;
+	}
+
+	.btn-search {
+		position: absolute;
+		right: 0;
+		padding: 1rem;
+		max-height: 48px;
+
+		span {
+			&::before {
+				font-weight: 700;
+				font-size: 1.125rem;
+			}
+		}
 	}
 }

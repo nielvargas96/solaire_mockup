@@ -155,7 +155,7 @@ let slider5 = new Swiper(".slider-5", {
   }
 });
 
-let slider6 = new Swiper(".slider-dining-offers", {
+let slider6 = new Swiper(".slider-offers", {
   navigation: {
     nextEl: ".button-next-slider-6",
     prevEl: ".button-prev-slider-6",
@@ -522,4 +522,17 @@ $(".booking-date").flatpickr({
   mode: "range",
   minDate: "today"
   // maxDate: new Date().fp_incr(15)
+});
+
+
+// Select script
+
+$('.select-header').click(function () {
+  $('.select-options').toggle();
+});
+
+$('.option').click(function () {
+  var selectedOption = $(this).text();
+  $('.selected-option').text(selectedOption);
+  $('.select-options').hide();
 });

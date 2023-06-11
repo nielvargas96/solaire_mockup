@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solaire</title>
+  <link rel="stylesheet" href="./assets/fonts/avenir/style.css">
+  <link rel="stylesheet" href="./assets/fonts/montserrat/style.css">
+  <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./assets/css/normalize.css">
+  <link rel="stylesheet" href="./assets/fonts/fontello/fontello.css">
+  <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./assets/css/flatpickr.min.css">
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet"> -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+  <div class="app">
+    <header>
+      <div class="header-container">
+        <div class="header-first">
+          <div class="wrapper">
+            <div class="header-first-left">
+              <a href="#">Solaire Enticity</a>
+              <a href="#">Solaire North</a>
+            </div>
+            <div class="header-first-right">
+              <a href="#" class="search-btn-top">
+                <span class="icon-light-search"></span>
+              </a>
+              <a href="#" class="btn-location"><i class="icon-location-outline"></i> Transportation Guide</a>
+
+              <div class="language-container">
+                <i class="icon-globe"></i>
+                <span class="btn-lang"> Language<i class="icon-down-open-big"></i></span>
+                <div class="language-wrapper">
+                  <button>English</button>
+                  <button>Filipino</button>
+                  <button>한국어</button>
+                  <button>ภาษาไทย</button>
+                  <button>简体中文</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <nav class="header-second">
+          <div class="toggle-container">
+            <div class="toggle">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <!-- <span>MENU</span> -->
+          </div>
+
+          <div class="logo-container">
+            <a class="logo" href="#">
+              <img class="logo-img" src="./assets/img/solaire_logo.svg" alt="Solaire Logo">
+            </a>
+          </div>
+          <!-- <a class="logo-inner" href="#">
+            <img class="logo-img" src="./assets/img/solaire_logo.png" alt="Solaire Logo">
+          </a> -->
+          <div class="header-menu">
+            <div class="menu-wrapper">
+              <div class="menu-item">
+                <div class="item">
+                  <a class="menu-link" href="#">
+                    <i class="demo-icon iconlocation-outline"></i>Offers</a>
+                  <div class="sub-menu">
+                    <div class="sub-menu-item"><a class="sub-menu-link" href="#">Link 1</a></div>
+                    <div class="sub-menu-item"><a class="sub-menu-link" href="#">Link 2</a></div>
+                    <div class="sub-menu-item"><a class="sub-menu-link" href="#">Link 3</a></div>
+                    <div class="sub-menu-item"><a class="sub-menu-link" href="#">Link 4</a></div>
+                    <div class="sub-menu-item"><a class="sub-menu-link" href="#">Link 5</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="item">
+                  <a class="menu-link" href="#">
+                    <i class="demo-icon iconlocation-outline"></i>Rooms & Suites</a>
+                  <div class="sub-menu">
+                    <div class="sub-menu-item"><a class="sub-menu-link" href="#">Link 1</a></div>
+                    <div class="sub-menu-item"><a class="sub-menu-link" href="#">Link 2</a></div>
+                    <div class="sub-menu-item"><a class="sub-menu-link" href="#">Link 3</a></div>
+                    <div class="sub-menu-item"><a class="sub-menu-link" href="#">Link 4</a></div>
+                    <div class="sub-menu-item"><a class="sub-menu-link" href="#">Link 5</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="item">
+                  <a class="menu-link" href="#">Dining</a>
+                </div>
+                <div class="sub-menu">
+                  <div class="sub-menu-item"><a class="sub-menu-link" href="#">Link 1</a></div>
+                  <div class="sub-menu-item"><a class="sub-menu-link" href="#">Link 2</a></div>
+                  <div class="sub-menu-item"><a class="sub-menu-link" href="#">Link 3</a></div>
+                  <div class="sub-menu-item"><a class="sub-menu-link" href="#">Link 4</a></div>
+                  <div class="sub-menu-item"><a class="sub-menu-link" href="#">Link 5</a></div>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="item">
+                  <a class="menu-link" href="#">Shopping</a>
+                </div>
+                <div class="sub-menu">
+                  <div class="sub-menu-item"><a class="sub-menu-link" href="#">Link 1</a></div>
+                  <div class="sub-menu-item"><a class="sub-menu-link" href="#">Link 2</a></div>
+                  <div class="sub-menu-item"><a class="sub-menu-link" href="#">Link 3</a></div>
+                  <div class="sub-menu-item"><a class="sub-menu-link" href="#">Link 4</a></div>
+                  <div class="sub-menu-item"><a class="sub-menu-link" href="#">Link 5</a></div>
+                </div>
+              </div>
+            </div>
+            <a class="logo-inner" href="#">
+              <img class="logo-img" src="./assets/img/solaire_logo.png" alt="Solaire Logo">
+            </a>
+            <div class="menu-wrapper">
+              <div class="menu-item">
+                <div class="item">
+                  <a class="menu-link" href="#">Meetings & Events</a>
+                </div>
+                <div class="sub-menu">
+                  <div class="sub-menu-item"><a class="sub-menu-link" href="#">Link 1</a></div>
+                  <div class="sub-menu-item"><a class="sub-menu-link" href="#">Link 2</a></div>
+                  <div class="sub-menu-item"><a class="sub-menu-link" href="#">Link 3</a></div>
+                  <div class="sub-menu-item"><a class="sub-menu-link" href="#">Link 4</a></div>
+                  <div class="sub-menu-item"><a class="sub-menu-link" href="#">Link 5</a></div>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="item">
+                  <a class="menu-link" href="#">Experience</a>
+                </div>
+                <div class="sub-menu">
+                  <div class="sub-menu-item"><a class="sub-menu-link" href="#">Link 1</a></div>
+                  <div class="sub-menu-item"><a class="sub-menu-link" href="#">Link 2</a></div>
+                  <div class="sub-menu-item"><a class="sub-menu-link" href="#">Link 3</a></div>
+                  <div class="sub-menu-item"><a class="sub-menu-link" href="#">Link 4</a></div>
+                  <div class="sub-menu-item"><a class="sub-menu-link" href="#">Link 5</a></div>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="item">
+                  <a class="menu-link" href="#">Casino</a>
+                </div>
+                <div class="sub-menu">
+                  <div class="sub-menu-item"><a class="sub-menu-link" href="#">Link 1</a></div>
+                  <div class="sub-menu-item"><a class="sub-menu-link" href="#">Link 2</a></div>
+                  <div class="sub-menu-item"><a class="sub-menu-link" href="#">Link 3</a></div>
+                  <div class="sub-menu-item"><a class="sub-menu-link" href="#">Link 4</a></div>
+                  <div class="sub-menu-item"><a class="sub-menu-link" href="#">Link 5</a></div>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="item">
+                  <a class="menu-link" href="#">Solaire Rewards</a>
+                </div>
+                <div class="sub-menu">
+                  <div class="sub-menu-item"><a class="sub-menu-link" href="#">Link 1</a></div>
+                  <div class="sub-menu-item"><a class="sub-menu-link" href="#">Link 2</a></div>
+                  <div class="sub-menu-item"><a class="sub-menu-link" href="#">Link 3</a></div>
+                  <div class="sub-menu-item"><a class="sub-menu-link" href="#">Link 4</a></div>
+                  <div class="sub-menu-item"><a class="sub-menu-link" href="#">Link 5</a></div>
+                </div>
+              </div>
+
+              <!-- <div class="menu-item">
+                <button class="btn pri-btn book-now">
+                  Book now
+                </button>
+              </div> -->
+            </div>
+          </div>
+
+          <button class="btn pri-btn book-now">
+            Book now
+          </button>
+
+          <button class="search-btn">
+            <span class="icon-light-search"></span>
+          </button>
+
+          <div class="search-container">
+            <div class="search">
+              <form action="">
+                <div class="search-content">
+                  <input type="text" class="search-input" placeholder="Search...">
+                  <div class="search-related">
+                    <a href="#">Find a Room</a>
+                    <a href="#">Find a Restaurant</a>
+                    <a href="#">Find a Shop</a>
+                    <a href="#">SPA & Relaxation</a>
+                    <a href="#">Galaxy Cinema</a>
+                    <a href="#">Tickets and Shows</a>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="search-container-mask"></div>
+
+          <div class="side-nav">
+            <div class="side-menu-wrapper">
+              <div class="language-side-nav">
+                <div class="side-language">
+                  <div class="btn-side-lang">
+                    <i class="icon-globe"></i>
+                    <span class="btn-lang"> <span>Language</span><i class="icon-down-open-big"></i></span>
+                  </div>
+                  <div class="language-wrapper">
+                    <button>English</button>
+                    <button>Filipino</button>
+                    <button>한국어</button>
+                    <button>ภาษาไทย</button>
+                    <button>简体中文</button>
+                  </div>
+                </div>
+              </div>
+              <div class="side-menu-item">
+                <a class="menu-link" href="#">Offers<span class="icon-down-open-big"></span></a>
+                <div class="side-sub-menu">
+                  <a class="sub-menu-link" href="#">Overview</a>
+                  <a class="sub-menu-link" href="#">Rooms & Suites Offers</a>
+                  <a class="sub-menu-link" href="#">Dining Offers</a>
+                  <a class="sub-menu-link" href="#">Shopping Offers</a>
+                  <a class="sub-menu-link" href="#">Entertainment Offers</a>
+                  <a class="sub-menu-link" href="#">MICE Offers</a>
+                  <a class="sub-menu-link" href="#">Casino Offers</a>
+                  <a class="sub-menu-link border-top" href="#">Solaire Rewards Offers</a>
+                </div>
+              </div>
+
+              <div class="side-menu-item">
+                <a class="menu-link" href="#">Rooms & Suites <span class="icon-down-open-big"></span></a>
+                <div class="side-sub-menu">
+                  <a class="sub-menu-link" href="#">Sub 2</a>
+                  <a class="sub-menu-link" href="#">Sub 3</a>
+                  <a class="sub-menu-link" href="#">Sub 4</a>
+                  <a class="sub-menu-link" href="#">Sub 5</a>
+                </div>
+              </div>
+              <div class="side-menu-item">
+                <a class="menu-link" href="#">Dining <span class="icon-down-open-big"></span></a>
+                <div class="side-sub-menu">
+                  <a class="sub-menu-link" href="#">Sub 2</a>
+                  <a class="sub-menu-link" href="#">Sub 3</a>
+                  <a class="sub-menu-link" href="#">Sub 4</a>
+                  <a class="sub-menu-link" href="#">Sub 5</a>
+                </div>
+              </div>
+              <div class="side-menu-item">
+                <a class="menu-link" href="#">Shopping <span class="icon-down-open-big"></span></a>
+                <div class="side-sub-menu">
+                  <a class="sub-menu-link" href="#">Sub 2</a>
+                  <a class="sub-menu-link" href="#">Sub 3</a>
+                  <a class="sub-menu-link" href="#">Sub 4</a>
+                  <a class="sub-menu-link" href="#">Sub 5</a>
+                </div>
+              </div>
+              <div class="side-menu-item">
+                <a class="menu-link" href="#">Meetings & Events <span class="icon-down-open-big"></span></a>
+                <div class="side-sub-menu">
+                  <a class="sub-menu-link" href="#">Sub 2</a>
+                  <a class="sub-menu-link" href="#">Sub 3</a>
+                  <a class="sub-menu-link" href="#">Sub 4</a>
+                  <a class="sub-menu-link" href="#">Sub 5</a>
+                </div>
+              </div>
+              <div class="side-menu-item">
+                <a class="menu-link" href="#">Experience <span class="icon-down-open-big"></span></a>
+                <div class="side-sub-menu">
+                  <a class="sub-menu-link" href="#">Sub 2</a>
+                  <a class="sub-menu-link" href="#">Sub 3</a>
+                  <a class="sub-menu-link" href="#">Sub 4</a>
+                  <a class="sub-menu-link" href="#">Sub 5</a>
+                </div>
+              </div>
+              <div class="side-menu-item">
+                <a class="menu-link" href="#">Casino <span class="icon-down-open-big"></span></a>
+                <div class="side-sub-menu">
+                  <a class="sub-menu-link" href="#">Sub 2</a>
+                  <a class="sub-menu-link" href="#">Sub 3</a>
+                  <a class="sub-menu-link" href="#">Sub 4</a>
+                  <a class="sub-menu-link" href="#">Sub 5</a>
+                </div>
+              </div>
+              <div class="side-menu-item">
+                <a class="menu-link" href="#">Solaire Rewards<span class="icon-down-open-big"></span></a>
+                <div class="side-sub-menu">
+                  <a class="sub-menu-link" href="#">Sub 2</a>
+                  <a class="sub-menu-link" href="#">Sub 3</a>
+                  <a class="sub-menu-link" href="#">Sub 4</a>
+                  <a class="sub-menu-link" href="#">Sub 5</a>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="side-menu-bottom">
+              <div>
+                <a href="#">Login</a>
+              </div>
+              <div class="language">
+                <a href="#">Language</a>
+                <div>
+                  <a href="#">English</a>
+                  <a href="#">English</a>
+                  <a href="#">English</a>
+                </div>
+              </div>
+            </div> -->
+          </div>
+          <div class="side-menu-mask"></div>
+        </nav>
+    </header>
+
+    <main>
+      <section class="hero-parallax">
+        <div class="main-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide" lazy="true">
+              <div class="main-banner-content">
+                <div class="img-container">
+                  <img loading="lazy" src="./assets/img/default_img.png" alt="banner">
+                </div>
+                <div class="content-text">
+                  <h1>All Restaurants</h1>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptatem similique repellendus. Dignissimos ad itaque in cumque est, totam vitae, tempora laborum hic quae facilis, unde nesciunt ipsam ut ex.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="main-pagination"></div>
+          <div class="main-swiper-button-next swiper-button-next"></div>
+          <div class="main-swiper-button-prev swiper-button-prev"></div> -->
+        </div>
+      </section>
+
+      <section class="overlay-parallax">
+        <div class="main">
+          <!-- <section class="booking">
+            <div class="search-container-block">
+              <div class="search-all">
+                <form action="#" class="form-search">
+                  <div class="form-group">
+                    <div class="search-wrapper">
+                      <input type="text" class="input-search" placeholder="Search">
+                      <button class="btn-search">
+                        <span class="icon-light-search"></span>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <div class="custom-select">
+                      <div class="select-header">
+                        <div class="selected-option">All Hotels</div>
+                        <span class="icon-down-open-big"></span>
+                      </div>
+                      <div class="select-options">
+                        <div class="option">Hotel 1</div>
+                        <div class="option">Hotel 2</div>
+                        <div class="option">Hotel 3</div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+          </section> -->
+          <div class="search-container-block">
+            <div class="search-all">
+              <form action="#" class="form-search">
+                <div class="form-group">
+                  <div class="search-wrapper">
+                    <input type="text" class="input-search" placeholder="Search">
+                    <button class="btn-search">
+                      <span class="icon-light-search"></span>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <div class="custom-select">
+                    <div class="select-header">
+                      <div class="selected-option">All Hotels</div>
+                      <span class="icon-down-open-big"></span>
+                    </div>
+                    <div class="select-options">
+                      <div class="option">Hotel 1</div>
+                      <div class="option">Hotel 2</div>
+                      <div class="option">Hotel 3</div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <section class="block-content">
+            <div class="heading-top">
+              <h2>Dining experience</h2>
+              <p class="sub-title">Est sed varius praesent vivamus mauris elit. Accumsan enim elementum iaculis viverra felis.</p>
+            </div>
+
+            <div class="featured-slider-container">
+              <div class="slider-layout grid-container">
+                <!-- <div class="swiper-wrapper"> -->
+                <div class="swiper-slide">
+                  <article>
+                    <a href="#" class="img-container">
+                      <div class="img-holder">
+                        <img loading="lazy" src="./assets/img/slider-img-380x260.png" alt="">
+                      </div>
+                    </a>
+                    <div class="description">
+                      <h4>Acacia</h4>
+                      <p>Whether it be a prime-aged ribeye steak or BBQ pork ribs, find the savory satisfaction you crave at the Acacia restaurant.</p>
+
+                      <a href="#" class="btn-text" title="View More Details">View More Details</a>
+                    </div>
+                  </article>
+                </div>
+
+                <div class="swiper-slide">
+                  <article>
+                    <a href="#" class="img-container">
+                      <div class="img-holder">
+                        <img loading="lazy" src="./assets/img/slider-img-380x260.png" alt="">
+                      </div>
+                    </a>
+                    <div class="description">
+                      <h4>House of Zhou</h4>
+                      <p>House of Zhou brings you today’s well-loved imperial food from China’s rich spectrum of dishes.</p>
+
+                      <a href="#" class="btn-text" title="View More Details">View More Details</a>
+                    </div>
+                  </article>
+                </div>
+
+                <div class="swiper-slide">
+                  <article>
+                    <a href="#" class="img-container">
+                      <div class="img-holder">
+                        <img loading="lazy" src="./assets/img/slider-img-380x260.png" alt="">
+                      </div>
+                    </a>
+                    <div class="description">
+                      <h4>Finestra Italian Steakhouse</h4>
+                      <p>Enjoy an exquisite steak experience that's a cut above the rest..</p>
+
+                      <a href="#" class="btn-text" title="View More Details">View More Details</a>
+                    </div>
+                  </article>
+                </div>
+
+                <div class="swiper-slide">
+                  <article>
+                    <a href="#" class="img-container">
+                      <div class="img-holder">
+                        <img loading="lazy" src="./assets/img/slider-img-380x260.png" alt="">
+                      </div>
+                    </a>
+                    <div class="description">
+                      <h4>Fresh</h4>
+                      <p>Your ultimate buffet experience, redefined.</p>
+
+                      <a href="#" class="btn-text" title="View More Details">View More Details</a>
+                    </div>
+                  </article>
+                </div>
+                <!-- </div> -->
+              </div>
+            </div>
+
+            <div class="see-all-container">
+              <button class="btn pri-btn">
+                Load more
+              </button>
+            </div>
+          </section>
+
+          <section class="block-content">
+            <div class="heading-top">
+              <h2>All Dining Offers</h2>
+              <p class="sub-title">Est sed varius praesent vivamus mauris elit. Accumsan enim elementum iaculis viverra felis.</p>
+            </div>
+
+            <div class="featured-slider-container">
+              <div class="slider-layout slider-offers">
+                <div class="swiper-wrapper">
+
+                  <div class="swiper-slide">
+                    <article>
+                      <a href="#" class="img-container">
+                        <div class="img-holder">
+                          <img loading="lazy" src="./assets/img/slider-img-380x260.png" alt="">
+                        </div>
+                      </a>
+                      <div class="description text-left">
+                        <h4>Lucky Noodles: Tastes Like Home</h4>
+                        <p> Experience the best Filipino cuisine in Manila at Lucky Noodles all this month as we feature authentic flavors of the Philippines for you to enjoy.</p>
+                        <p class="date">
+                          <span class="icon-light-date"></span>
+                          From now until June 30, 2023
+                        </p>
+                        <a href="#" class="btn-text" title="Read More">Learn More</a>
+                      </div>
+                    </article>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <article>
+                      <a href="#" class="img-container">
+                        <div class="img-holder">
+                          <img loading="lazy" src="./assets/img/slider-img-380x260.png" alt="">
+                        </div>
+                      </a>
+                      <div class="description text-left">
+                        <h4>Lucky Noodles: Tastes Like Home</h4>
+                        <p> Experience the best Filipino cuisine in Manila at Lucky Noodles all this month as we feature authentic flavors of the Philippines for you to enjoy.</p>
+                        <p class="date">
+                          <span class="icon-light-date"></span>
+                          From now until June 30, 2023
+                        </p>
+                        <a href="#" class="btn-text" title="Read More">Learn More</a>
+                      </div>
+                    </article>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <article>
+                      <a href="#" class="img-container">
+                        <div class="img-holder">
+                          <img loading="lazy" src="./assets/img/slider-img-380x260.png" alt="">
+                        </div>
+                      </a>
+                      <div class="description text-left">
+                        <h4>Lucky Noodles: Tastes Like Home</h4>
+                        <p> Experience the best Filipino cuisine in Manila at Lucky Noodles all this month as we feature authentic flavors of the Philippines for you to enjoy.</p>
+                        <p class="date">
+                          <span class="icon-light-date"></span>
+                          From now until June 30, 2023
+                        </p>
+                        <a href="#" class="btn-text" title="Read More">Learn More</a>
+                      </div>
+                    </article>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <article>
+                      <a href="#" class="img-container">
+                        <div class="img-holder">
+                          <img loading="lazy" src="./assets/img/slider-img-380x260.png" alt="">
+                        </div>
+                      </a>
+                      <div class="description text-left">
+                        <h4>Lucky Noodles: Tastes Like Home</h4>
+                        <p> Experience the best Filipino cuisine in Manila at Lucky Noodles all this month as we feature authentic flavors of the Philippines for you to enjoy.</p>
+                        <p class="date">
+                          <span class="icon-light-date"></span>
+                          From now until June 30, 2023
+                        </p>
+                        <a href="#" class="btn-text" title="Read More">Learn More</a>
+                      </div>
+                    </article>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <article>
+                      <a href="#" class="img-container">
+                        <div class="img-holder">
+                          <img loading="lazy" src="./assets/img/slider-img-380x260.png" alt="">
+                        </div>
+                      </a>
+                      <div class="description text-left">
+                        <h4>Lucky Noodles: Tastes Like Home</h4>
+                        <p> Experience the best Filipino cuisine in Manila at Lucky Noodles all this month as we feature authentic flavors of the Philippines for you to enjoy.</p>
+                        <p class="date">
+                          <span class="icon-light-date"></span>
+                          From now until June 30, 2023
+                        </p>
+                        <a href="#" class="btn-text" title="Read More">Learn More</a>
+                      </div>
+                    </article>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <article>
+                      <a href="#" class="img-container">
+                        <div class="img-holder">
+                          <img loading="lazy" src="./assets/img/slider-img-380x260.png" alt="">
+                        </div>
+                      </a>
+                      <div class="description text-left">
+                        <h4>Lucky Noodles: Tastes Like Home</h4>
+                        <p> Experience the best Filipino cuisine in Manila at Lucky Noodles all this month as we feature authentic flavors of the Philippines for you to enjoy.</p>
+                        <p class="date">
+                          <span class="icon-light-date"></span>
+                          From now until June 30, 2023
+                        </p>
+                        <a href="#" class="btn-text" title="Read More">Learn More</a>
+                      </div>
+                    </article>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="button-next-slider-6 swiper-button-next"></div>
+              <div class="button-prev-slider-6 swiper-button-prev"></div>
+              <div class="pagination-slider-6 swiper-pagination"></div>
+            </div>
+
+            <div class="see-all-container">
+              <button class="btn pri-btn">
+                See all dining offers
+              </button>
+            </div>
+          </section>
+
+          <section class="signup-bottom">
+            <div class="block-content signup-wrapper">
+              <div class="signup-heading">
+                <h2>Enjoy every visit by becoming a member of Solaire Rewards.</h2>
+                <p>Et tristique sed mauris lectus ultrices pellentesque sollicitudin.</p>
+              </div>
+              <div class="img-container">
+                <img src="./assets/img/dummy-cards.png" alt="">
+              </div>
+              <div class="actions">
+                <button class="btn pri-btn">Sign up now</button>
+                <a class="btn-text" href="#">Learn more</a>
+              </div>
+            </div>
+          </section>
+
+          <div class="back-to-top">
+            <a href="#">
+              <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
+              </svg>
+            </a>
+          </div>
+
+
+        </div>
+      </section>
+
+
+
+    </main>
+
+    <footer>
+      <div class="footer-wrapper">
+        <section class="footer-content">
+          <div class="footer-block">
+            <a class="footer-logo" title="Solaire Logo" href="#">
+              <img src="./assets/img/solaire_logo.svg" alt="Solaire Logo">
+            </a>
+            <div class="social">
+              <p>Follow us</p>
+              <div class="social-links">
+                <a href="#"><i class="icon-facebook"></i></a>
+                <a href="#"><i class="icon-instagram"></i></a>
+                <a href="#"><i class="icon-linkedin"></i></a>
+                <a href="#"><i class="icon-youtube-play"></i></a>
+                <a href="#"><i class="icon-light-trip-advisor"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="footer-block">
+            <input type="checkbox" class="footer-checkbox" id="footer_1">
+            <label class="footer-title" for="footer_1">
+              <p>Quick Booking</p>
+              <span class="plus-minus"></span>
+            </label>
+            <div class="footer-menu">
+              <a class="footer-link" href="#">Book a Room</a>
+              <a class="footer-link" href="#">Book a Restaurant</a>
+              <a class="footer-link" href="#">Tickets and Shows</a>
+
+              <div class="footer-inner-title">
+                <a class="footer-title" href="#">Maps & Transportation</a>
+                <a class="footer-title" href="#">Careers</a>
+                <a class="footer-title" href="#">Press Room</a>
+              </div>
+            </div>
+          </div>
+          <div class="footer-block">
+            <input type="checkbox" class="footer-checkbox" id="footer_2">
+            <label class="footer-title" for="footer_2">
+              <p>Explore </p>
+              <span class="plus-minus"></span>
+            </label>
+            <div class="footer-menu">
+              <a class="footer-link" href="#">Rooms & Suites</a>
+              <a class="footer-link" href="#">Dining</a>
+              <a class="footer-link" href="#">Shopping</a>
+              <a class="footer-link" href="#">Meetings & Events</a>
+              <a class="footer-link" href="#">Theater Plays & Broadway Shows</a>
+              <a class="footer-link" href="#">Wellness Spa & Recreation</a>
+              <a class="footer-link" href="#">Sky Range</a>
+            </div>
+          </div>
+          <div class="footer-block added">
+            <a class="footer-title" href="#">Maps & Transportation</a>
+            <a class="footer-title" href="#">Careers</a>
+            <a class="footer-title" href="#">Press Room</a>
+          </div>
+          <div class="footer-block">
+            <div class="footer-title">
+              <p>Corporate</p>
+            </div>
+            <div class="footer-address">
+              <p>1 Asean Avenue Entertainment City Tambo, Paranaque City 1701 Metro Manila, Philippines</p>
+              <a href="#">+639 8888-8888</a>
+            </div>
+          </div>
+        </section>
+        <section class="footer-copyright">
+          <div><a href="#">Site Map</a> <a href="#">Privacy Policy</a><a href="#">Terms of Use</a></div>
+          <span>Copyright © 2023 Solaire Resort. All Rights Reserved.</span>
+        </section>
+      </div>
+    </footer>
+
+  </div>
+
+
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/swiper-bundle.min.js"></script>
+  <script src="./js/gsap.min.js"></script>
+  <script src="./js/ScrollTrigger.min.js"></script>
+  <script src="./js/flatpickr.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

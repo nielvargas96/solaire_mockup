@@ -1,0 +1,11 @@
+@media only screen and (min-width: $screen_768) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: $screen_1024) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
