@@ -147,11 +147,6 @@
       top: 70px;
     }
 
-    .btn.book-now {
-      top: 20%;
-      font-size: 14px;
-    }
-
     .menu-link {
       font-size: 14px;
     }
@@ -381,7 +376,8 @@
 }
 
 .logo-img {
-  width: 220px;
+  display: block;
+  width: 160px;
 }
 
 .logo-inner {
@@ -391,7 +387,7 @@
 }
 
 .search-btn {
-  position: absolute;
+  // position: absolute;
   top: 0;
   right: 0;
   border: 0;
@@ -569,16 +565,21 @@
 }
 
 .btn.book-now {
-  position: absolute;
+  // position: absolute;
   top: 30%;
   font-size: 12px;
   padding-left: 10px;
   padding-right: 10px;
+}
 
-  &:hover {
-    background-color: darken($primary, 5);
-    transition: 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
-  }
+.btn-header {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  height: 70px;
+  right: 0;
+  top: 0;
+  margin-right: 1.5rem;
 }
 
 .language-side-nav {

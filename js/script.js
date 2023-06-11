@@ -450,7 +450,7 @@ $(document).ready(function () {
       //   $(this).find('span').toggleClass('active');
       // })
       $(window).on('scroll', function () {
-        if ($(this).scrollTop() > 1) {
+        if ($(this).scrollTop() > 50) {
           $('.header-second').removeClass('on-scroll');
           $('.booking').addClass('on-scroll');
         } else {
@@ -463,10 +463,10 @@ $(document).ready(function () {
     } else {
       // Header
       $(window).on('scroll', function () {
-        if ($(this).scrollTop() > 1) {
-          $('.header-second, .booking').addClass('on-scroll');
+        if ($(this).scrollTop() > 50) {
+          $('.header-second, .booking, .btn-header').addClass('on-scroll');
         } else {
-          $('.header-second, .booking').removeClass('on-scroll');
+          $('.header-second, .booking, .btn-header').removeClass('on-scroll');
         }
       });
 

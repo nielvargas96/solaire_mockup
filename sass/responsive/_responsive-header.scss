@@ -35,12 +35,6 @@
     }
   }
 
-  .search-btn {
-    display: none;
-  }
-
-
-
   .logo-container {
     display: none;
   }
@@ -55,24 +49,41 @@
     font-size: 14px;
   }
 
-  .book-now {
-    right: auto;
-    left: 2rem;
+
+  .btn-header {
+    height: 100px;
+    margin-right: 3rem;
+    transition: height .3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+
+    &.on-scroll {
+      height: 70px;
+      transition: height .3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    }
   }
 
+
+  .search-btn {
+    display: none;
+  }
+
+  .btn-header {
+    left: 2rem;
+    right: auto;
+  }
 }
 
 
 @media only screen and (min-width: 1280px) {
-  .book-now {
-    right: 3%;
-    left: auto;
-  }
-
   .logo-img {
     width: 220px;
   }
+}
 
+@media only screen and (min-width: 1320px) {
+  .btn-header {
+    left: auto;
+    right: 0;
+  }
 }
 
 @media only screen and (min-width: 1420px) {
@@ -88,8 +99,21 @@
 
 
 @media only screen and (min-width: 1580px) {
+  .header-second.on-scroll {
+    .logo-img {
+      width: 220px;
+      transition: width .25s cubic-bezier(0.785, 0.135, 0.15, 0.86)
+    }
+
+    .btn.book-now {
+      transform: scale(.875);
+      transition: transform .25s cubic-bezier(0.785, 0.135, 0.15, 0.86)
+    }
+  }
+
   .logo-img {
     width: 280px;
+    transition: width .25s cubic-bezier(0.785, 0.135, 0.15, 0.86)
   }
 
   .menu-link {
@@ -99,6 +123,8 @@
 
   .btn.book-now {
     font-size: 1rem;
+    transform: scale(1);
+    transition: transform .25s cubic-bezier(0.785, 0.135, 0.15, 0.86);
   }
 }
 
@@ -121,6 +147,26 @@
   }
 }
 
+@media only screen and (max-width: 550px) {
+  .logo-container {
+    justify-content: flex-start;
+    margin-left: 4rem;
+  }
+
+  .btn.book-now {
+    padding: 10px;
+    font-size: 11px;
+  }
+
+  .search-btn {
+    padding: 10px;
+
+    .icon-light-search::before {
+      font-weight: 400;
+    }
+  }
+}
+
 // Screen below 1100px
 @media only screen and (max-width: $screen_1100) {
   .header-second {
@@ -138,10 +184,6 @@
 
   .logo {
     top: 0;
-
-    .logo-img {
-      height: auto !important;
-    }
   }
 
   .side-menu-mask {
@@ -158,13 +200,5 @@
     }
   }
 
-  .book-now {
-    display: none;
-  }
 
-
-
-  // .search-btn {
-  //   right: 15%;
-  // }
 }
