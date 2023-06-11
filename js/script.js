@@ -1,3 +1,4 @@
+// Sliders
 let mainSlider = new Swiper(".main-slider", {
   navigation: {
     nextEl: ".main-swiper-button-next",
@@ -386,6 +387,7 @@ let slider11 = new Swiper(".vip-restaurants", {
 //   }
 // });
 
+// Toggle header
 $('.toggle-container').on('click', function () {
   $(this).toggleClass('active');
 
@@ -406,6 +408,8 @@ $('.search-btn, .search-btn-top').on('click', function () {
 });
 
 // $('.toggle-container').hasClass('active').parents('body').addClass('active');
+
+// Side menu 
 
 $('.side-menu-mask').on('click', function () {
   $('.header-second').find('.toggle-container.active').trigger("click");
@@ -479,6 +483,8 @@ $(document).ready(function () {
   $(window).on('resize', checkWindowWidth);
 });
 
+// Booking widget on body
+
 $(".book-select").on("click", function () {
   $(".book-item").not($(this).closest(".book-item")).find(".book-list, .icon-down-open-big").removeClass("active");
 
@@ -514,6 +520,7 @@ $(".side-language").on("click", function () {
   $('.side-language').toggleClass('active');
 });
 
+// Booking date plugin
 $(".booking-date").flatpickr({
   // altInput: true,
   // altFormat: "F j, Y",
@@ -525,14 +532,66 @@ $(".booking-date").flatpickr({
 });
 
 
-// Select script
+// General select dropdown
 
-$('.select-header').click(function () {
-  $(this).siblings('.select-options').toggle();
+$('.select-header').on("click", function () {
+  var selectOptions = $(this).siblings('.select-options');
+  selectOptions.toggle();
+  var selectContainer = $(this).closest('.custom-select');
+  closeOtherSelects(selectContainer);
 });
 
-$('.option').click(function () {
+$('.option').on("click", function () {
   var selectedOption = $(this).text();
-  $(this).parent('.select-options').siblings('.select-header').children('.selected-option').text(selectedOption);
+  var selectedValue = $(this).data('value');
+  var selectHeader = $(this).parent('.select-options').siblings('.select-header');
+  var selectedOptionElement = selectHeader.children('.selected-option');
+
+  if (selectedOptionElement.text() !== selectedOption) {
+    selectedOptionElement.addClass('text-changed');
+  } else {
+    selectedOptionElement.removeClass('text-changed');
+  }
+
+  selectedOptionElement.text(selectedOption);
   $(this).parent('.select-options').hide();
+
+  console.log('Selected Value:', selectedValue);
 });
+
+// Closing the dropdown if click outside of it.
+$(document).on('click', function (e) {
+  var target = $(e.target);
+  if (!target.closest(".book-widget").length) {
+    $(".book-item").find(".book-list, .icon-down-open-big").removeClass("active");
+  }
+
+  if (!target.closest('.custom-select').length) {
+    $('.select-options').hide();
+  }
+});
+
+function closeOtherSelects(currentSelectContainer) {
+  var allSelectContainers = $('.custom-select');
+  allSelectContainers.each(function () {
+    var selectContainer = $(this);
+    if (!selectContainer.is(currentSelectContainer)) {
+      var selectOptions = selectContainer.find('.select-options');
+      selectOptions.hide();
+    }
+  });
+}
+
+
+// Book now pop-up on header
+
+$('.book-now').on("click", function () {
+  $(".book-now-form-container").addClass('active');
+  $("body").addClass('active');
+  $('html, body').animate({ scrollTop: 0 }, 'fast');
+})
+
+$('.close-btn').on("click", function () {
+  $(".book-now-form-container").removeClass('active')
+  $("body").removeClass('active');
+})

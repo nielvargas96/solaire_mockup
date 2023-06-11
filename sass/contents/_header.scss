@@ -403,7 +403,7 @@
 
 .search-container {
   position: relative;
-  background-color: rgba(0, 0, 0, 0.85);
+  background-color: rgba(0, 0, 0, .85);
   width: 100%;
   display: flex;
   justify-content: center;
@@ -428,6 +428,8 @@
     z-index: 1;
     padding-bottom: 2rem;
     padding-top: 1rem;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, .5);
+    z-index: 2;
 
     a {
       display: block;
@@ -548,7 +550,6 @@
     .icon-down-open-big {
       &:before {
         transform: rotate(-180deg);
-        transition: transform .2s cubic-bezier(0.165, 0.84, 0.44, 1);
       }
     }
   }

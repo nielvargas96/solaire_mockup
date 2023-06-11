@@ -8,4 +8,15 @@
   .grid-container {
     grid-template-columns: 1fr 1fr 1fr;
   }
+
+  .booking-details {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
+
+@media only screen and (min-width: $screen_1100) {
+  .book-now-form-container {
+    top: -40px;
+  }
 }

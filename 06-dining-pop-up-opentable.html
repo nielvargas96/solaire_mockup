@@ -208,29 +208,188 @@
           </div>
           <div class="search-container-mask"></div>
 
-          <div class="book-now-form-container">
-            <div class="book-header">
-              <p class="book-title">Book a title</p>
-              <button class="close-btn">X<span class="icon"></span></button>
+          <aside class="book-now-form-container">
+            <div class="book-header-container">
+              <div class="book-header">
+                <p class="book-title">Book a title</p>
+                <button class="close-btn"><img src="./assets/img/close-btn.svg" alt=""></button>
+              </div>
             </div>
+
             <div class="book-fill-up-form">
-              <form action="">
+              <form class="book-form" action="">
                 <div class="form-group">
                   <div class="custom-select">
                     <div class="select-header">
-                      <div class="selected-option">All Hotels</div>
+                      <div class="selected-option">Finestra Italian Steakhouse</div>
                       <span class="icon-down-open-big"></span>
                     </div>
                     <div class="select-options">
-                      <div class="option">Hotel 1</div>
-                      <div class="option">Hotel 2</div>
-                      <div class="option">Hotel 3</div>
+                      <div class="option" data-value="value1">Hotel 1</div>
+                      <div class="option" data-value="value1">Hotel 2</div>
+                      <div class="option" data-value="value1">Hotel 3</div>
                     </div>
                   </div>
                 </div>
+
+                <div class="table-info-details">
+                  <div class="img-container-logo">
+                    <img src="./assets/img/restaurant-logo.png" alt="">
+                  </div>
+
+                  <p class="info">Reserve at busy hour or making group reservation, please call +XXX XXXX XXXX.</p>
+
+                  <div class="opening-hour">
+                    <span class="icon-light-clock"></span>
+                    <div class="hours">
+                      <b>Opening hour</b>
+                      <p>Lunch: 12:00 pm to 3:00 pm</p>
+                      <p>Diner: 5:30 pm to 10:00 pm</p>
+                    </div>
+                  </div>
+
+                  <div class="see-more-details">
+                    <span></span>
+                    <a href="#" title="See more details">
+                      See more details
+                    </a>
+                  </div>
+
+                  <div class="booking-details">
+
+                    <div class="form-container">
+                      <div class="header-form-group">
+                        <p class="form-title">Booking Details</p>
+                      </div>
+
+                      <div class="form-group">
+                        <label class="input-label">Guest<span class="required-input">*</span></label>
+                        <div class="custom-select">
+                          <div class="select-header">
+                            <div class="selected-option">Finestra Italian Steakhouse</div>
+                            <span class="icon-down-open-big"></span>
+                          </div>
+                          <div class="select-options">
+                            <div class="option" data-value="value1">Hotel 1</div>
+                            <div class="option" data-value="value1">Hotel 2</div>
+                            <div class="option" data-value="value1">Hotel 3</div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label class="input-label" for="">Visiting date<span class="required-input">*</span></label>
+                        <div class="custom-select">
+                          <div class="select-header">
+                            <div class="selected-option">Finestra Italian Steakhouse</div>
+                            <span class="icon-down-open-big"></span>
+                          </div>
+                          <div class="select-options">
+                            <div class="option" data-value="value1">Hotel 1</div>
+                            <div class="option" data-value="value1">Hotel 2</div>
+                            <div class="option" data-value="value1">Hotel 3</div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label class="input-label" for="">Period<span class="required-input">*</span></label>
+                        <div class="custom-select">
+                          <div class="select-header">
+                            <div class="selected-option">Select reservation period (ex. Breakfast)</div>
+                            <span class="icon-down-open-big"></span>
+                          </div>
+                          <div class="select-options">
+                            <div class="option" data-value="value1">Hotel 1</div>
+                            <div class="option" data-value="value1">Hotel 2</div>
+                            <div class="option" data-value="value1">Hotel 3</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="form-container">
+                      <div class="header-form-group">
+                        <p class="form-title">Personal Details</p>
+                      </div>
+
+                      <div class="form-group">
+                        <label class="input-label" for="">Salutation<span class="required-input">*</span></label>
+                        <div class="custom-select">
+                          <div class="select-header">
+                            <div class="selected-option">Select salutation</div>
+                            <span class="icon-down-open-big"></span>
+                          </div>
+                          <div class="select-options">
+                            <div class="option" data-value="value1">Hotel 1</div>
+                            <div class="option" data-value="value1">Hotel 2</div>
+                            <div class="option" data-value="value1">Hotel 3</div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label class="input-label" for="">Firstname<span class="required-input">*</span></label>
+                        <input type="text" placeholder="Enter your firstname">
+                      </div>
+
+                      <div class="form-group">
+                        <label class="input-label" for="">Lastname<span class="required-input">*</span></label>
+                        <input type="text" placeholder="Enter your lastname">
+                      </div>
+
+                      <div class="form-group">
+                        <label class="input-label" for="">Email address<span class="required-input">*</span></label>
+                        <input type="email" placeholder="Enter your email address">
+                      </div>
+
+                      <div class="form-group">
+                        <label class="input-label" for="">Contact number<span class="required-input">*</span></label>
+                        <input type="number" placeholder="+63 XXX XXX XXXX">
+                      </div>
+
+                      <div class="form-group">
+                        <label class="input-label" for="">Special Occation<span class="required-input">*</span></label>
+                        <div class="custom-select">
+                          <div class="select-header">
+                            <div class="selected-option">Select occation</div>
+                            <span class="icon-down-open-big"></span>
+                          </div>
+                          <div class="select-options">
+                            <div class="option" data-value="value1">Hotel 1</div>
+                            <div class="option" data-value="value1">Hotel 2</div>
+                            <div class="option" data-value="value1">Hotel 3</div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label class="input-label" for="">Member ID<span class="required-input">*</span></label>
+                        <input type="number" placeholder="XXXX XXXX">
+                      </div>
+
+                      <div class="form-group">
+                        <label class="input-checkbox" for="">
+                          <input type="checkbox" placeholder="Enter your firstname">
+                          <span class="checkbox-text">By supplying information via this form and clicking submit, I affirm that I have read, understood and hereby accept the terms of <a href="#" title="Solaire Privacy">Solaire's Privacy Policy</a> and that I hereby consent to the collection, storage, and processing by Solaire and any third party it authorizes, including its affiliates and their respective officers, employees, agents, representatives and personnel of such information disclosed.</span>
+                        </label>
+                      </div>
+
+                      <div class="form-group form-action">
+                        <button class="btn pri-btn">Submit</button>
+                      </div>
+
+                    </div>
+
+
+                  </div>
+
+
+
+                </div>
               </form>
             </div>
-          </div>
+          </aside>
 
           <div class="side-nav">
             <div class="side-menu-wrapper">

@@ -27,7 +27,7 @@
 
   .search-container {
     &.active {
-      top: 0;
+      top: -100px;
     }
 
     .search {

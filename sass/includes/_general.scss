@@ -130,19 +130,49 @@ footer {
 	color: $primary;
 }
 
-input {
+input[type=text],
+input[type=email],
+input[type=number] {
 	font-family: $font-family-sec-500;
 	border: 1px solid #CBCBCB;
 	height: 46px;
-	color: #727272;
+	color: $brown;
 	outline: none;
 	border-radius: 0;
 	background-color: $white;
-}
-
-input[type=text] {
 	appearance: none;
 	-webkit-appearance: none;
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+	width: 100%;
+
+	&::placeholder {
+		color: #727272;
+	}
+}
+
+input[type=checkbox] {
+	cursor: pointer;
+	background: #F2F2F2;
+	border: 1px solid #D0D0D0;
+	border-radius: 3px;
+}
+
+.input-checkbox {
+	display: flex;
+	cursor: pointer;
+	align-items: flex-start;
+
+	input[type=checkbox] {
+		margin-top: 5px;
+	}
+}
+
+.checkbox-text {
+	margin-left: 12px;
+	font-family: $font_family_sec-500;
+	font-size: 14px;
+	line-height: 24px;
 }
 
 select {
@@ -151,13 +181,14 @@ select {
 	height: 46px;
 }
 
-.booking-date {
+input[type=text].booking-date {
 	color: #908f8f;
 	background-color: transparent;
 	border: 0;
 	width: 100%;
 	outline: 0;
 	height: auto;
+	padding: 0;
 	cursor: pointer;
 }
 
