@@ -24,6 +24,16 @@ button {
       transition: 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
     }
   }
+
+  &.btn-bordered {
+    color: $primary;
+    border: 1px solid $primary;
+    background-color: $white;
+
+    &:hover {
+      color: $white;
+    }
+  }
 }
 
 .btn-lang {

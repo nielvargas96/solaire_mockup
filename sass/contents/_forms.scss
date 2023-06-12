@@ -152,6 +152,9 @@
 }
 
 .form-action {
+	display: flex;
+	gap: 1rem;
+
 	.btn {
 		width: 100%;
 	}

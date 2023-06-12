@@ -524,7 +524,7 @@ $(".side-language").on("click", function () {
 $(".booking-date").flatpickr({
   // altInput: true,
   // altFormat: "F j, Y",
-  dateFormat: "m-d-Y",
+  dateFormat: "m/d/y",
   // allowInput: true,
   mode: "range",
   minDate: "today"
