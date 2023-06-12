@@ -392,7 +392,11 @@ main {
 	padding-left: 1rem;
 	padding-right: 1rem;
 	padding-bottom: 6rem;
-	padding-top: 3rem;
+
+	&:first-child {
+
+		padding-top: 3rem;
+	}
 }
 
 .content-wrapper {

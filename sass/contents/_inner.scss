@@ -17,6 +17,11 @@
   .swiper-button-prev {
     display: flex;
     background-color: rgb(255, 255, 255, .25);
+    top: 50%;
+  }
+
+  .button-next-slider-2,
+  .button-prev-slider-2 {
     top: 38%;
   }
 
@@ -167,4 +172,55 @@
   }
 }
 
-//
+// Inner page content
+.block-content.restaurant-inner-content {
+  padding-bottom: 0;
+}
+
+.restaurant-information {
+  width: 100%;
+  border-top: 1px solid #D2D2D2;
+  border-bottom: 1px solid #D2D2D2;
+
+  .info-title {
+    font-size: 1.25rem;
+    font-family: $font-family_sec-700;
+    color: $brown;
+    margin: 1.5rem 0;
+  }
+
+  .info-item {
+    display: flex;
+    margin-bottom: 1.5rem;
+  }
+
+  .desc {
+    padding-left: 12px;
+
+    p {
+      line-height: 24px;
+    }
+  }
+}
+
+.inner-page-content {}
+
+.title-description {
+  margin-bottom: 2rem;
+
+  h2 {
+    margin-bottom: 2rem;
+  }
+
+  p {
+    line-height: 24px;
+    margin-bottom: 1rem;
+  }
+}
+
+.featured-logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
