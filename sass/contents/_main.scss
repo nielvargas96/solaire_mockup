@@ -312,7 +312,7 @@ main {
 	}
 
 	.text-changed {
-		color: $primary;
+		color: #FFB084 !important;
 		font-weight: 500;
 	}
 
@@ -392,11 +392,7 @@ main {
 	padding-left: 1rem;
 	padding-right: 1rem;
 	padding-bottom: 6rem;
-
-	&:first-child {
-
-		padding-top: 3rem;
-	}
+	padding-top: 3rem;
 }
 
 .content-wrapper {
@@ -623,5 +619,45 @@ main {
 				font-size: 1.125rem;
 			}
 		}
+	}
+}
+
+.actions-layout-2 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 2rem;
+	margin-bottom: 1rem;
+	padding: 0 1rem;
+
+	a {
+		width: calc(100% /2);
+	}
+}
+
+.splash-screen {
+	position: fixed;
+	width: 100vw;
+	height: 100%;
+	background-color: $white;
+	z-index: 1000;
+	align-items: center;
+	justify-content: center;
+	top: 0;
+	display: flex;
+
+	&.active {
+		display: none;
+	}
+}
+
+.splash-logo {
+	max-width: 350px;
+	margin: 0 auto;
+
+	img {
+		display: block;
+		width: 100%;
+		height: 100%;
 	}
 }

@@ -18,9 +18,9 @@
   box-sizing: border-box;
   -ms-touch-action: manipulation;
   touch-action: manipulation;
-  background: #231e1a;
-  -webkit-box-shadow: 1px 0 0 #231e1a, -1px 0 0 #231e1a, 0 1px 0 #231e1a, 0 -1px 0 #231e1a, 0 3px 13px rgba(0, 0, 0, 0.08);
-  box-shadow: 1px 0 0 #231e1a, -1px 0 0 #231e1a, 0 1px 0 #231e1a, 0 -1px 0 #231e1a, 0 3px 13px rgba(0, 0, 0, 0.08);
+  background: #2c2724;
+  -webkit-box-shadow: 1px 0 0 #2c2724, -1px 0 0 #2c2724, 0 1px 0 #2c2724, 0 -1px 0 #2c2724, 0 3px 13px rgba(0, 0, 0, 0.08);
+  box-shadow: 1px 0 0 #2c2724, -1px 0 0 #2c2724, 0 1px 0 #2c2724, 0 -1px 0 #2c2724, 0 3px 13px rgba(0, 0, 0, 0.08);
   font-family: "Avenir_Book", sans-serif;
 }
 
@@ -130,11 +130,11 @@
 }
 
 .flatpickr-calendar.arrowTop:before {
-  border-bottom-color: #e6e6e6
+  border-bottom-color: transparent;
 }
 
 .flatpickr-calendar.arrowTop:after {
-  border-bottom-color: #fff
+  border-bottom-color: transparent;
 }
 
 .flatpickr-calendar.arrowBottom:before,
@@ -143,11 +143,11 @@
 }
 
 .flatpickr-calendar.arrowBottom:before {
-  border-top-color: #e6e6e6
+  border-top-color: transparent;
 }
 
 .flatpickr-calendar.arrowBottom:after {
-  border-top-color: #fff
+  border-top-color: transparent;
 }
 
 .flatpickr-calendar:focus {
@@ -372,11 +372,12 @@
 
 .flatpickr-current-month span.cur-month {
   font-family: inherit;
-  font-weight: 700;
+  font-weight: 500;
   color: inherit;
   display: inline-block;
   margin-left: .5ch;
-  padding: 0
+  padding: 0;
+  color: #fff;
 }
 
 .flatpickr-current-month span.cur-month:hover {
@@ -467,7 +468,7 @@
 }
 
 .flatpickr-current-month .flatpickr-monthDropdown-months .flatpickr-monthDropdown-month {
-  background-color: #231e1a;
+  background-color: #2c2724;
   outline: none;
   padding: 0
 }
@@ -563,8 +564,8 @@ span.flatpickr-weekday {
 }
 
 .dayContainer+.dayContainer {
-  -webkit-box-shadow: -1px 0 0 #e6e6e6;
-  box-shadow: -1px 0 0 #e6e6e6
+  /* -webkit-box-shadow: -1px 0 0 #e6e6e6;
+  box-shadow: -1px 0 0 #e6e6e6 */
 }
 
 .flatpickr-day {

@@ -36,7 +36,7 @@
               <a href="#" class="btn-location"><i class="icon-location-outline"></i> Transportation Guide</a>
 
               <div class="language-container">
-                <i class="icon-globe"></i>
+                <i class="icon-light-globe"></i>
                 <span class="btn-lang"> Language<i class="icon-down-open-big"></i></span>
                 <div class="language-wrapper">
                   <button>English</button>
@@ -536,7 +536,6 @@
                   <div class="book-select">
                     <span class="book-label">Select Booking Type</span>
                     <div class="book-details">
-                      <!-- <input type="text" value="" required /> -->
                       <span class="selected-item">
                         Events/Shows
                       </span>
@@ -544,7 +543,7 @@
                     </div>
                   </div>
                   <div class="book-list">
-                    <div class="book-list-item" data-value="Events">Events</div>
+                    <div class="book-list-item" data-value="Events">Restaurants</div>
                     <div class="book-list-item" data-value="Shows 1">Shows 1</div>
                     <div class="book-list-item" data-value="Shows 2">Shows 2</div>
                     <div class="book-list-item" data-value="Shows 3">Shows 3</div>
@@ -554,9 +553,25 @@
 
                 <div class="book-item">
                   <div class="book-select">
-                    <span class="book-label">Events/Shows</span>
+                    <span class="book-label">Restaurants</span>
                     <div class="book-details">
-                      <span class="selected-item">Select a show</span>
+                      <span class="selected-item">Select a restaurant</span>
+                      <span class="icon-down-open-big"></span>
+                    </div>
+                  </div>
+                  <div class="book-list">
+                    <div class="book-list-item" data-value="Events">Restaurant</div>
+                    <div class="book-list-item" data-value="Shows 1">Restaurant 1</div>
+                    <div class="book-list-item" data-value="Shows 2">Restaurant 2</div>
+                    <div class="book-list-item" data-value="Shows 3">Restaurant 3</div>
+                    <div class="book-list-item" data-value="Shows 4">Restaurant 4</div>
+                  </div>
+                </div>
+                <div class="book-item">
+                  <div class="book-select">
+                    <span class="book-label">Guests</span>
+                    <div class="book-details">
+                      <span class="selected-item">0 Adults 0 child</span>
                       <span class="icon-down-open-big"></span>
                     </div>
                   </div>
@@ -568,66 +583,21 @@
                     <div class="book-list-item" data-value="Shows 4">Shows 4</div>
                   </div>
                 </div>
-                <div class="book-item">
-                  <div class="book-select">
-                    <span class="book-label">Tickets</span>
-                    <div class="book-details">
-                      <span class="selected-item">Select no. of tickets</span>
-                      <span class="icon-down-open-big"></span>
-                    </div>
-                  </div>
-                  <div class="book-list">
-                    <div class="book-list-item" data-value="Events">Events</div>
-                    <div class="book-list-item" data-value="Shows 1">Shows 1</div>
-                    <div class="book-list-item" data-value="Shows 2">Shows 2</div>
-                    <div class="book-list-item" data-value="Shows 3">Shows 3</div>
-                    <div class="book-list-item" data-value="Shows 4">Shows 4</div>
-                  </div>
-                </div>
-                <!-- <input type="date" class="booking-date"> -->
-                <!-- <input class="booking-date flatpickr flatpickr-input" type="text" placeholder="Select Date.." readonly="readonly"> -->
-
-
-
-                <!-- <span class="booking-date">Select Date</span> -->
-
                 <div class="book-item date-select">
-                  <div class="book-select ">
+                  <label for="booking_select_date" class="book-select ">
                     <span class="book-label">Visiting Date</span>
                     <div class="book-details">
                       <!-- <span class="selected-item">Select date</span> -->
-                      <input type="text" class="booking-date" placeholder="Select Date.." data-input readonly="readonly" required>
+                      <input id="booking_select_date" type="text" class="booking-date" placeholder="Select Date.." data-input readonly="readonly" required>
                       <span class="icon-light-date"></span>
                     </div>
-                  </div>
-                  <!-- <div class="book-list">
-                    <div class="book-list-item" data-value="Events">Events</div>
-                    <div class="book-list-item" data-value="Shows 1">Shows 1</div>
-                    <div class="book-list-item" data-value="Shows 2">Shows 2</div>
-                    <div class="book-list-item" data-value="Shows 3">Shows 3</div>
-                    <div class="book-list-item" data-value="Shows 4">Shows 4</div>
-                  </div> -->
+                  </label>
                 </div>
                 <div class="book-item action-booking">
                   <button class="btn pri-btn">Book Now</button>
                 </div>
               </div>
             </form>
-            <!-- <div class="booking-container">
-              <div class="booking-content tab1 active">
-                <div class="custom-select">
-                  <div class="select-header">
-                    <div class="selected-option">All Hotels</div>
-                    <div class="arrow"></div>
-                  </div>
-                  <div class="select-options">
-                    <div class="option">Option 1</div>
-                    <div class="option">Option 2</div>
-                    <div class="option">Option 3</div>
-                  </div>
-                </div>
-              </div>
-            </div> -->
           </section>
 
           <section class="block-content">

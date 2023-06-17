@@ -1,3 +1,69 @@
+// Homepage Screen Splash
+const animationPlayedTimestamp = localStorage.getItem('animationPlayedTimestamp');
+const expirationTime = 2 * 60 * 60 * 1000;
+if (!animationPlayedTimestamp || (Date.now() - animationPlayedTimestamp > expirationTime)) {
+  const logoAnimation = gsap.timeline();
+  logoAnimation
+    .from(".index .splash-logo", {
+      duration: 1,
+      scale: 0,
+      opacity: 0,
+      y: -100
+    })
+    .from(".index body", { className: "active" })
+    .to(".index .splash-logo", {
+      scale: 3,
+      opacity: 0,
+      duration: .5,
+      delay: 1
+    });
+
+  const screenAnimation = gsap.timeline();
+  screenAnimation
+    .to(".index .splash-screen", { opacity: 0, duration: .8, delay: 2.8 })
+    .to(".index .splash-screen", { display: "none" })
+    .to(".index body", { className: "", delay: 1 });
+
+  gsap.from('.index .menu-wrapper,.index .btn-header,.index .logo-inner,.index .content-text,.index .logo-container,.index .toggle-container,.index .main-pagination', {
+    delay: 2.8,
+    duration: 0.3,
+    opacity: 0,
+    y: 25,
+    stagger: {
+      each: 0.2
+    }
+  });
+
+  gsap.from('.index .main-swiper-button-prev', {
+    delay: 2.8,
+    duration: 0.3,
+    x: -100,
+  });
+
+  gsap.to('.index .main-swiper-button-prev', {
+    delay: 4.5,
+    duration: 0.3,
+    x: 0,
+  });
+
+  gsap.from('.index .main-swiper-button-next', {
+    delay: 2.9,
+    duration: 0.3,
+    x: 100,
+  });
+
+  gsap.to('.index .main-swiper-button-next', {
+    delay: 4.5,
+    duration: 0.3,
+    x: 0,
+  });
+
+  localStorage.setItem('animationPlayedTimestamp', Date.now());
+} else {
+  $('.index .splash-screen').addClass('active');
+}
+
+
 // Sliders
 let mainSlider = new Swiper(".main-slider", {
   navigation: {
@@ -8,7 +74,7 @@ let mainSlider = new Swiper(".main-slider", {
     el: ".main-pagination",
     clickable: true,
   }, autoplay: {
-    delay: 4000,
+    delay: 6000,
   },
   centeredSlides: true,
   slidesPerView: 1,
@@ -169,9 +235,9 @@ let slider6 = new Swiper(".slider-offers", {
   // autoplay: {
   //   delay: 4000,
   // },
+  loop: false,
   centeredSlides: false,
   slidesPerView: 1,
-  loop: true,
   spaceBetween: 20,
   speed: 900,
   breakpoints: {
@@ -401,6 +467,10 @@ $('.toggle-container').on('click', function () {
 });
 
 $('.search-btn, .search-btn-top').on('click', function () {
+  $(this).toggleClass('active')
+
+
+  $('input.search-input').focus();
   $('.search-container').toggleClass('active');
   $('.search-container-mask').toggleClass('active');
   $('body').toggleClass('active');
@@ -425,7 +495,7 @@ $('.side-menu-item .menu-link').on('click', function () {
 
 $('.search-container-mask').on('click', function () {
   $('.header-second').find('.search-btn').trigger("click");
-  $('.header-second').find('.search-btn-top').trigger("click");
+  $('.header-container').find('.search-btn-top').removeClass('active');
 });
 
 
@@ -462,6 +532,18 @@ $(document).ready(function () {
         }
       });
 
+      $(".booking-date").flatpickr({
+        // altInput: true,
+        // altFormat: "F j, Y",
+        showMonths: 1,
+        dateFormat: "m/d/y",
+        // allowInput: true,
+        mode: "range",
+        minDate: "today",
+        position: "below left"
+        // maxDate: new Date().fp_incr(15)
+      });
+
       $('.footer-checkbox').prop('disabled', false);
       $('.footer-checkbox').prop('checked', false);
     } else {
@@ -474,14 +556,64 @@ $(document).ready(function () {
         }
       });
 
+      $(".booking-date").flatpickr({
+        // altInput: true,
+        // altFormat: "F j, Y",
+        showMonths: 2,
+        dateFormat: "m/d/y",
+        // allowInput: true,
+        mode: "range",
+        minDate: "today",
+        position: "below left"
+        // maxDate: new Date().fp_incr(15)
+      });
+
       $('.footer-checkbox').prop('checked', true);
       $('.footer-checkbox').prop('disabled', true);
-
     }
   }
+
   checkWindowWidth();
   $(window).on('resize', checkWindowWidth);
 });
+
+flatpickr(".input_date", {
+  showMonths: 2,
+  mode: "range",
+  minDate: "today",
+  position: "below left"
+});
+
+// document.addEventListener("DOMContentLoaded", function () {
+//   const datepickerButtons = document.getElementsByClassName("btn_date");
+//   const inputDates = document.getElementsByClassName("input_date");
+//   const selectedDates = document.getElementsByClassName("selectedDate");
+
+//   // Loop through each datepicker element
+//   for (let i = 0; i < datepickerButtons.length; i++) {
+//     const datepickerButton = datepickerButtons[i];
+//     const datepicker = inputDates[i]._flatpickr;
+//     const selectedDate = selectedDates[i];
+
+//     datepickerButton.addEventListener("click", function () {
+//       datepicker.open();
+//     });
+
+//     datepicker.config.onChange.push(function (selectedDates, dateStr, instance) {
+//       if (selectedDates.length > 0) {
+//         if (selectedDates.length === 1) {
+//           selectedDate.textContent = selectedDates[0].toLocaleDateString();
+//         } else {
+//           const startDate = selectedDates[0].toLocaleDateString();
+//           const endDate = selectedDates[selectedDates.length - 1].toLocaleDateString();
+//           selectedDate.textContent = startDate + " - " + endDate;
+//         }
+//       } else {
+//         selectedDate.textContent = "";
+//       }
+//     });
+//   }
+// });
 
 // Booking widget on body
 
@@ -521,15 +653,19 @@ $(".side-language").on("click", function () {
 });
 
 // Booking date plugin
-$(".booking-date").flatpickr({
-  // altInput: true,
-  // altFormat: "F j, Y",
-  dateFormat: "m/d/y",
-  // allowInput: true,
-  mode: "range",
-  minDate: "today"
-  // maxDate: new Date().fp_incr(15)
-});
+// $(".booking-date").flatpickr({
+//   // altInput: true,
+//   // altFormat: "F j, Y",
+//   showMonths: 2,
+//   dateFormat: "m/d/y",
+//   // allowInput: true,
+//   mode: "range",
+//   minDate: "today"
+//   // maxDate: new Date().fp_incr(15)
+// });
+
+
+
 
 
 // General select dropdown
@@ -595,3 +731,22 @@ $('.close-btn').on("click", function () {
   $(".book-now-form-container").removeClass('active')
   $("body").removeClass('active');
 })
+
+
+// // Check if the animation has already been played
+// const animationPlayed = localStorage.getItem("animationPlayed");
+
+// if (!animationPlayed) {
+
+
+//   // Set the flag indicating the animation has been played
+//   localStorage.setItem("animationPlayed", true);
+// } else {
+//   // Hide the splash-screen element immediately if the animation has already been played
+//   gsap.set(".splash-screen", { display: "none" });
+// }
+
+
+// gsap.timeline();
+
+

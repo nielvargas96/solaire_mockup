@@ -68,7 +68,7 @@
     z-index: 1;
 
     img {
-      transition: transform .25s cubic-bezier(0.25, 0.1, 0.25, 1);
+      transition: transform .35s cubic-bezier(0.25, 0.1, 0.25, 1);
     }
 
     &:hover img {
@@ -85,7 +85,7 @@
 
 .slider-layout {
   max-width: 1200px;
-  overflow-x: hidden;
+  overflow: hidden;
 
   article {
     position: relative;
@@ -173,14 +173,9 @@
 }
 
 // Inner page content
-.block-content.restaurant-inner-content {
-  padding-bottom: 0;
-}
-
-.restaurant-information {
+.inner-page-information {
   width: 100%;
   border-top: 1px solid #D2D2D2;
-  border-bottom: 1px solid #D2D2D2;
 
   .info-title {
     font-size: 1.25rem;
@@ -192,14 +187,46 @@
   .info-item {
     display: flex;
     margin-bottom: 1.5rem;
+
+    span {
+      width: 20px;
+    }
   }
 
   .desc {
     padding-left: 12px;
 
+    b {
+      font-family: $font-family_sec-500;
+    }
+
     p {
+      margin-top: 4px;
       line-height: 24px;
     }
+  }
+
+  .see-all-container {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    justify-content: center;
+
+    .btn {
+      margin-left: 0;
+      margin-right: 2rem;
+    }
+  }
+}
+
+.action-single-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+
+  .btn {
+    width: 100%;
+    max-width: 350px;
   }
 }
 

@@ -533,6 +533,18 @@
       "search": [
         "light-suite-size"
       ]
+    },
+    {
+      "uid": "c759418c008e9562944080fee617fc76",
+      "css": "cancel-circled",
+      "code": 59444,
+      "src": "entypo"
+    },
+    {
+      "uid": "c709da589c923ba3c2ad48d9fc563e93",
+      "css": "cancel",
+      "code": 59445,
+      "src": "entypo"
     }
   ]
 }

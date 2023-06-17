@@ -196,6 +196,7 @@ input[type=text].booking-date {
 
 .flatpickr-calendar.animate.open {
 	margin-top: 22px;
+	margin-left: -39px;
 }
 
 .flatpickr-day.prevMonthDay.flatpickr-disabled {
@@ -403,5 +404,10 @@ input[type=text].booking-date {
 
 	a {
 		font-size: 0.875rem;
+	}
+
+
+	.flatpickr-calendar.animate.open {
+		margin-left: -22px;
 	}
 }

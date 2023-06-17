@@ -19,6 +19,16 @@
 
   .header-second {
     margin-top: 2.5rem;
+
+    .menu-link {
+      padding: 42px 8px;
+    }
+
+    &.on-scroll {
+      .menu-link {
+        padding: 27px 8px;
+      }
+    }
   }
 
   .toggle-container {
@@ -28,10 +38,11 @@
   .search-container {
     &.active {
       top: -100px;
+      z-index: 5;
     }
 
     .search {
-      width: 40%;
+      width: 75%;
     }
   }
 
@@ -45,7 +56,6 @@
   }
 
   .menu-link {
-    padding: 0 8px;
     font-size: 14px;
   }
 
@@ -69,6 +79,10 @@
   .btn-header {
     left: 2rem;
     right: auto;
+  }
+
+  .side-menu-mask {
+    height: 0;
   }
 }
 
