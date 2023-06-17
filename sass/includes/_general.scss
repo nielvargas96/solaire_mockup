@@ -65,6 +65,7 @@ h1 {
 h2 {
 	font-family: $font_family_600;
 	color: $brown;
+	line-height: 40px;
 }
 
 h3,
@@ -76,7 +77,11 @@ h5 {
 	font-family: $font_family;
 }
 
-h3,
+h3 {
+	color: $brown;
+	line-height: 30px;
+}
+
 h4,
 h5 {
 	color: $gray;
@@ -381,6 +386,7 @@ input[type=text].booking-date {
 	h1,
 	.heading-1 {
 		font-size: 1.75rem;
+		line-height: 40px;
 	}
 
 	h2,
@@ -390,20 +396,20 @@ input[type=text].booking-date {
 
 	h3,
 	.heading-3 {
-		font-size: 1.25rem;
+		font-size: 1.35rem;
 	}
 
 	h4,
 	.heading-4 {
-		font-size: 1.2rem;
+		font-size: 1.3rem;
 	}
 
 	p {
-		font-size: 0.875rem;
+		font-size: 0.9375rem;
 	}
 
 	a {
-		font-size: 0.875rem;
+		font-size: 0.9375rem;
 	}
 
 

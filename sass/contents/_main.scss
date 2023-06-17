@@ -262,7 +262,7 @@ main {
 	cursor: pointer;
 
 	&:hover {
-		color: $primary;
+		color: #FFB084;
 	}
 }
 
@@ -299,7 +299,7 @@ main {
 
 	.icon-down-open-big {
 		font-size: 13px;
-		color: $primary;
+		color: #FFB084;
 		transform: rotate(0);
 
 		&.active {
@@ -308,7 +308,7 @@ main {
 	}
 
 	.icon-light-date {
-		color: $primary;
+		color: #FFB084;
 	}
 
 	.text-changed {
@@ -398,7 +398,7 @@ main {
 .content-wrapper {
 	display: flex;
 	flex-direction: column;
-	margin: 0 auto;
+	margin: 0 auto 3rem;
 	text-align: left;
 }
 
@@ -420,7 +420,18 @@ main {
 
 	.card-img {
 		img {
+			z-index: 1;
 			box-shadow: 0px 3px 9px 0px rgba(0, 0, 0, .2);
+		}
+
+		.img-shadow {
+			display: none;
+			position: absolute;
+			height: 430px;
+			width: 480px;
+			background: rgba(239, 239, 239, 1);
+			left: 22%;
+			top: 20%;
 		}
 	}
 }
@@ -486,6 +497,10 @@ main {
 			transition: transform 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
 		}
 	}
+}
+
+.card-action {
+	margin-top: 1.875rem;
 }
 
 .feaured-banner {

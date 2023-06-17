@@ -50,6 +50,7 @@
   }
 
   .card-details {
+    padding: 0 1rem;
 
     h2,
     h3 {
@@ -105,6 +106,7 @@
 @media only screen and (min-width: $screen_768) {
   .content-wrapper {
     max-width: 70%;
+    margin-bottom: 4rem;
   }
 
   .book-select {
@@ -270,7 +272,11 @@
 
       img {
         width: auto;
-        box-shadow: 110px 100px 0px -30px rgba(239, 239, 239, 1);
+        // box-shadow: 110px 100px 0px -30px rgba(239, 239, 239, 1);
+      }
+
+      .img-shadow {
+        display: block;
       }
     }
   }
@@ -306,6 +312,7 @@
 
   .content-wrapper {
     max-width: 100%;
+    margin-bottom: 6rem;
   }
 
 
