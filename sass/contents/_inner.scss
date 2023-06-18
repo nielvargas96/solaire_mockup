@@ -46,6 +46,8 @@
       display: block;
       margin-top: 1.875rem;
     }
+
+
   }
 
   h4 {
@@ -88,6 +90,13 @@
 
 }
 
+.recommend-tag {
+  display: block;
+  font-family: $font-family_sec-700;
+  color: $gray;
+  margin-bottom: 6px;
+}
+
 .slider-layout {
   max-width: 1200px;
   overflow: hidden;
@@ -105,13 +114,15 @@
   //   margin-bottom: 0;
   // }
 
-  .slider-tab {
+  .slider-tab,
+  .slider-tab-2 {
     margin-bottom: 2rem;
 
     a {
       border-bottom: 1px solid;
       color: $gray;
       margin-right: 1rem;
+      line-height: 30px;
 
       &.active {
         color: $primary;
@@ -120,7 +131,8 @@
   }
 }
 
-.slider-tab-content {
+.slider-tab-content,
+.slider-tab-content-2 {
   display: none;
 
   &.active {
@@ -235,7 +247,6 @@
   }
 }
 
-.inner-page-content {}
 
 .title-description {
   margin-bottom: 2rem;
@@ -255,4 +266,12 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: 2rem;
+}
+
+.slider-2 {
+  .img-container {
+    img {
+      min-height: 250px;
+    }
+  }
 }

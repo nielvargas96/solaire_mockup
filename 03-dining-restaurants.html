@@ -32,6 +32,7 @@
             <div class="header-first-right">
               <a href="#" class="search-btn-top">
                 <span class="icon-light-search"></span>
+                <span class="icon-cancel-circled"></span>
               </a>
               <a href="#" class="btn-location"><i class="icon-location-outline"></i> Transportation Guide</a>
 
@@ -182,6 +183,7 @@
           <div class="btn-header">
             <button class="search-btn">
               <span class="icon-light-search"></span>
+              <span class="icon-cancel-circled"></span>
             </button>
 
             <button class="btn pri-btn book-now">
@@ -212,7 +214,7 @@
             <div class="book-header-container">
               <div class="book-header">
                 <p class="book-title">Book a title</p>
-                <button class="close-btn"><img src="./assets/img/close-btn.svg" alt=""></button>
+                <button class="close-btn"> <span class="icon-cancel-circled"></span> </button>
               </div>
             </div>
 
@@ -382,10 +384,7 @@
 
                     </div>
 
-
                   </div>
-
-
 
                 </div>
               </form>
@@ -397,7 +396,7 @@
               <div class="language-side-nav">
                 <div class="side-language">
                   <div class="btn-side-lang">
-                    <i class="icon-globe"></i>
+                    <i class="icon-light-globe"></i>
                     <span class="btn-lang"> <span>Language</span><i class="icon-down-open-big"></i></span>
                   </div>
                   <div class="language-wrapper">
@@ -530,37 +529,77 @@
 
       <section class="overlay-parallax">
         <div class="main">
-          <!-- <section class="booking">
-            <div class="search-container-block">
-              <div class="search-all">
-                <form action="#" class="form-search">
-                  <div class="form-group">
-                    <div class="search-wrapper">
-                      <input type="text" class="input-search" placeholder="Search">
-                      <button class="btn-search">
-                        <span class="icon-light-search"></span>
-                      </button>
+          <section class="booking">
+            <form action="">
+              <div class="book-widget">
+                <div class="book-item">
+                  <div class="book-select">
+                    <span class="book-label">Select Booking Type</span>
+                    <div class="book-details">
+                      <span class="selected-item">
+                        Events/Shows
+                      </span>
+                      <span class="icon-down-open-big"></span>
                     </div>
                   </div>
+                  <div class="book-list">
+                    <div class="book-list-item" data-value="Events">Restaurants</div>
+                    <div class="book-list-item" data-value="Shows 1">Shows 1</div>
+                    <div class="book-list-item" data-value="Shows 2">Shows 2</div>
+                    <div class="book-list-item" data-value="Shows 3">Shows 3</div>
+                    <div class="book-list-item" data-value="Shows 4">Shows 4</div>
+                  </div>
+                </div>
 
-                  <div class="form-group">
-                    <div class="custom-select">
-                      <div class="select-header">
-                        <div class="selected-option">All Hotels</div>
-                        <span class="icon-down-open-big"></span>
-                      </div>
-                      <div class="select-options">
-                        <div class="option">Hotel 1</div>
-                        <div class="option">Hotel 2</div>
-                        <div class="option">Hotel 3</div>
-                      </div>
+                <div class="book-item">
+                  <div class="book-select">
+                    <span class="book-label">Restaurants</span>
+                    <div class="book-details">
+                      <span class="selected-item">Select a restaurant</span>
+                      <span class="icon-down-open-big"></span>
                     </div>
                   </div>
-                </form>
+                  <div class="book-list">
+                    <div class="book-list-item" data-value="Events">Restaurant</div>
+                    <div class="book-list-item" data-value="Shows 1">Restaurant 1</div>
+                    <div class="book-list-item" data-value="Shows 2">Restaurant 2</div>
+                    <div class="book-list-item" data-value="Shows 3">Restaurant 3</div>
+                    <div class="book-list-item" data-value="Shows 4">Restaurant 4</div>
+                  </div>
+                </div>
+                <div class="book-item">
+                  <div class="book-select">
+                    <span class="book-label">Guests</span>
+                    <div class="book-details">
+                      <span class="selected-item">0 Adults 0 child</span>
+                      <span class="icon-down-open-big"></span>
+                    </div>
+                  </div>
+                  <div class="book-list">
+                    <div class="book-list-item" data-value="Events">Events</div>
+                    <div class="book-list-item" data-value="Shows 1">Shows 1</div>
+                    <div class="book-list-item" data-value="Shows 2">Shows 2</div>
+                    <div class="book-list-item" data-value="Shows 3">Shows 3</div>
+                    <div class="book-list-item" data-value="Shows 4">Shows 4</div>
+                  </div>
+                </div>
+                <div class="book-item date-select">
+                  <label for="booking_select_date" class="book-select ">
+                    <span class="book-label">Visiting Date</span>
+                    <div class="book-details">
+                      <!-- <span class="selected-item">Select date</span> -->
+                      <input id="booking_select_date" type="text" class="booking-date" placeholder="Select Date.." data-input readonly="readonly" required>
+                      <span class="icon-light-date"></span>
+                    </div>
+                  </label>
+                </div>
+                <div class="book-item action-booking">
+                  <button class="btn pri-btn">Book Now</button>
+                </div>
               </div>
-            </div>
+            </form>
+          </section>
 
-          </section> -->
           <div class="search-container-block">
             <div class="search-all">
               <form action="#" class="form-search">
@@ -580,9 +619,19 @@
                       <span class="icon-down-open-big"></span>
                     </div>
                     <div class="select-options">
-                      <div class="option" data-value="value1">Hotel 1</div>
-                      <div class="option" data-value="value1">Hotel 2</div>
-                      <div class="option" data-value="value1">Hotel 3</div>
+                      <div class="option-category">
+                        <div class="option-category-title">Signature Outlets</div>
+                        <div class="option" data-value="value1">Finestra</div>
+                        <div class="option" data-value="value2">Red Lantern</div>
+                        <div class="option" data-value="value3">Yakumi</div>
+                        <div class="option" data-value="value4">Kiwa</div>
+                      </div>
+                      <div class="option-category">
+                        <div class="option-category-title">Casual</div>
+                        <div class="option" data-value="value5">Waterside</div>
+                        <div class="option" data-value="value6">Fresh</div>
+                        <div class="option" data-value="value7">Oasis</div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -591,10 +640,10 @@
           </div>
 
           <section class="block-content">
-            <div class="heading-top">
+            <!-- <div class="heading-top">
               <h2>Dining experience</h2>
               <p class="sub-title">Est sed varius praesent vivamus mauris elit. Accumsan enim elementum iaculis viverra felis.</p>
-            </div>
+            </div> -->
 
             <div class="featured-slider-container">
               <div class="slider-layout grid-container">
@@ -610,7 +659,7 @@
                       <h4>Acacia</h4>
                       <p>Whether it be a prime-aged ribeye steak or BBQ pork ribs, find the savory satisfaction you crave at the Acacia restaurant.</p>
 
-                      <a href="#" class="btn-text" title="View More Details">View More Details</a>
+                      <a href="#" class="btn-text" title="Learn More">Learn More</a>
                     </div>
                   </article>
                 </div>
@@ -626,7 +675,7 @@
                       <h4>House of Zhou</h4>
                       <p>House of Zhou brings you today’s well-loved imperial food from China’s rich spectrum of dishes.</p>
 
-                      <a href="#" class="btn-text" title="View More Details">View More Details</a>
+                      <a href="#" class="btn-text" title="Learn More">Learn More</a>
                     </div>
                   </article>
                 </div>
@@ -642,7 +691,7 @@
                       <h4>Finestra Italian Steakhouse</h4>
                       <p>Enjoy an exquisite steak experience that's a cut above the rest..</p>
 
-                      <a href="#" class="btn-text" title="View More Details">View More Details</a>
+                      <a href="#" class="btn-text" title="Learn More">Learn More</a>
                     </div>
                   </article>
                 </div>
@@ -658,7 +707,7 @@
                       <h4>Fresh</h4>
                       <p>Your ultimate buffet experience, redefined.</p>
 
-                      <a href="#" class="btn-text" title="View More Details">View More Details</a>
+                      <a href="#" class="btn-text" title="Learn More">Learn More</a>
                     </div>
                   </article>
                 </div>
