@@ -76,4 +76,90 @@
       border-bottom: 1px solid #eaeaea;
     }
   }
+
+  .no-option-category {
+    padding: 1rem .5rem;
+  }
+}
+
+.booking-tab-content {
+  display: none;
+  background-color: $brown;
+  padding: 2.5rem 1rem;
+
+  &.active {
+    display: block;
+  }
+
+  .book-widget {
+    background-color: $brown;
+  }
+
+  .book-item {
+    width: calc(100% / 4);
+    display: flex;
+    align-items: center;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .book-select {
+    display: flex;
+    justify-content: space-between;
+    height: 44px;
+    width: 100%;
+    padding: 0 1rem 0 0;
+    border: 1px solid $white;
+  }
+
+  .book-details {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .book-list {
+    top: 90%;
+  }
+
+  .solaire-icon {
+    display: flex;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    align-items: center;
+    color: $gray-light;
+    margin-top: -3px;
+  }
+
+  .icon-down-open-big {
+    margin-left: auto;
+  }
+
+  .action-booking {
+    max-width: 100%;
+  }
+}
+
+.booking-tab {
+  display: flex;
+
+  a {
+    text-align: center;
+    width: calc(100% / 2);
+    border-top: 5px solid transparent;
+    background-color: #66625E;
+    line-height: 2.15rem;
+    padding: .5rem .75rem;
+    color: $white;
+    text-transform: uppercase;
+    font-family: $font-family_sec_300;
+
+    &.active {
+      border-top: 5px solid $primary;
+      background-color: $brown;
+    }
+  }
 }

@@ -214,7 +214,7 @@
             <div class="book-header-container">
               <div class="book-header">
                 <p class="book-title">Book a title</p>
-                <button class="close-btn"> <span class="icon-cancel-circled"></span> </button>
+                <button class="close-btn"> <span class="icon-close"></span> </button>
               </div>
             </div>
 
@@ -589,7 +589,7 @@
                     <span class="book-label">Visiting Date</span>
                     <div class="book-details">
                       <!-- <span class="selected-item">Select date</span> -->
-                      <input id="booking_select_date" type="text" class="booking-date" placeholder="Select Date.." data-input readonly="readonly" required>
+                      <input id="booking_select_date" type="text" class="booking-date" placeholder="Select date" data-input readonly="readonly" required>
                       <span class="icon-light-date"></span>
                     </div>
                   </label>
@@ -749,7 +749,7 @@
               <form action="#" class="form-search">
                 <div class="form-group">
                   <div class="search-wrapper">
-                    <input type="text" class="input-search" placeholder="Search">
+                    <input type="text" class="input-search" placeholder="Search dining offers">
                     <button class="btn-search">
                       <span class="icon-light-search"></span>
                     </button>
@@ -759,13 +759,15 @@
                 <div class="form-group">
                   <div class="custom-select">
                     <div class="select-header">
-                      <div class="selected-option">All Hotels</div>
+                      <div class="selected-option">Select offers</div>
                       <span class="icon-down-open-big"></span>
                     </div>
                     <div class="select-options">
-                      <div class="option" data-value="value1">Hotel 1</div>
-                      <div class="option" data-value="value1">Hotel 2</div>
-                      <div class="option" data-value="value1">Hotel 3</div>
+                      <div class="no-option-category">
+                        <div class="option" data-value="value1">Dining Offers</div>
+                        <div class="option" data-value="value1">Dining Offers 2</div>
+                        <div class="option" data-value="value1">Dining Offers 3</div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -783,6 +785,7 @@
                       </div>
                     </a>
                     <div class="description text-left">
+                      <a href="#" class="category-tag"><small class="secondary"><span class=" icon-light-restaurant"></span> Japanese Cuisine</small></a>
                       <h4>Acacia</h4>
                       <p>Whether it be a prime-aged ribeye steak or BBQ pork ribs, find the savory satisfaction you crave at the Acacia restaurant.</p>
                       <p class="date">
@@ -802,6 +805,7 @@
                       </div>
                     </a>
                     <div class="description text-left">
+                      <a href="#" class="category-tag"><small class="secondary"><span class=" icon-light-restaurant"></span> Japanese Cuisine</small></a>
                       <h4>House of Zhou</h4>
                       <p>House of Zhou brings you today’s well-loved imperial food from China’s rich spectrum of dishes.</p>
                       <p class="date">
@@ -821,6 +825,7 @@
                       </div>
                     </a>
                     <div class="description text-left">
+                      <a href="#" class="category-tag"><small class="secondary"><span class=" icon-light-restaurant"></span> Japanese Cuisine</small></a>
                       <h4>Finestra Italian Steakhouse</h4>
                       <p>Enjoy an exquisite steak experience that's a cut above the rest..</p>
                       <p class="date">
@@ -840,6 +845,7 @@
                       </div>
                     </a>
                     <div class="description text-left">
+                      <a href="#" class="category-tag"><small class="secondary"><span class=" icon-light-restaurant"></span> Japanese Cuisine</small></a>
                       <h4>Fresh</h4>
                       <p>Your ultimate buffet experience, redefined.</p>
                       <p class="date">

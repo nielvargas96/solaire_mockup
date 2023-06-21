@@ -19,4 +19,10 @@
   .book-now-form-container {
     top: -40px;
   }
+
+  .header-second.on-scroll {
+    .book-now-form-container {
+      top: 0;
+    }
+  }
 }

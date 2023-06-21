@@ -1,0 +1,34 @@
+@media only screen and (max-width: $screen_1024) {
+  .booking-tab-content {
+
+    .book-item {
+      flex-direction: column;
+      width: 98%;
+
+      &:not(:last-child) {
+        margin-bottom: 1.5rem;
+      }
+    }
+
+    .book-widget {
+      align-items: center;
+    }
+
+    .book-list {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (min-width: $screen_1024) {
+  .booking-tab-content {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+
+    .book-item {
+      &:not(:last-child) {
+        padding-right: 1rem;
+      }
+    }
+  }
+}

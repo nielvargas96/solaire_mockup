@@ -10,11 +10,13 @@
 
       p {
         font-size: 0.875rem;
-        max-width: 85%;
+        max-width: 100%;
+      }
+
+      &.mb-0 {
+        margin-bottom: 0;
       }
     }
-
-
   }
 
   .block-content {
@@ -49,11 +51,9 @@
     }
   }
 
-
-
-
   .card-details {
-    padding: 0 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 
     h2,
     h3 {
@@ -70,14 +70,28 @@
   .form-search {
     .form-group {
       &:not(:last-of-type) {
-        margin-bottom: 1rem;
+        margin-bottom: 0;
       }
+    }
+  }
+
+  .form-search {
+    .input-search {
+      padding-left: 1rem;
+    }
+
+    .selected-option {
+      padding-left: 1rem;
     }
   }
 
 
   .splash-logo {
     max-width: 280px;
+  }
+
+  .signup-heading h2 {
+    margin-bottom: 1rem;
   }
 
 
@@ -138,7 +152,7 @@
   }
 
   .book-select {
-    padding: 1.5rem 2.5rem;
+    padding: 1.5rem 1.5rem;
   }
 
   .signup-wrapper {
@@ -156,7 +170,6 @@
       justify-content: center;
     }
   }
-
 
   .dining-experience {
     flex-direction: row;
@@ -177,6 +190,40 @@
 
   .card-container-2 .card-img {
     margin-bottom: 2rem;
+    width: 100%;
+  }
+
+
+
+  .card-container-3 {
+    display: flex;
+
+    .card-details-3 {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      text-align: left;
+      padding-right: 3rem;
+    }
+
+    h2 {
+      padding-top: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .card-action {
+      width: 70%;
+      text-align: center;
+
+      .btn {
+        width: 100%;
+      }
+    }
+  }
+
+  .card-details-3,
+  .card-img {
+    width: calc(100% / 2);
   }
 }
 
@@ -292,7 +339,11 @@
 
   }
 
-
+  .card-action {
+    .btn {
+      width: 70%;
+    }
+  }
 
   .card-container-2 {
     max-width: 50%;
@@ -330,6 +381,10 @@
       margin-bottom: 2rem;
     }
 
+    h3.mt-0 {
+      margin-top: 0;
+    }
+
     p {
       margin-bottom: 2rem;
     }
@@ -352,7 +407,7 @@
 
   .content-wrapper {
     max-width: 100%;
-    margin-bottom: 6rem;
+    // margin-bottom: 6rem;
   }
 
 
@@ -373,5 +428,16 @@
       padding: 1rem 2.5rem;
     }
   }
+
+
+  .newsletter-group {
+    max-width: 50%;
+  }
+
+  .newsletter-wrapper {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
 
 }

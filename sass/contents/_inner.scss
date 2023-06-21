@@ -83,9 +83,21 @@
     }
   }
 
-  .date {
+  .date,
+  .store-hours,
+  .store-location {
     font-family: $font-family_sec-500;
-    color: $gray_light;
+    color: $gray;
+  }
+
+  .store-hours,
+  .store-location {
+    display: flex;
+    font-size: 1rem;
+
+    span {
+      width: 20px;
+    }
   }
 
 }
@@ -193,6 +205,7 @@
 .inner-page-information {
   width: 100%;
   border-top: 1px solid #D2D2D2;
+  border-bottom: 1px solid #d2d2d2;
 
   .info-title {
     font-size: 1.25rem;
@@ -218,19 +231,24 @@
     }
 
     p {
-      margin-top: 4px;
+      margin-top: 8px;
       line-height: 24px;
     }
   }
 
   .see-all-container {
+    padding-top: 2rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
     justify-content: center;
 
     .btn {
+      width: 50%;
       margin-left: 0;
-      margin-right: 2rem;
+
+      &:not(:last-child) {
+        margin-right: 2rem;
+      }
     }
   }
 }
@@ -240,6 +258,7 @@
   align-items: center;
   justify-content: center;
   margin-top: 2rem;
+  margin-bottom: 1.5rem;
 
   .btn {
     width: 100%;
@@ -252,7 +271,7 @@
   margin-bottom: 2rem;
 
   h2 {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
 
   p {
@@ -273,5 +292,21 @@
     img {
       min-height: 250px;
     }
+  }
+}
+
+.block-content.dining-specials {
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 2rem;
+  padding-top: 0;
+
+  .heading-top {
+    padding-bottom: 1rem;
+  }
+
+  h3 {
+    font-family: $font-family-sec-700;
+    font-size: 1.25rem;
   }
 }

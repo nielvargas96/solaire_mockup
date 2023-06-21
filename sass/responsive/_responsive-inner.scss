@@ -120,6 +120,18 @@
       }
     }
   }
+
+  .inner-page-information .see-all-container {
+    flex-direction: column;
+
+    .btn {
+      width: 100%;
+
+      &:not(:last-child) {
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
 }
 
 

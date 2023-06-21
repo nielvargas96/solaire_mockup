@@ -137,7 +137,9 @@ footer {
 
 input[type=text],
 input[type=email],
-input[type=number] {
+input[type=number],
+input[type=date],
+input[type=time] {
 	font-family: $font-family-sec-500;
 	border: 1px solid #CBCBCB;
 	height: 46px;
@@ -156,6 +158,14 @@ input[type=number] {
 	}
 }
 
+input[type=date] {
+	padding-right: 1rem;
+
+	&::placeholder {
+		color: #727272;
+	}
+}
+
 input[type=checkbox] {
 	cursor: pointer;
 	background: #F2F2F2;
@@ -163,6 +173,58 @@ input[type=checkbox] {
 	border-radius: 3px;
 	min-height: 20px;
 }
+
+input[type=time]::-webkit-calendar-picker-indicator {
+	opacity: 0;
+	cursor: pointer;
+	width: 30px;
+	height: 30px;
+}
+
+input[type=time] {
+	position: relative;
+	padding-right: .5rem;
+	z-index: 1;
+
+	&::before {
+		content: 'Select time';
+		position: absolute;
+		background: #fff;
+		width: 75%;
+		color: #727272;
+	}
+
+	&::after {
+		content: '\e824';
+		position: absolute;
+		display: inline-block;
+		font-family: 'fontello';
+		color: $primary;
+		right: 1rem;
+		z-index: -1;
+		cursor: pointer;
+	}
+
+	&.active {
+		&::before {
+			content: '';
+		}
+	}
+
+	&.input-type-start {
+		&::before {
+			content: 'Start time';
+		}
+	}
+
+	&.input-type-end {
+		&::before {
+			content: 'End time';
+		}
+	}
+}
+
+
 
 .input-checkbox {
 	display: flex;
@@ -187,6 +249,12 @@ select {
 	height: 46px;
 }
 
+.time-group {
+	display: flex;
+	column-gap: 1.5rem;
+}
+
+
 input[type=text].booking-date {
 	color: #908f8f;
 	background-color: transparent;
@@ -198,6 +266,72 @@ input[type=text].booking-date {
 	cursor: pointer;
 }
 
+textarea {
+	font-family: $font-family-sec-500;
+	border: 1px solid #CBCBCB;
+	color: $brown;
+	outline: none;
+	border-radius: 0;
+	background-color: $white;
+	appearance: none;
+	-webkit-appearance: none;
+	padding: 1rem 1.5rem;
+	width: 100%;
+	resize: none;
+
+	&:focus-visible {
+		outline: 0;
+	}
+
+	&::placeholder {
+		color: #727272;
+	}
+}
+
+
+.radio-input-group {
+	display: flex;
+	column-gap: 2rem;
+	margin-bottom: 1rem;
+	margin-right: 30%;
+	margin-left: auto;
+
+	.group {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		label {
+			font-size: 14px;
+			margin-left: 6px;
+		}
+	}
+
+	input[type=radio] {
+		cursor: pointer;
+	}
+
+	// input[type=radio] {
+	// 	height: 16px;
+	// 	width: 16px;
+	// 	appearance: none;
+	// 	-webkit-appearance: none;
+	// 	-moz-appearance: none;
+	// 	border: 1px solid $primary;
+	// 	border-radius: 50%;
+	// 	transition: border-color 0.3s ease-in-out;
+
+	// 	&:checked {
+	// 		background-color: $primary;
+	// 		border-color: $primary;
+	// 	}
+	// }
+
+}
+
+.radio-group {
+	display: flex;
+}
 
 .flatpickr-calendar.animate.open {
 	margin-top: 22px;
@@ -205,11 +339,27 @@ input[type=text].booking-date {
 }
 
 .flatpickr-day.prevMonthDay.flatpickr-disabled {
-	color: #3939394d;
+	color: #b6b6b64d;
 }
 
-.flatpickr-day.flatpickr-disabled {
-	color: #3939396e;
+.pt {
+	padding-top: 1.5rem;
+}
+
+.mb-0 {
+	margin-bottom: 0;
+}
+
+.mt-0 {
+	margin-top: 0;
+}
+
+.m-auto {
+	margin: 0 auto;
+}
+
+.d-none {
+	display: none;
 }
 
 @mixin shadow {
@@ -406,17 +556,20 @@ input[type=text].booking-date {
 
 	p {
 		font-size: 0.9375rem;
+		line-height: 22px;
 	}
 
 	a {
 		font-size: 0.9375rem;
 	}
 
-	.featured-slider-container {
 
-		p,
-		b {
+	.recommend-tag {
+		font-size: 13px;
+
+		+p {
 			font-size: 13px;
+			line-height: 1;
 		}
 	}
 

@@ -154,7 +154,7 @@ main {
 .main-pagination {
 	position: absolute;
 	z-index: 1;
-	bottom: 20% !important;
+	bottom: 22% !important;
 	text-align: center;
 }
 
@@ -242,8 +242,8 @@ main {
 	top: 100%;
 	left: 0;
 	background: $brown_light;
-	padding-left: 2.5rem;
-	padding-right: 2.5rem;
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
 	transform: translateY(-.5rem);
 	transition: transform .2s cubic-bezier(0.25, 0.1, 0.48, 0.52) 0s;
 	// display: none;
@@ -458,7 +458,36 @@ main {
 	}
 }
 
+.card-container-3 {
+	display: block;
+	width: 100%;
+	text-align: center;
 
+	// .card-details-3 {
+	// 	padding-right: 2rem;
+	// }
+
+	.btn {
+		display: block;
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	.card-action {
+		margin-bottom: 4rem;
+		// display: block;
+		// width: 80%;
+		// margin: 2rem auto;
+	}
+
+
+	.card-img {
+		img {
+			width: 100%;
+			display: block;
+		}
+	}
+}
 
 .card-details {
 
@@ -467,6 +496,8 @@ main {
 		margin-top: 1.75rem;
 		margin-bottom: 1rem;
 	}
+
+
 
 	p {
 		line-height: 26px;
@@ -518,6 +549,11 @@ main {
 
 .card-action {
 	margin-top: 1.875rem;
+
+	.btn {
+		width: 100%;
+		text-align: center;
+	}
 }
 
 .feaured-banner {
@@ -567,8 +603,11 @@ main {
 	}
 
 	.actions {
-		* {
-			margin-right: 1.5rem;
+		display: flex;
+		align-items: center;
+
+		.btn-text {
+			margin-left: 1.5rem;
 		}
 	}
 }
@@ -711,4 +750,50 @@ main {
 	img {
 		min-height: 250px;
 	}
+}
+
+.newsletter {
+	background-color: #D2D2D2;
+}
+
+.newsletter-wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+}
+
+.newsletter-heading {
+	h2 {
+		color: #5D5D5D;
+		margin-bottom: .875rem;
+	}
+
+	p {
+		margin-bottom: 1.5rem;
+	}
+}
+
+.newsletter-group {
+	display: flex;
+	width: 100%;
+
+	.btn {
+		border: 1px solid #949494;
+		border-left: 0;
+		width: 50px;
+	}
+
+	.icon-send {
+		font-size: 1.25rem;
+	}
+}
+
+.input-newsletter {
+	background-color: #DEDEDE !important;
+	height: 44px;
+	border: 1px solid #949494 !important;
+	border-right-color: transparent !important;
 }

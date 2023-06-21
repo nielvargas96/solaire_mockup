@@ -214,7 +214,7 @@
             <div class="book-header-container">
               <div class="book-header">
                 <p class="book-title">Book a title</p>
-                <button class="close-btn"> <span class="icon-cancel-circled"></span> </button>
+                <button class="close-btn"> <span class="icon-close"></span> </button>
               </div>
             </div>
 
@@ -504,7 +504,6 @@
         </nav>
     </header>
 
-
     <main>
       <section class="hero-parallax">
         <div class="main-slider">
@@ -530,15 +529,20 @@
       <section class="overlay-parallax">
         <div class="main">
 
-          <section class="booking">
-            <form action="">
+          <section class="booking booking-with-tabs">
+            <div class="booking-tab">
+              <a href="#" class="active">Sky Tower</a>
+              <a href="#">Bay Tower</a>
+            </div>
+
+            <form action="" class="booking-tab-content active">
               <div class="book-widget">
                 <div class="book-item">
                   <div class="book-select">
-                    <span class="book-label">Select Booking Type</span>
                     <div class="book-details">
+                      <span class="solaire-icon icon-light-rooms"></span>
                       <span class="selected-item">
-                        Events/Shows
+                        Select Room
                       </span>
                       <span class="icon-down-open-big"></span>
                     </div>
@@ -554,24 +558,8 @@
 
                 <div class="book-item">
                   <div class="book-select">
-                    <span class="book-label">Restaurants</span>
                     <div class="book-details">
-                      <span class="selected-item">Select a restaurant</span>
-                      <span class="icon-down-open-big"></span>
-                    </div>
-                  </div>
-                  <div class="book-list">
-                    <div class="book-list-item" data-value="Events">Restaurant</div>
-                    <div class="book-list-item" data-value="Shows 1">Restaurant 1</div>
-                    <div class="book-list-item" data-value="Shows 2">Restaurant 2</div>
-                    <div class="book-list-item" data-value="Shows 3">Restaurant 3</div>
-                    <div class="book-list-item" data-value="Shows 4">Restaurant 4</div>
-                  </div>
-                </div>
-                <div class="book-item">
-                  <div class="book-select">
-                    <span class="book-label">Guests</span>
-                    <div class="book-details">
+                      <span class="solaire-icon icon-light-adult"></span>
                       <span class="selected-item">0 Adults 0 child</span>
                       <span class="icon-down-open-big"></span>
                     </div>
@@ -586,11 +574,65 @@
                 </div>
                 <div class="book-item date-select">
                   <label for="booking_select_date" class="book-select ">
-                    <span class="book-label">Visiting Date</span>
                     <div class="book-details">
+                      <span class="solaire-icon icon-light-date"></span>
                       <!-- <span class="selected-item">Select date</span> -->
-                      <input id="booking_select_date" type="text" class="booking-date" placeholder="Select Date.." data-input readonly="readonly" required>
-                      <span class="icon-light-date"></span>
+                      <input id="booking_select_date" type="text" class="booking-date" placeholder="Select date" data-input readonly="readonly" required>
+
+                      <span class="icon-down-open-big"></span>
+                    </div>
+                  </label>
+                </div>
+                <div class="book-item action-booking">
+                  <button class="btn pri-btn">Book Now</button>
+                </div>
+              </div>
+            </form>
+            <form action="" class="booking-tab-content ">
+              <div class="book-widget">
+                <div class="book-item">
+                  <div class="book-select">
+                    <div class="book-details">
+                      <span class="solaire-icon icon-light-rooms"></span>
+                      <span class="selected-item">
+                        Select Room
+                      </span>
+                      <span class="icon-down-open-big"></span>
+                    </div>
+                  </div>
+                  <div class="book-list">
+                    <div class="book-list-item" data-value="Events">Restaurants</div>
+                    <div class="book-list-item" data-value="Shows 1">Shows 1</div>
+                    <div class="book-list-item" data-value="Shows 2">Shows 2</div>
+                    <div class="book-list-item" data-value="Shows 3">Shows 3</div>
+                    <div class="book-list-item" data-value="Shows 4">Shows 4</div>
+                  </div>
+                </div>
+
+                <div class="book-item">
+                  <div class="book-select">
+                    <div class="book-details">
+                      <span class="solaire-icon icon-light-adult"></span>
+                      <span class="selected-item">0 Adults 0 child</span>
+                      <span class="icon-down-open-big"></span>
+                    </div>
+                  </div>
+                  <div class="book-list">
+                    <div class="book-list-item" data-value="Events">Events</div>
+                    <div class="book-list-item" data-value="Shows 1">Shows 1</div>
+                    <div class="book-list-item" data-value="Shows 2">Shows 2</div>
+                    <div class="book-list-item" data-value="Shows 3">Shows 3</div>
+                    <div class="book-list-item" data-value="Shows 4">Shows 4</div>
+                  </div>
+                </div>
+                <div class="book-item date-select">
+                  <label for="booking_select_date" class="book-select ">
+                    <div class="book-details">
+                      <span class="solaire-icon icon-light-date"></span>
+                      <!-- <span class="selected-item">Select date</span> -->
+                      <input id="booking_select_date" type="text" class="booking-date" placeholder="Select date" data-input readonly="readonly" required>
+
+                      <span class="icon-down-open-big"></span>
                     </div>
                   </label>
                 </div>
@@ -602,22 +644,20 @@
           </section>
 
           <section class="block-content">
-            <div class="content-wrapper">
-              <div class="heading-top">
-                <h2>Sky Tower</h2>
-              </div>
+            <div class="heading-top">
+              <h2>Sky Tower</h2>
+            </div>
 
-              <div class="card-container">
-                <a href="#" class="card-img">
-                  <img loading="lazy" src="./assets/img/card-img-560x330.png" alt="">
-                </a>
-                <div class="card-details">
-                  <h3>Sky Tower</h3>
-                  <p>Bask in the opulence of one of the premier 5-star hotels in Metro Manila with the variety of lavish rooms and suites offered at Solaire Resort & Casino.</p>
+            <div class="card-container-1">
+              <a href="#" class="card-img">
+                <img loading="lazy" src="./assets/img/card-img-560x330.png" alt="">
+              </a>
+              <div class="card-details">
+                <h3>Sky Tower</h3>
+                <p>Bask in the opulence of one of the premier 5-star hotels in Metro Manila with the variety of lavish rooms and suites offered at Solaire Resort & Casino.</p>
 
-                  <div class="card-action">
-                    <a href="#" class="btn-text from-left" title="Read more">Read More</a>
-                  </div>
+                <div class="card-action">
+                  <a href="#" class="btn-text from-left" title="Read more">Read More</a>
                 </div>
               </div>
             </div>
@@ -761,7 +801,7 @@
                 <h2>Bay Tower</h2>
               </div>
 
-              <div class="card-container">
+              <div class="card-container-1">
                 <a href="#" class="card-img">
                   <img loading="lazy" src="./assets/img/card-img-560x330.png" alt="">
                 </a>
@@ -1045,6 +1085,23 @@
               <button class="btn pri-btn">
                 See all dining offers
               </button>
+            </div>
+          </section>
+
+          <section class="newsletter">
+            <div class="newsletter-wrapper">
+              <div class="newsletter-heading">
+                <h2>Stay updated</h2>
+                <p>Sign up for our newsletter about our latest deals and updates.</p>
+              </div>
+              <div class="newsletter-form">
+                <form action="">
+                  <div class="newsletter-group">
+                    <input class="input-newsletter" type="email" placeholder="Enter your email address" required>
+                    <button class="btn pri-btn"><span class="icon-send"></span></button>
+                  </div>
+                </form>
+              </div>
             </div>
           </section>
 

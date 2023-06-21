@@ -3,9 +3,25 @@
 }
 
 .text-center {
-  position: relative;
+  text-align: center;
 }
 
 .text-left {
   text-align: left;
+}
+
+.secondary {
+  color: $secondary;
+}
+
+.red {
+  color: $red;
+}
+
+.green {
+  color: $green;
+}
+
+.blue {
+  color: $blue;
 }
