@@ -11,7 +11,7 @@ if (document.querySelector('.index')) {
       .from(".index .splash-logo", {
         delay: 0.1,
         scale: 1,
-        duration: 1.5,
+        duration: 1,
         scale: 0,
         y: -100,
         stagger: {
@@ -21,18 +21,18 @@ if (document.querySelector('.index')) {
         scale: 3,
         opacity: 0,
         duration: .5,
-        delay: 1.3
+        delay: 1
       })
       .from(".index body", { className: "active" });
 
     const screenAnimation = gsap.timeline();
     screenAnimation
-      .to(".index .splash-screen", { opacity: 0, duration: .5, delay: 3.5 })
+      .to(".index .splash-screen", { opacity: 0, duration: .5, delay: 2.5 })
       .to(".index .splash-screen", { display: "none" })
       .to(".index body", { className: "", delay: 1 });
 
     gsap.from('.index .menu-wrapper,.index .btn-header,.index .logo-inner,.index .content-text,.index .logo-container,.index .toggle-container,.index .main-pagination', {
-      delay: 4,
+      delay: 3,
       duration: .5,
       opacity: 0,
       y: 50,
@@ -42,38 +42,38 @@ if (document.querySelector('.index')) {
     });
 
     gsap.from('.index .booking', {
-      delay: 4,
+      delay: 3,
       duration: .5,
       opacity: 0,
       y: 100,
     });
 
     gsap.to('.index .booking', {
-      delay: 5,
+      delay: 4,
       duration: .5,
       y: -80,
     });
 
     gsap.from('.index .main-swiper-button-prev', {
-      delay: 4,
+      delay: 4.5,
       duration: 0.5,
       x: -100,
     });
 
     gsap.to('.index .main-swiper-button-prev', {
-      delay: 6,
+      delay: 5,
       duration: 0.5,
       x: 0,
     });
 
     gsap.from('.index .main-swiper-button-next', {
-      delay: 4,
+      delay: 4.5,
       duration: 0.5,
       x: 100,
     });
 
     gsap.to('.index .main-swiper-button-next', {
-      delay: 6,
+      delay: 5,
       duration: 0.5,
       x: 0,
     });
@@ -812,18 +812,22 @@ $('.close-btn').on("click", function () {
 
 
 // gsap.timeline();
-const timeStart = document.querySelector('.input-time-start');
-const timeEnd = document.querySelector('.input-time-end');
 
-timeStart.addEventListener('change', function () {
-  timeStart.classList.add('active');
+
+// Input time start js
+const timeStart = document.querySelectorAll('.input-time-start');
+const timeEnd = document.querySelectorAll('.input-time-end');
+
+function addActiveClass() {
+  this.classList.add('active');
+}
+
+timeStart.forEach(function (input) {
+  input.addEventListener('change', addActiveClass);
+  input.addEventListener('click', addActiveClass);
 });
-timeStart.addEventListener('click', function () {
-  timeStart.classList.add('active');
-});
-timeEnd.addEventListener('change', function () {
-  timeEnd.classList.add('active');
-});
-timeEnd.addEventListener('click', function () {
-  timeEnd.classList.add('active');
+
+timeEnd.forEach(function (input) {
+  input.addEventListener('change', addActiveClass);
+  input.addEventListener('click', addActiveClass);
 });
