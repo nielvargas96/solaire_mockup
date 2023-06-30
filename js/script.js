@@ -86,6 +86,9 @@ if (document.querySelector('.index')) {
 
 // Sliders
 let mainSlider = new Swiper(".main-slider", {
+  lazy: {
+    loadPrevNext: true, // Load images in the adjacent slides
+  },
   navigation: {
     nextEl: ".main-swiper-button-next",
     prevEl: ".main-swiper-button-prev",
@@ -580,6 +583,35 @@ $(document).ready(function () {
   });
 
   function checkWindowWidth() {
+
+    if ($(window).width() < 680) {
+      $(".booking-date").flatpickr({
+        // altInput: true,
+        // altFormat: "F j, Y",
+        showMonths: 1,
+        dateFormat: "m/d/y",
+        // allowInput: true,
+        mode: "range",
+        minDate: "today",
+        position: "below left",
+        static: true
+        // maxDate: new Date().fp_incr(15)
+      });
+    } else {
+      $(".booking-date").flatpickr({
+        // altInput: true,
+        // altFormat: "F j, Y",
+        showMonths: 2,
+        dateFormat: "m/d/y",
+        // allowInput: true,
+        mode: "range",
+        minDate: "today",
+        position: "below left"
+
+        // maxDate: new Date().fp_incr(15)
+      });
+    }
+
     if ($(window).width() < 1100) {
       // Footer
       // $(".footer-title").on('click', function () {
@@ -596,17 +628,7 @@ $(document).ready(function () {
         }
       });
 
-      $(".booking-date").flatpickr({
-        // altInput: true,
-        // altFormat: "F j, Y",
-        showMonths: 1,
-        dateFormat: "m/d/y",
-        // allowInput: true,
-        mode: "range",
-        minDate: "today",
-        position: "below left"
-        // maxDate: new Date().fp_incr(15)
-      });
+
 
       $('.footer-checkbox').prop('disabled', false);
       $('.footer-checkbox').prop('checked', false);
@@ -620,17 +642,7 @@ $(document).ready(function () {
         }
       });
 
-      $(".booking-date").flatpickr({
-        // altInput: true,
-        // altFormat: "F j, Y",
-        showMonths: 2,
-        dateFormat: "m/d/y",
-        // allowInput: true,
-        mode: "range",
-        minDate: "today",
-        position: "below left"
-        // maxDate: new Date().fp_incr(15)
-      });
+
 
       $('.footer-checkbox').prop('checked', true);
       $('.footer-checkbox').prop('disabled', true);
@@ -641,12 +653,12 @@ $(document).ready(function () {
   $(window).on('resize', checkWindowWidth);
 });
 
-flatpickr(".input_date", {
-  showMonths: 2,
-  mode: "range",
-  minDate: "today",
-  position: "below left"
-});
+// flatpickr(".input_date", {
+//   showMonths: 2,
+//   mode: "range",
+//   minDate: "today",
+//   position: "below left"
+// });
 
 // document.addEventListener("DOMContentLoaded", function () {
 //   const datepickerButtons = document.getElementsByClassName("btn_date");
