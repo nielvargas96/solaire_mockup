@@ -589,13 +589,13 @@
       <section class="overlay-parallax">
         <div class="main">
           <section class="booking">
-            <form action="#">
+            <form class="book-now-submit-form" action="#">
               <div class="book-widget">
                 <div class="book-item">
                   <div class="book-select">
                     <span class="book-label">Select Booking Type</span>
                     <div class="book-details">
-                      <span class="selected-item">
+                      <span class="selected-item" required>
                         Events/Shows
                       </span>
                       <span class="icon-down-open-big"></span>
@@ -614,7 +614,7 @@
                   <div class="book-select">
                     <span class="book-label">Restaurants</span>
                     <div class="book-details">
-                      <span class="selected-item">Select a restaurant</span>
+                      <span class="selected-item" required>Select a restaurant</span>
                       <span class="icon-down-open-big"></span>
                     </div>
                   </div>
@@ -631,7 +631,7 @@
                   <div class="book-select">
                     <span class="book-label">Guests</span>
                     <div class="book-details">
-                      <span class="selected-item">0 Adults 0 child</span>
+                      <span class="selected-item" required>0 Adults 0 child</span>
                       <span class="icon-down-open-big"></span>
                     </div>
                   </div>
@@ -646,7 +646,7 @@
 
                 <div class="book-item date-select">
                   <label for="booking_select_date" class="book-select ">
-                    <span class="book-label">Visiting Date</span>
+                    <span class="book-label" required>Visiting Date</span>
                     <div class="book-details">
                       <!-- <span class="selected-item">Select date</span> -->
                       <input id="booking_select_date" type="text" class="booking-date" placeholder="Select date" data-input readonly="readonly" required>

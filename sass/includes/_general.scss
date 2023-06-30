@@ -297,20 +297,88 @@ textarea {
 	margin-left: auto;
 
 	.group {
-		display: flex;
-		align-items: center;
-		justify-content: center;
+		position: relative;
+		// display: flex;
+		// align-items: center;
+		// justify-content: center;
 
-		label {
-			font-size: 14px;
-			margin-left: 6px;
-			font-family: $font-family-sec-500;
-		}
+		// label {
+		// 	font-size: 14px;
+		// 	margin-left: 6px;
+		// 	font-family: $font-family-sec-500;
+		// }
 	}
 
-	input[type=radio] {
+	input[type=radio]:checked,
+	input[type=radio]:not(:checked) {
+		position: absolute;
+		left: -9999px;
+	}
+
+	input[type=radio]:checked+label,
+	input[type=radio]:not(:checked)+label {
+		position: relative;
+		padding-left: 28px;
 		cursor: pointer;
+		line-height: 20px;
+		display: inline-block;
+		color: #666;
+		z-index: 110000;
 	}
+
+	input[type=radio]:checked+label:before,
+	input[type=radio]:not(:checked)+label:before {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 18px;
+		height: 18px;
+		border: 1px solid $primary;
+		border-radius: 100%;
+		background: #fff;
+	}
+
+	input[type=radio]:checked+label:after,
+	input[type=radio]:not(:checked)+label:after {
+		content: '';
+		width: 12px;
+		height: 12px;
+		background: $primary;
+		position: absolute;
+		top: 4px;
+		left: 4px;
+		border-radius: 100%;
+		-webkit-transition: all 0.2s ease;
+		transition: all 0.2s ease;
+	}
+
+	input[type=radio]:not(:checked)+label:after {
+		// opacity: 0;
+		-webkit-transform: scale(1);
+		transform: scale(1);
+		background-color: #DEDEDE;
+		width: 12px;
+		height: 12px;
+	}
+
+	input[type=radio]:not(:checked)+label::before {
+		border-color: #DBDBDB;
+	}
+
+	input[type=radio]:checked+label:after {
+		opacity: 1;
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+
+	// input[type=radio] {
+	// 	cursor: pointer;
+	// 	position: relative;
+	// 	background-color: #fff;
+	// 	margin-left: -150px;
+
+	// }
 
 	// input[type=radio] {
 	// 	height: 16px;
@@ -577,5 +645,18 @@ textarea {
 
 	.flatpickr-calendar.animate.open {
 		margin-left: -22px;
+	}
+
+	input[type=text],
+	input[type=email],
+	input[type=number],
+	input[type=date],
+	input[type=time],
+	textarea {
+		padding-left: 0.5rem;
+	}
+
+	div.custom-select .selected-option {
+		padding-left: 0.5rem;
 	}
 }

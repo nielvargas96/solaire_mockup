@@ -831,3 +831,34 @@ timeEnd.forEach(function (input) {
   input.addEventListener('change', addActiveClass);
   input.addEventListener('click', addActiveClass);
 });
+
+// Validation form book-now
+
+const bookForm = document.querySelector('.book-now-submit-form');
+
+bookForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  // Validate the form
+  if (validateBookForm()) {
+    // If the form is valid, submit it
+    bookForm.submit();
+  } else {
+    console.log('test')
+  }
+
+})
+
+function validateBookForm() {
+  const requiredInputs = bookForm.querySelectorAll('[required]');
+
+  for (let i = 0; i < requiredInputs.length; i++) {
+    if (requiredInputs[i].value.trim() === '') {
+      alert('Please fill in all required fields.');
+      return false;
+    }
+  }
+
+  return true;
+}
+
