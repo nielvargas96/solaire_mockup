@@ -85,26 +85,30 @@ if (document.querySelector('.index')) {
 }
 
 // Sliders
-let mainSlider = new Swiper(".main-slider", {
-  lazy: {
-    loadPrevNext: true, // Load images in the adjacent slides
-  },
-  navigation: {
-    nextEl: ".main-swiper-button-next",
-    prevEl: ".main-swiper-button-prev",
-  },
-  pagination: {
-    el: ".main-pagination",
-    clickable: true,
-  }, autoplay: {
-    delay: 6000,
-  },
-  centeredSlides: true,
-  slidesPerView: 1,
-  loop: true,
-  spaceBetween: 0,
-  speed: 900
-});
+
+
+setTimeout(function () {
+  let mainSlider = new Swiper(".main-slider", {
+    lazy: {
+      loadPrevNext: true, // Load images in the adjacent slides
+    },
+    navigation: {
+      nextEl: ".main-swiper-button-next",
+      prevEl: ".main-swiper-button-prev",
+    },
+    pagination: {
+      el: ".main-pagination",
+      clickable: true,
+    }, autoplay: {
+      delay: 5000,
+    },
+    centeredSlides: true,
+    slidesPerView: 1,
+    loop: true,
+    spaceBetween: 0,
+    speed: 900
+  });
+}, 9000);
 
 let slider1 = new Swiper(".slider-1", {
   navigation: {
