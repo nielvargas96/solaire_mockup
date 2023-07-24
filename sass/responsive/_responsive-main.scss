@@ -2,7 +2,7 @@
   .main-slider {
     .content-text {
       padding: 6%;
-      margin-bottom: 6rem;
+      // margin-bottom: 6rem;
 
       h1 {
         font-size: 1.625rem;
@@ -142,6 +142,7 @@
       margin-bottom: 0;
     }
   }
+
 }
 
 
@@ -155,10 +156,23 @@
     padding: 1.5rem 1.5rem;
   }
 
+  .signup-bottom {
+    &.with-image {
+      flex-direction: row;
+
+      .main-img-container,
+      .signup-wrapper {
+        width: calc(100%/2);
+      }
+    }
+  }
+
   .signup-wrapper {
     .signup-heading {
       width: 50%;
     }
+
+
 
     .img-container {
       position: absolute;
@@ -225,17 +239,65 @@
   .card-img {
     width: calc(100% / 2);
   }
+
+  .article-layout-3 .description {
+    padding: 3.5rem;
+  }
+
+  .card-container-5 {
+    article {
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 5rem;
+      flex-direction: row;
+
+      &.reversed {
+        flex-direction: row-reverse;
+
+        .description {
+          padding-left: 0;
+        }
+      }
+    }
+
+    .img-container,
+    .description {
+      width: calc(100%/2);
+    }
+
+    .img-holder,
+    img {
+      width: 100%;
+    }
+
+    .description {
+      padding-left: 2.5rem;
+      padding-right: 2rem;
+    }
+
+    h4 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    p {
+      font-size: 1.125rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+
 }
 
 
 @media only screen and (min-width: $screen_1024) {
 
   .overlay-parallax {
-    margin-top: 100vh;
+    margin-top: calc(60vh + 70px);
   }
 
   .hero-parallax {
-    height: 100vh;
+    height: 60vh;
+    margin-top: 70px;
   }
 
   .book-widget {
@@ -247,8 +309,8 @@
     padding: 2rem 3rem;
     // transform: translateY(-80px);
     // margin-bottom: -80px;
-    transform: translateY(-82px);
-    transition: transform .25s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    // transform: translateY(-82px);
+    // transition: transform .25s cubic-bezier(0.445, 0.05, 0.55, 0.95);
     padding: 0 2rem;
     margin-bottom: 0;
 
@@ -287,11 +349,6 @@
     margin-left: auto;
   }
 
-
-
-  .hero-parallax {
-    margin-top: 40px;
-  }
 
   .main-slider {
     .swiper-pagination {
@@ -372,6 +429,11 @@
     }
   }
 
+
+  .card-container-4 {
+    flex-direction: row;
+  }
+
   .card-details {
     padding-left: 2.5rem;
 
@@ -439,5 +501,42 @@
     padding-bottom: 6rem;
   }
 
+  .slider-layout-2 {
+    .article-layout-3 {
+      flex-direction: row;
 
+      .img-container,
+      .description {
+        width: 50%;
+      }
+
+      .description {
+        text-align: right;
+      }
+
+      .action {
+        justify-content: flex-end;
+      }
+    }
+  }
+
+  .block-content-2 {
+    overflow: unset;
+  }
+
+
+
+}
+
+.restaurant-container {
+  display: flex;
+
+  .featured-slider-container,
+  .inner-page-information {
+    width: 50%;
+  }
+
+  .inner-page-information {
+    padding-left: 2rem;
+  }
 }

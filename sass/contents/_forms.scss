@@ -18,6 +18,17 @@
 	margin-bottom: 1.5rem;
 }
 
+.body-form-group {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 2rem;
+
+	.form-group {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+}
+
 .book-fill-up-form {
 	background-color: $white;
 	width: 100%;
@@ -27,9 +38,17 @@
 	.img-container-logo {
 		margin-bottom: 1rem;
 	}
-
-
 }
+
+.book-fill-up-form {
+	&.main-book-form {
+		.book-form {
+			max-height: inherit;
+			overflow-y: unset;
+		}
+	}
+}
+
 
 .table-info-details {
 	.info {
@@ -175,4 +194,14 @@
 	.btn {
 		width: 100%;
 	}
+}
+
+.form-grid {
+	display: grid;
+	grid-template-columns: 1fr;
+
+}
+
+.form-flex {
+	display: flex;
 }

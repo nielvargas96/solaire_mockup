@@ -16,11 +16,11 @@ footer {
 }
 
 .footer-wrapper {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
-.footer-content {
+.footer-inner-wrapper {
   padding: 2rem 1rem;
 }
 
@@ -90,11 +90,6 @@ footer {
     }
   }
 }
-
-.footer-title {}
-
-
-
 
 .footer-links {
   display: flex;
@@ -173,11 +168,10 @@ footer {
 .footer-logo {
   display: block;
   text-align: center;
-  margin-bottom: 2rem;
-  margin-top: 1rem;
+  margin-bottom: 1.5rem;
 
   img {
-    width: 260px;
+    width: 300px;
   }
 }
 
@@ -205,11 +199,14 @@ footer {
 }
 
 .social {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
   text-align: center;
 
   p {
+    margin-right: 1.125rem;
     font-family: $font_family_sec_900;
-    margin-bottom: 1rem;
     color: $white;
     text-transform: uppercase;
   }
@@ -225,4 +222,27 @@ footer {
     line-height: 2;
     margin-bottom: 2rem;
   }
+}
+
+.footer-sign-up {
+
+  p {
+    font-size: 1.125rem;
+    line-height: 26px;
+    margin-bottom: 1rem;
+    color: $white;
+    font-family: $font_family_sec_700;
+    font-weight: 500;
+  }
+
+  .newsletter-group {
+    max-width: 100%;
+  }
+}
+
+.left-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 2.5rem;
 }

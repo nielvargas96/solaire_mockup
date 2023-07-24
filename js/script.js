@@ -3,7 +3,7 @@ if (document.querySelector('.index')) {
 
   // Homepage Screen Splash
   const animationPlayedTimestamp = localStorage.getItem('animationPlayedTimestamp');
-  const expirationTime = 2 * 60 * 60 * 1000;
+  const expirationTime = 3 * 60 * 60 * 1000;
   if (!animationPlayedTimestamp || (Date.now() - animationPlayedTimestamp > expirationTime)) {
     $('.index .splash-logo').css('display', 'block');
     const logoAnimation = gsap.timeline();
@@ -51,7 +51,7 @@ if (document.querySelector('.index')) {
     gsap.to('.index .booking', {
       delay: 4,
       duration: .5,
-      y: -80,
+      y: -50,
     });
 
     gsap.from('.index .main-swiper-button-prev', {
@@ -79,6 +79,7 @@ if (document.querySelector('.index')) {
     });
 
     localStorage.setItem('animationPlayedTimestamp', Date.now());
+    $('body').animate({ scrollTop: 0 }, 'fast');
   } else {
     $('.index .splash-screen').addClass('active');
   }
@@ -86,7 +87,7 @@ if (document.querySelector('.index')) {
 
 // Sliders
 
-
+// 
 setTimeout(function () {
   let mainSlider = new Swiper(".main-slider", {
     lazy: {
@@ -108,7 +109,7 @@ setTimeout(function () {
     spaceBetween: 0,
     speed: 900
   });
-}, 9000);
+}, 8000);
 
 let slider1 = new Swiper(".slider-1", {
   navigation: {
@@ -155,10 +156,35 @@ let slider2 = new Swiper(".slider-2", {
   },
   centeredSlides: true,
   slidesPerView: 1,
-  loop: true,
+  loop: false,
   spaceBetween: 50,
-  speed: 800
+  speed: 600,
+  effect: 'coverflow',
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: 'auto',
+  coverflowEffect: {
+    rotate: 0,
+    stretch: 0,
+    depth: 0,
+    modifier: 1,
+    slideShadows: true,
+  },
+  breakpoints: {
+    1024: {
+      spaceBetween: 350,
+      coverflowEffect: {
+        rotate: 5,
+        stretch: 100,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      }
+    }
+  }
 });
+
+
 
 let slider3 = new Swiper(".slider-3", {
   navigation: {
@@ -456,6 +482,27 @@ let slider11 = new Swiper(".vip-restaurants", {
   }
 });
 
+let slider12 = new Swiper(".slider-inner-restaurant", {
+  // navigation: {
+  //   nextEl: ".button-next-slider-12",
+  //   prevEl: ".button-prev-slider-12",
+  // },
+  pagination: {
+    el: ".pagination-slider-12",
+    clickable: true,
+  },
+  lazyLoading: true,
+  // autoplay: {
+  //   delay: 4000,
+  // },
+  centeredSlides: false,
+  slidesPerView: 1,
+  loop: false,
+  spaceBetween: 20,
+  speed: 800
+});
+
+
 // let slider12 = new Swiper(".dining-experience", {
 //   // navigation: {
 //   //   nextEl: ".button-next-slider-11",
@@ -626,7 +673,7 @@ $(document).ready(function () {
       $(window).on('scroll', function () {
         if ($(this).scrollTop() > 50) {
           $('.header-second').removeClass('on-scroll');
-          $('.booking').addClass('on-scroll');
+          // $('.booking').addClass('on-scroll');
         } else {
           $('.header-second').removeClass('on-scroll');
         }
@@ -640,9 +687,11 @@ $(document).ready(function () {
       // Header
       $(window).on('scroll', function () {
         if ($(this).scrollTop() > 50) {
-          $('.header-second, .booking, .btn-header').addClass('on-scroll');
+          $('.header-second,  .btn-header').addClass('on-scroll');
+          // $('.header-second, .booking, .btn-header').addClass('on-scroll');
         } else {
-          $('.header-second, .booking, .btn-header').removeClass('on-scroll');
+          // $('.header-second, .booking, .btn-header').removeClass('on-scroll');
+          $('.header-second,  .btn-header').removeClass('on-scroll');
         }
       });
 
@@ -850,31 +899,42 @@ timeEnd.forEach(function (input) {
 
 // Validation form book-now
 
-const bookForm = document.querySelector('.book-now-submit-form');
+// const bookForm = document.querySelector('.book-now-submit-form');
 
-bookForm.addEventListener('submit', (e) => {
-  e.preventDefault();
+// bookForm.addEventListener('submit', (e) => {
+//   e.preventDefault();
 
-  // Validate the form
-  if (validateBookForm()) {
-    // If the form is valid, submit it
-    bookForm.submit();
-  } else {
-    console.log('test')
-  }
+//   // Validate the form
+//   if (validateBookForm()) {
+//     // If the form is valid, submit it
+//     bookForm.submit();
+//   } else {
+//     console.log('test')
+//   }
 
-})
+// })
 
-function validateBookForm() {
-  const requiredInputs = bookForm.querySelectorAll('[required]');
+// function validateBookForm() {
+//   const requiredInputs = bookForm.querySelectorAll('[required]');
 
-  for (let i = 0; i < requiredInputs.length; i++) {
-    if (requiredInputs[i].value.trim() === '') {
-      alert('Please fill in all required fields.');
-      return false;
-    }
-  }
+//   for (let i = 0; i < requiredInputs.length; i++) {
+//     if (requiredInputs[i].value.trim() === '') {
+//       alert('Please fill in all required fields.');
+//       return false;
+//     }
+//   }
 
-  return true;
-}
+//   return true;
+// }
+
+
+// Screen Size for to wrap my slider
+// window.addEventListener('resize', function () {
+//   var screenWidth = window.innerWidth;
+//   var blockContent_2 = document.querySelector('.block-content-2');
+//   blockContent_2.style.maxWidth = `${screenWidth}px`;
+
+
+//   console.log(blockContent_2.style.maxWidth = `${screenWidth}px`)
+// });
 

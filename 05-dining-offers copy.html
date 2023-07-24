@@ -96,7 +96,7 @@
               </div>
               <div class="menu-item">
                 <div class="item">
-                  <a href="./02-dining-landing-page.html" class="menu-link" href="#">Dining</a>
+                  <a href="./02-dining-landing-page.html" class="menu-link active" href="#">Dining</a>
                 </div>
                 <div class="sub-menu">
                   <div class="sub-menu-item"><a class="sub-menu-link" href="#">Link 1</a></div>
@@ -149,7 +149,7 @@
               </div>
               <div class="menu-item">
                 <div class="item">
-                  <a href="./13-casino-landing-page.html" class="menu-link active" href="#">Casino</a>
+                  <a href="./13-casino-landing-page.html" class="menu-link" href="#">Casino</a>
                 </div>
                 <div class="sub-menu">
                   <div class="sub-menu-item"><a class="sub-menu-link" href="#">Link 1</a></div>
@@ -521,9 +521,9 @@
                 <div class="img-container">
                   <img loading="lazy" src="./assets/img/default_img.png" alt="banner">
                 </div>
-                <div class="content-text mb-0">
-                  <h1>Fortune Favors The Game</h1>
-                  <p>Luctus nunc ut pellentesque id elementum interdum nisl. Volutpat ut porttitor neque neque facilisis a nibh velit non iaculis dui imperdiet.</p>
+                <div class="content-text">
+                  <h1>Viverra vel amet integer elit</h1>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptatem similique repellendus. Dignissimos ad itaque in cumque est, totam vitae, tempora laborum hic quae facilis, unde nesciunt ipsam ut ex.</p>
                 </div>
               </div>
             </div>
@@ -537,288 +537,433 @@
       <section class="overlay-parallax">
         <div class="main">
 
-          <section class="block-content">
-            <div class="content-wrapper">
-
-
-              <div class="card-container-1">
-                <a href="#" class="card-img">
-                  <img loading="lazy" src="./assets/img/card-img-560x330.png" alt="">
-                </a>
-                <div class="card-details">
-                  <h3>Responsible Gaming</h3>
-                  <p>Solaire Resort adheres to Responsible Gaming. While we aim to provide a world-class gaming experience, we are also committed to preventing gambling-related problems and underage gambling. Guests below twenty-one (21) years in age are not allowed to gamble.</p>
-
-                  <div class="card-action">
-                    <a href="#" class="btn-text" title="Learn More">Learn More</a>
+          <section class="booking">
+            <form action="">
+              <div class="book-widget">
+                <div class="book-item">
+                  <div class="book-select">
+                    <span class="book-label">Select Booking Type</span>
+                    <div class="book-details">
+                      <span class="selected-item">
+                        Events/Shows
+                      </span>
+                      <span class="icon-down-open-big"></span>
+                    </div>
+                  </div>
+                  <div class="book-list">
+                    <div class="book-list-item" data-value="Events">Restaurants</div>
+                    <div class="book-list-item" data-value="Shows 1">Shows 1</div>
+                    <div class="book-list-item" data-value="Shows 2">Shows 2</div>
+                    <div class="book-list-item" data-value="Shows 3">Shows 3</div>
+                    <div class="book-list-item" data-value="Shows 4">Shows 4</div>
                   </div>
                 </div>
+
+                <div class="book-item">
+                  <div class="book-select">
+                    <span class="book-label">Restaurants</span>
+                    <div class="book-details">
+                      <span class="selected-item">Select a restaurant</span>
+                      <span class="icon-down-open-big"></span>
+                    </div>
+                  </div>
+                  <div class="book-list">
+                    <div class="book-list-item" data-value="Events">Restaurant</div>
+                    <div class="book-list-item" data-value="Shows 1">Restaurant 1</div>
+                    <div class="book-list-item" data-value="Shows 2">Restaurant 2</div>
+                    <div class="book-list-item" data-value="Shows 3">Restaurant 3</div>
+                    <div class="book-list-item" data-value="Shows 4">Restaurant 4</div>
+                  </div>
+                </div>
+                <div class="book-item">
+                  <div class="book-select">
+                    <span class="book-label">Guests</span>
+                    <div class="book-details">
+                      <span class="selected-item">0 Adults 0 child</span>
+                      <span class="icon-down-open-big"></span>
+                    </div>
+                  </div>
+                  <div class="book-list">
+                    <div class="book-list-item" data-value="Events">Events</div>
+                    <div class="book-list-item" data-value="Shows 1">Shows 1</div>
+                    <div class="book-list-item" data-value="Shows 2">Shows 2</div>
+                    <div class="book-list-item" data-value="Shows 3">Shows 3</div>
+                    <div class="book-list-item" data-value="Shows 4">Shows 4</div>
+                  </div>
+                </div>
+                <div class="book-item date-select">
+                  <label for="booking_select_date" class="book-select ">
+                    <span class="book-label">Visiting Date</span>
+                    <div class="book-details">
+                      <!-- <span class="selected-item">Select date</span> -->
+                      <input id="booking_select_date" type="text" class="booking-date" placeholder="Select date" data-input readonly="readonly" required>
+                      <span class="icon-light-date"></span>
+                    </div>
+                  </label>
+                </div>
+                <div class="book-item action-booking">
+                  <button class="btn pri-btn">Book Now</button>
+                </div>
               </div>
-            </div>
+            </form>
           </section>
 
-          <section class="block-content ">
-            <div class="heading-top first-heading">
-              <h2> Table Game Guides</h2>
-            </div>
-            <div class="featured-slider-container ">
-              <div class="slider-layout slider-offers">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <article class="article-layout-2">
-                      <a href="#" class="img-container">
-                        <div class="img-holder">
-                          <img loading="lazy" src="./assets/img/slider-img-380x260.png" alt="">
-                        </div>
-                      </a>
-                      <div class="description">
-                        <h4>Baccarat Rush</h4>
-                        <p>Play the fastest Baccarat variant where quick wins and big payouts happen!</p>
-                        <a href="#" class="btn-text" title="View Details">View Details</a>
-                      </div>
-                    </article>
-                  </div>
-
-                  <div class="swiper-slide">
-                    <article class="article-layout-2">
-                      <a href="#" class="img-container">
-                        <div class="img-holder">
-                          <img loading="lazy" src="./assets/img/slider-img-380x260.png" alt="">
-                        </div>
-                      </a>
-                      <div class="description">
-                        <h4>Unwind with our amenities</h4>
-                        <p>Pamper yourself with our state-of-the-art luxury wellness spa.
-                        </p>
-                        <a href="#" class="btn-text" title="Learn More">Learn More</a>
-                      </div>
-                    </article>
-                  </div>
-
-                  <div class="swiper-slide">
-                    <article class="article-layout-2">
-                      <a href="#" class="img-container">
-                        <div class="img-holder">
-                          <img loading="lazy" src="./assets/img/slider-img-380x260.png" alt="">
-                        </div>
-                      </a>
-                      <div class="description">
-                        <h4>Unwind with our amenities</h4>
-                        <p>Pamper yourself with our state-of-the-art luxury wellness spa.
-                        </p>
-                        <a href="#" class="btn-text" title="Learn More">Learn More</a>
-                      </div>
-                    </article>
-                  </div>
-
-                  <div class="swiper-slide">
-                    <article class="article-layout-2">
-                      <a href="#" class="img-container">
-                        <div class="img-holder">
-                          <img loading="lazy" src="./assets/img/slider-img-380x260.png" alt="">
-                        </div>
-                      </a>
-                      <div class="description">
-                        <h4>Unwind with our amenities</h4>
-                        <p>Pamper yourself with our state-of-the-art luxury wellness spa.
-                        </p>
-                        <a href="#" class="btn-text" title="Learn More">Learn More</a>
-                      </div>
-                    </article>
-                  </div>
-
-                  <div class="swiper-slide">
-                    <article class="article-layout-2">
-                      <a href="#" class="img-container">
-                        <div class="img-holder">
-                          <img loading="lazy" src="./assets/img/slider-img-380x260.png" alt="">
-                        </div>
-                      </a>
-                      <div class="description">
-                        <h4>Celebrate In Spades</h4>
-                        <p>Celebrate the milestones of life’s greatest moments in luxury and style.
-                        </p>
-                        <a href="#" class="btn-text" title="Learn More">Learn More</a>
-                      </div>
-                    </article>
+          <div class="search-container-block">
+            <div class="search-all">
+              <form action="#" class="form-search">
+                <div class="form-group">
+                  <div class="search-wrapper">
+                    <input type="text" class="input-search" placeholder="Search">
+                    <button class="btn-search">
+                      <span class="icon-light-search"></span>
+                    </button>
                   </div>
                 </div>
+
+                <!-- <div class="form-group">
+                  <div class="custom-select">
+                    <div class="select-header">
+                      <div class="selected-option">All Hotels</div>
+                      <span class="icon-down-open-big"></span>
+                    </div>
+                    <div class="select-options">
+                      <div class="option-category">
+                        <div class="option-category-title">Signature Outlets</div>
+                        <div class="option" data-value="value1">Finestra</div>
+                        <div class="option" data-value="value2">Red Lantern</div>
+                        <div class="option" data-value="value3">Yakumi</div>
+                        <div class="option" data-value="value4">Kiwa</div>
+                      </div>
+                      <div class="option-category">
+                        <div class="option-category-title">Casual</div>
+                        <div class="option" data-value="value5">Waterside</div>
+                        <div class="option" data-value="value6">Fresh</div>
+                        <div class="option" data-value="value7">Oasis</div>
+                      </div>
+                    </div>
+                  </div>
+                </div> -->
+              </form>
+            </div>
+          </div>
+
+          <section class="block-content slider-with-tab pt-0">
+            <div class="heading-top">
+              <h2 class="text-left">All Dining Offers</h2>
+            </div>
+            <div class="slider-tab">
+              <a href="#" class="active">Dining Offers</a>
+              <a href="#">Rooms & Suite Offers</a>
+              <a href="#">Shopping Offers</a>
+              <a href="#">Entertainment Offers</a>
+              <a href="#">MICE Offers</a>
+              <a href="#">Casino Offers</a>
+            </div>
+
+            <div class="slider-tab-content featured-slider-container">
+              <div class="slider-layout grid-container">
+                <!-- <div class="swiper-wrapper"> -->
+                <div class="swiper-slide">
+                  <article>
+                    <a href="#" class="img-container">
+                      <div class="img-holder">
+                        <img loading="lazy" src="./assets/img/slider-img-380x260.png" alt="">
+                      </div>
+                    </a>
+                    <div class="description text-left">
+                      <h4>Et elementum aliquam sed facilisis pellentesque dui.</h4>
+                      <a href="#" class="category-tag"><small class="secondary"><span class=" icon-light-restaurant"></span> Restaurant 1</small></a>
+                      <p> Experience the best Filipino cuisine in Manila at Lucky Noodles all this month as we feature authentic flavors of the Philippines for you to enjoy.</p>
+                      <p class="date">
+                        <span class="icon-light-date"></span>
+                        From now until June 30, 2023
+                      </p>
+                      <a href="#" class="btn-text" title="Read More">Learn More</a>
+                    </div>
+                  </article>
+                </div>
+                <!-- </div> -->
               </div>
+              <!-- <div class="button-next-slider-8 swiper-button-next"></div>
+              <div class="button-prev-slider-8 swiper-button-prev"></div>
+              <div class="pagination-slider-8 swiper-pagination"></div> -->
+            </div>
+
+
+            <div class="see-all-container">
+              <button class="btn pri-btn">
+                See all restaurants
+              </button>
+            </div>
+
+          </section>
+
+          <section class="block-content">
+            <div class="heading-top">
+              <h2>Exclusive Offers</h2>
+              <p class="sub-title">Est sed varius praesent vivamus mauris elit. Accumsan enim elementum iaculis viverra felis.</p>
+            </div>
+
+            <div class="featured-slider-container">
+              <div class="slider-layout slider-offers">
+                <div class="swiper-wrapper">
+
+                  <div class="swiper-slide">
+                    <article>
+                      <a href="#" class="img-container">
+                        <div class="img-holder">
+                          <img loading="lazy" src="./assets/img/slider-img-380x260.png" alt="">
+                        </div>
+                      </a>
+                      <div class="description text-left">
+                        <h4>Lucky Noodles: Tastes Like Home</h4>
+                        <p> Experience the best Filipino cuisine in Manila at Lucky Noodles all this month as we feature authentic flavors of the Philippines for you to enjoy.</p>
+                        <p class="date">
+                          <span class="icon-light-date"></span>
+                          From now until June 30, 2023
+                        </p>
+                        <a href="#" class="btn-text" title="Read More">Learn More</a>
+                      </div>
+                    </article>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <article>
+                      <a href="#" class="img-container">
+                        <div class="img-holder">
+                          <img loading="lazy" src="./assets/img/slider-img-380x260.png" alt="">
+                        </div>
+                      </a>
+                      <div class="description text-left">
+                        <h4>Lucky Noodles: Tastes Like Home</h4>
+                        <p> Experience the best Filipino cuisine in Manila at Lucky Noodles all this month as we feature authentic flavors of the Philippines for you to enjoy.</p>
+                        <p class="date">
+                          <span class="icon-light-date"></span>
+                          From now until June 30, 2023
+                        </p>
+                        <a href="#" class="btn-text" title="Read More">Learn More</a>
+                      </div>
+                    </article>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <article>
+                      <a href="#" class="img-container">
+                        <div class="img-holder">
+                          <img loading="lazy" src="./assets/img/slider-img-380x260.png" alt="">
+                        </div>
+                      </a>
+                      <div class="description text-left">
+                        <h4>Lucky Noodles: Tastes Like Home</h4>
+                        <p> Experience the best Filipino cuisine in Manila at Lucky Noodles all this month as we feature authentic flavors of the Philippines for you to enjoy.</p>
+                        <p class="date">
+                          <span class="icon-light-date"></span>
+                          From now until June 30, 2023
+                        </p>
+                        <a href="#" class="btn-text" title="Read More">Learn More</a>
+                      </div>
+                    </article>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <article>
+                      <a href="#" class="img-container">
+                        <div class="img-holder">
+                          <img loading="lazy" src="./assets/img/slider-img-380x260.png" alt="">
+                        </div>
+                      </a>
+                      <div class="description text-left">
+                        <h4>Lucky Noodles: Tastes Like Home</h4>
+                        <p> Experience the best Filipino cuisine in Manila at Lucky Noodles all this month as we feature authentic flavors of the Philippines for you to enjoy.</p>
+                        <p class="date">
+                          <span class="icon-light-date"></span>
+                          From now until June 30, 2023
+                        </p>
+                        <a href="#" class="btn-text" title="Read More">Learn More</a>
+                      </div>
+                    </article>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <article>
+                      <a href="#" class="img-container">
+                        <div class="img-holder">
+                          <img loading="lazy" src="./assets/img/slider-img-380x260.png" alt="">
+                        </div>
+                      </a>
+                      <div class="description text-left">
+                        <h4>Lucky Noodles: Tastes Like Home</h4>
+                        <p> Experience the best Filipino cuisine in Manila at Lucky Noodles all this month as we feature authentic flavors of the Philippines for you to enjoy.</p>
+                        <p class="date">
+                          <span class="icon-light-date"></span>
+                          From now until June 30, 2023
+                        </p>
+                        <a href="#" class="btn-text" title="Read More">Learn More</a>
+                      </div>
+                    </article>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <article>
+                      <a href="#" class="img-container">
+                        <div class="img-holder">
+                          <img loading="lazy" src="./assets/img/slider-img-380x260.png" alt="">
+                        </div>
+                      </a>
+                      <div class="description text-left">
+                        <h4>Lucky Noodles: Tastes Like Home</h4>
+                        <p> Experience the best Filipino cuisine in Manila at Lucky Noodles all this month as we feature authentic flavors of the Philippines for you to enjoy.</p>
+                        <p class="date">
+                          <span class="icon-light-date"></span>
+                          From now until June 30, 2023
+                        </p>
+                        <a href="#" class="btn-text" title="Read More">Learn More</a>
+                      </div>
+                    </article>
+                  </div>
+
+                </div>
+              </div>
+
               <div class="button-next-slider-6 swiper-button-next"></div>
               <div class="button-prev-slider-6 swiper-button-prev"></div>
               <div class="pagination-slider-6 swiper-pagination"></div>
             </div>
-          </section>
 
-          <section class="block-content ">
-            <div class="content-wrapper">
-              <div class="card-container-2">
-                <h2 class="text-center">Gaming Clubs</h2>
-                <div class="card-img">
-                  <img loading="lazy" src="./assets/img/img-480x430.png" alt="">
-                  <div class="img-shadow"></div>
-                </div>
-                <div class="card-details">
-                  <p>Volutpat interdum viverra et elit phasellus. Sed at vestibulum at orci blandit egestas. Aenean posuere ac euismod molestie. Urna elementum semper commodo nisi amet lobortis vivamus. Nec.</p>
-                  <p>Et tristique sed mauris lectus ultrices pellentesque sollicitudin.</p>
-                </div>
-                <div class="card-links">
-                  <a href="#" class="card-link">Player Stadium <span class="icon-light-arrow-right"></span></a>
-                  <a href="#" class="card-link">Solaire Club <span class="icon-light-arrow-right"></span></a>
-                  <a href="#" class="card-link">Sportsbook <span class="icon-light-arrow-right"></span></a>
-                </div>
-              </div>
-            </div>
-
-            <!-- <div class="heading-top">
-                <div class="sub-title">
-                  <span>Our Projects</span>
-                </div>
-                <h2>Explore Recent Projects</h2>
-              </div> -->
-          </section>
-
-          <section class="block-content ">
-            <div class="heading-top first-heading">
-              <h2>Casino Offers</h2>
-            </div>
-            <div class="featured-slider-container ">
-              <div class="slider-layout slider-5">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <article class="article-layout-2">
-                      <a href="#" class="img-container">
-                        <div class="img-holder">
-                          <img loading="lazy" src="./assets/img/slider-img-380x260.png" alt="">
-                        </div>
-                      </a>
-                      <div class="description">
-                        <h4>Slots Sync2Pay</h4>
-                        <p>Go cardless when you play your favorite slot games!</p>
-                        <a href="#" class="btn-text" title="View Details">View Details</a>
-                      </div>
-                    </article>
-                  </div>
-
-                  <div class="swiper-slide">
-                    <article class="article-layout-2">
-                      <a href="#" class="img-container">
-                        <div class="img-holder">
-                          <img loading="lazy" src="./assets/img/slider-img-380x260.png" alt="">
-                        </div>
-                      </a>
-                      <div class="description">
-                        <h4>Slots Sync2Pay</h4>
-                        <p>Go cardless when you play your favorite slot games!</p>
-                        <a href="#" class="btn-text" title="View Details">View Details</a>
-                      </div>
-                    </article>
-                  </div>
-
-                  <div class="swiper-slide">
-                    <article class="article-layout-2">
-                      <a href="#" class="img-container">
-                        <div class="img-holder">
-                          <img loading="lazy" src="./assets/img/slider-img-380x260.png" alt="">
-                        </div>
-                      </a>
-                      <div class="description">
-                        <h4>Slots Sync2Pay</h4>
-                        <p>Go cardless when you play your favorite slot games!</p>
-                        <a href="#" class="btn-text" title="View Details">View Details</a>
-                      </div>
-                    </article>
-                  </div>
-
-                  <div class="swiper-slide">
-                    <article class="article-layout-2">
-                      <a href="#" class="img-container">
-                        <div class="img-holder">
-                          <img loading="lazy" src="./assets/img/slider-img-380x260.png" alt="">
-                        </div>
-                      </a>
-                      <div class="description">
-                        <h4>Slots Sync2Pay</h4>
-                        <p>Go cardless when you play your favorite slot games!</p>
-                        <a href="#" class="btn-text" title="View Details">View Details</a>
-                      </div>
-                    </article>
-                  </div>
-
-                  <div class="swiper-slide">
-                    <article class="article-layout-2">
-                      <a href="#" class="img-container">
-                        <div class="img-holder">
-                          <img loading="lazy" src="./assets/img/slider-img-380x260.png" alt="">
-                        </div>
-                      </a>
-                      <div class="description">
-                        <h4>Unwind with our amenities</h4>
-                        <p>Pamper yourself with our state-of-the-art luxury wellness spa.
-                        </p>
-                        <a href="#" class="btn-text" title="Veiw Details">Veiw Details</a>
-                      </div>
-                    </article>
-                  </div>
-
-                  <div class="swiper-slide">
-                    <article class="article-layout-2">
-                      <a href="#" class="img-container">
-                        <div class="img-holder">
-                          <img loading="lazy" src="./assets/img/slider-img-380x260.png" alt="">
-                        </div>
-                      </a>
-                      <div class="description">
-                        <h4>Celebrate In Spades</h4>
-                        <p>Celebrate the milestones of life’s greatest moments in luxury and style.
-                        </p>
-                        <a href="#" class="btn-text" title="Learn More">Learn More</a>
-                      </div>
-                    </article>
-                  </div>
-
-                  <div class="swiper-slide">
-                    <article class="article-layout-2">
-                      <a href="#" class="img-container">
-                        <div class="img-holder">
-                          <img loading="lazy" src="./assets/img/slider-img-380x260.png" alt="">
-                        </div>
-                      </a>
-                      <div class="description">
-                        <h4>Celebrate In Spades</h4>
-                        <p>Celebrate the milestones of life’s greatest moments in luxury and style.
-                        </p>
-                        <a href="#" class="btn-text" title="Learn More">Learn More</a>
-                      </div>
-                    </article>
-                  </div>
-                </div>
-              </div>
-              <div class="button-next-slider-5 swiper-button-next"></div>
-              <div class="button-prev-slider-5 swiper-button-prev"></div>
-              <div class="pagination-slider-5 swiper-pagination"></div>
-            </div>
-          </section>
-
-          <section class="block-content full-width">
-            <div class="feaured-banner">
-              <div class="img-container">
-                <img loading="lazy" src="./assets/img/img-1200x500.png" alt="">
-              </div>
-              <div class="text-content">
-                <h2>Experience the excitement of live online casino gaming</h2>
-              </div>
-            </div>
-            <div class="description text-center">
-              <p class="text-center">
-                Volutpat interdum viverra et elit phasellus. Sed at vestibulum at orci blandit egestas. Aenean posuere ac euismod molestie. Urna elementum semper commodo nisi amet lobortis vivamus.
-              </p>
-            </div>
-            <div class="m-auto">
-              <button class="btn pri-btn m-auto">Play at Solaire Online now
+            <div class="see-all-container">
+              <button class="btn pri-btn">
+                See all dining offers
               </button>
             </div>
           </section>
+
+          <section class="block-content">
+            <div class="heading-top">
+              <h2>All Dining Offers</h2>
+            </div>
+
+            <div class="search-all">
+              <form action="#" class="form-search">
+                <div class="form-group">
+                  <div class="search-wrapper">
+                    <input type="text" class="input-search" placeholder="Search dining offers">
+                    <button class="btn-search">
+                      <span class="icon-light-search"></span>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <div class="custom-select">
+                    <div class="select-header">
+                      <div class="selected-option">Select offers</div>
+                      <span class="icon-down-open-big"></span>
+                    </div>
+                    <div class="select-options">
+                      <div class="no-option-category">
+                        <div class="option" data-value="value1">Dining Offers</div>
+                        <div class="option" data-value="value1">Dining Offers 2</div>
+                        <div class="option" data-value="value1">Dining Offers 3</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+            <div class="featured-slider-container">
+              <div class="slider-layout grid-container">
+                <!-- <div class="swiper-wrapper"> -->
+                <div class="swiper-slide">
+                  <article>
+                    <a href="#" class="img-container">
+                      <div class="img-holder">
+                        <img loading="lazy" src="./assets/img/slider-img-380x260.png" alt="">
+                      </div>
+                    </a>
+                    <div class="description text-left">
+                      <a href="#" class="category-tag"><small class="secondary"><span class=" icon-light-restaurant"></span> Japanese Cuisine</small></a>
+                      <h4>Acacia</h4>
+                      <p>Whether it be a prime-aged ribeye steak or BBQ pork ribs, find the savory satisfaction you crave at the Acacia restaurant.</p>
+                      <p class="date">
+                        <span class="icon-light-date"></span>
+                        From now until June 30, 2023
+                      </p>
+                      <a href="#" class="btn-text" title="View More Details">View More Details</a>
+                    </div>
+                  </article>
+                </div>
+
+                <div class="swiper-slide">
+                  <article>
+                    <a href="#" class="img-container">
+                      <div class="img-holder">
+                        <img loading="lazy" src="./assets/img/slider-img-380x260.png" alt="">
+                      </div>
+                    </a>
+                    <div class="description text-left">
+                      <a href="#" class="category-tag"><small class="secondary"><span class=" icon-light-restaurant"></span> Japanese Cuisine</small></a>
+                      <h4>House of Zhou</h4>
+                      <p>House of Zhou brings you today’s well-loved imperial food from China’s rich spectrum of dishes.</p>
+                      <p class="date">
+                        <span class="icon-light-date"></span>
+                        From now until June 30, 2023
+                      </p>
+                      <a href="#" class="btn-text" title="View More Details">View More Details</a>
+                    </div>
+                  </article>
+                </div>
+
+                <div class="swiper-slide">
+                  <article>
+                    <a href="#" class="img-container">
+                      <div class="img-holder">
+                        <img loading="lazy" src="./assets/img/slider-img-380x260.png" alt="">
+                      </div>
+                    </a>
+                    <div class="description text-left">
+                      <a href="#" class="category-tag"><small class="secondary"><span class=" icon-light-restaurant"></span> Japanese Cuisine</small></a>
+                      <h4>Finestra Italian Steakhouse</h4>
+                      <p>Enjoy an exquisite steak experience that's a cut above the rest..</p>
+                      <p class="date">
+                        <span class="icon-light-date"></span>
+                        From now until June 30, 2023
+                      </p>
+                      <a href="#" class="btn-text" title="View More Details">View More Details</a>
+                    </div>
+                  </article>
+                </div>
+
+                <div class="swiper-slide">
+                  <article>
+                    <a href="#" class="img-container">
+                      <div class="img-holder">
+                        <img loading="lazy" src="./assets/img/slider-img-380x260.png" alt="">
+                      </div>
+                    </a>
+                    <div class="description text-left">
+                      <a href="#" class="category-tag"><small class="secondary"><span class=" icon-light-restaurant"></span> Japanese Cuisine</small></a>
+                      <h4>Fresh</h4>
+                      <p>Your ultimate buffet experience, redefined.</p>
+                      <p class="date">
+                        <span class="icon-light-date"></span>
+                        From now until June 30, 2023
+                      </p>
+                      <a href="#" class="btn-text" title="View More Details">View More Details</a>
+                    </div>
+                  </article>
+                </div>
+                <!-- </div> -->
+              </div>
+            </div>
+
+            <div class="see-all-container">
+              <button class="btn pri-btn">
+                Load more
+              </button>
+            </div>
+          </section>
+
 
           <section class="signup-bottom">
             <div class="block-content signup-wrapper">
@@ -851,6 +996,7 @@
 
 
     </main>
+
 
     <footer>
       <div class="footer-wrapper">

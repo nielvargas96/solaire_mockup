@@ -194,6 +194,7 @@
 
     .menu-link {
       font-size: 14px;
+
     }
 
 
@@ -275,9 +276,15 @@
   padding: 0 13px;
   color: $brown;
   font-size: 1rem;
+
+  &.active {
+    color: $primary;
+  }
 }
 
 .menu-item {
+
+
   &:hover {
     .menu-link {
       color: $primary;

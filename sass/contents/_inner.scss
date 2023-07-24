@@ -20,10 +20,10 @@
     top: 50%;
   }
 
-  .button-next-slider-2,
-  .button-prev-slider-2 {
-    top: 38%;
-  }
+  // .button-next-slider-2,
+  // .button-prev-slider-2 {
+  //   top: 38%;
+  // }
 
   .swiper-button-next,
   .swiper-button-prev {
@@ -40,7 +40,8 @@
 
 
   .description {
-    padding: 1.5rem 1rem;
+    // padding: 1.5rem 1rem;
+    padding: 1.5rem 0;
 
     .btn-text {
       display: block;
@@ -86,6 +87,7 @@
   .date,
   .store-hours,
   .store-location {
+    font-size: 1rem;
     font-family: $font-family_sec-500;
     color: $gray;
   }
@@ -93,7 +95,6 @@
   .store-hours,
   .store-location {
     display: flex;
-    font-size: 1rem;
 
     span {
       width: 20px;
@@ -117,6 +118,46 @@
     position: relative;
     display: flex;
     flex-direction: column;
+  }
+}
+
+.slider-layout-2 {
+
+  article {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.article-layout-3 {
+
+  .img-container,
+  .description {
+    width: 100%;
+  }
+
+  .description {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+    background-color: #F0F0F0;
+  }
+
+  h3 {
+    margin-bottom: 1rem;
+    color: #5E5E5E;
+  }
+
+  .action {
+    display: flex;
+    justify-content: center;
+  }
+
+  .date {
+    font-size: 1rem;
   }
 }
 

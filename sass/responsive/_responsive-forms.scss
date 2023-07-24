@@ -13,6 +13,40 @@
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
   }
+
+
+  .main-book-form {
+    .booking-details {
+      grid-template-columns: 1fr;
+    }
+
+
+    .img-container-logo {
+      img {
+        display: block;
+        margin-left: auto;
+      }
+    }
+  }
+
+  .body-form-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+
+  }
+
+  .col-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .form-flex {
+    .form-action {
+      width: 50%;
+      margin-left: auto;
+    }
+  }
+
 }
 
 @media only screen and (min-width: $screen_1100) {

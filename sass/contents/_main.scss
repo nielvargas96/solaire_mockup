@@ -49,7 +49,7 @@ main {
 
 	.content-text {
 		position: relative;
-		padding: 0 15% 2%;
+		padding: 0 15% 0;
 		z-index: 2;
 		display: block;
 		margin: 0 auto;
@@ -191,7 +191,8 @@ main {
 	margin-right: auto;
 	max-width: 1200px;
 	padding: 0 1.4rem;
-	transform: translateY(-4rem);
+	// transform: translateY(-4rem);
+	transform: translateY(-3rem);
 	z-index: 2;
 
 	&.on-scroll {
@@ -399,6 +400,17 @@ main {
 	padding-top: 3rem;
 }
 
+.block-content-2 {
+	position: relative;
+	margin: 0 auto;
+	max-width: 1200px;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	padding-bottom: 6rem;
+	padding-top: 3rem;
+	overflow: hidden;
+}
+
 .content-wrapper {
 	display: flex;
 	flex-direction: column;
@@ -485,6 +497,20 @@ main {
 		img {
 			width: 100%;
 			display: block;
+		}
+	}
+}
+
+.card-container-4 {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+
+	.card-img {
+		width: 100%;
+
+		img {
+			width: 100%;
 		}
 	}
 }
@@ -587,6 +613,47 @@ main {
 	padding-left: 1rem;
 	padding-right: 1rem;
 	background-color: #F2F2F2;
+
+	&.with-image {
+		display: flex;
+		flex-direction: column;
+		padding-left: 0;
+		padding-right: 0;
+
+		.block-content {
+			padding: 2rem;
+		}
+
+		.signup-heading {
+			width: 100%;
+		}
+
+		.main-img-container,
+		.signup-wrapper {
+			width: 100%;
+		}
+
+		.main-img-container {
+			img {
+				display: block;
+				width: 100%;
+				height: 100%;
+			}
+		}
+
+		.text-img {
+			display: flex;
+			align-items: center;
+		}
+
+		.signup-wrapper {
+			display: flex;
+			align-items: center;
+		}
+	}
+
+
+
 }
 
 .signup-wrapper {
@@ -746,11 +813,13 @@ main {
 
 .discover-more.full-width {
 	margin-bottom: 0;
+	padding-bottom: 0;
 
 	img {
 		min-height: 250px;
 	}
 }
+
 
 .newsletter {
 	background-color: #D2D2D2;
@@ -796,4 +865,44 @@ main {
 	height: 44px;
 	border: 1px solid #949494 !important;
 	border-right-color: transparent !important;
+}
+
+.card-container-5 {
+	article {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 3rem;
+
+		&.reversed {
+			flex-direction: column;
+
+			.description {
+				padding-left: 0;
+			}
+		}
+	}
+
+	.img-container,
+	.description {
+		width: 100%;
+	}
+
+	.img-holder,
+	img {
+		width: 100%;
+	}
+
+	.description {
+		padding: 1.5rem;
+	}
+
+	h4 {
+		font-size: 1.5rem;
+		margin-bottom: 1rem;
+	}
+
+	p {
+		font-size: 1rem;
+		margin-bottom: 1.5rem;
+	}
 }
